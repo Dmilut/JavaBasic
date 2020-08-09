@@ -22,6 +22,20 @@ public class Main {
                 System.out.println(a + b);
                 System.out.println(a - b);
                 */
+        int a = 29;
+        int b = 15;
+        System.out.println(b + a);
+        System.out.println(b - a);
+        System.out.println(a - b + a);
+        System.out.println(a * b);
+        System.out.println(a * b / 2);
+        System.out.println(a / b);
+        System.out.println(a / b - b);;
+        System.out.println(a % b);
+        System.out.println(a % b + b);
+        System.out.println(++a);
+        System.out.println(++b);
+        System.out.println(a+b);
 
             /*  Операторы сравнения ---------------------------------------
              ==	Проверяет, равны или нет значения двух операндов, если да, то условие становится истинным
@@ -78,7 +92,7 @@ public class Main {
        */
 
 
-        int a = 1;
+        /* int a = 1;
         int b = 2;
         int c = 0;
 
@@ -86,6 +100,9 @@ public class Main {
 
             c++;
             System.out.println("c = " + c);
+
+
+         */
         };
     }
-}
+
