@@ -1,20 +1,9 @@
-package com.dmilut.lesson_04;
+package com.dmilut.lesson_04.homework;
 
-public class Homework {
-
+public class HomeworkOlga {
     public static void main(String[] args) {
 
-            //  Easy level
-
-            /*  Арифметические операторы -----------------------------------
-             +	Складывает значения по обе стороны от оператора
-             -	Вычитает правый операнд из левого операнда
-             *	Умножает значения по обе стороны от оператора
-             /	Оператор деления делит левый операнд на правый операнд
-             %	Делит левый операнд на правый операнд и возвращает остаток
-             ++	Инкремент - увеличивает значение операнда на 1
-             --	Декремент - уменьшает значение операнда на 1 */
-
+        //  Easy level
         /*  TODO: 2020-08-05
                 1.1. Создать переменные a и b типа int
                 1.2. Инициализировать переменные любыми значениями
@@ -25,20 +14,16 @@ public class Homework {
                 int b = 2;
                 System.out.println(a + b);
                 System.out.println(a - b); */
-        int a = 29;
-        int b = 15;
-        System.out.println(b + a);
-        System.out.println(b - a);
-        System.out.println(a - b + a);
+
+        int a = 3;
+        int b = 9;
+        System.out.println(a + b);
+        System.out.println(a - b);
         System.out.println(a * b);
-        System.out.println(a * b / 2);
         System.out.println(a / b);
-        System.out.println(a / b - b);;
         System.out.println(a % b);
-        System.out.println(a % b + b);
         System.out.println(++a);
-        System.out.println(++b);
-        System.out.println(a+b);
+        System.out.println(--b);
 
             /*  Операторы сравнения ---------------------------------------
              ==	Проверяет, равны или нет значения двух операндов, если да, то условие становится истинным
@@ -62,14 +47,22 @@ public class Homework {
                 int b = 2;
                 System.out.println("a == b = " + (a == b)); */
 
-        int c = 5;
-        int d = 10;
+        int c = 3;
+        int d = 9;
         System.out.println("c == d = " + (c == d));
-        System.out.println("c != d =" + (c != d));
-        System.out.println("d < c =" + (d < c));
-        System.out.println("d > c =" + (d > c));
-        System.out.println("c >= d =" + (c >= d));
-        System.out.println("d <= d =" + (d <= d));
+        System.out.println("c != d = " + (c != d));
+        System.out.println("c > d = " + (c > d));
+        System.out.println("c <  d = " + (c < d));
+        System.out.println("c >= d = " + (c >= d));
+        System.out.println("c <= d = " + (c <= d));
+        int e = 4;
+        int f = 6;
+        System.out.println("e == f = " + (e == f));
+        System.out.println("e != f = " + (e != f));
+        System.out.println("e > f = " + (e > f));
+        System.out.println("e <  f = " + (e < f));
+        System.out.println("e >= f = " + (e >= f));
+        System.out.println("e <= f = " + (e <= f));
 
                 /*  Логические операторы ---------------------------------------
                 &&	Называется логический оператор «И». Если оба операнда являются не равны нулю,
@@ -89,19 +82,18 @@ public class Homework {
                 boolean b = false;
                 System.out.println("a && b = " + (a&&b)); */
 
-        boolean e = false, f = false;
-        boolean g = true, h = true;
-        System.out.println("e && f = " + (e&&f));
-        System.out.println("g && h = " + (g&&h));
-        System.out.println("e && h = " + (e&&h));
-        System.out.println("g && f = " + (g&&f));
-        System.out.println("e || f = " + (e||f));
-        System.out.println("g || h = " + (g||h));
-        System.out.println("e || h = " + (e||h));
-        System.out.println("g || f = " + (g||f));
-        System.out.println("!g = " + !g);
-        System.out.println("!e = " + !e + " !h = " + !h);
-
+        boolean g = true;
+        boolean h = false;
+        System.out.println("g && h = " + (g && h));
+        System.out.println("g || h = " + (g || h));
+        System.out.println("g ! h = " + (!h));
+        System.out.println("g ! h = " + (!g));
+        boolean i = true;
+        boolean j = false;
+        System.out.println("i && j = " + (i && j));
+        System.out.println("i || j = " + (i || j));
+        System.out.println("!i = " + (!i));
+        System.out.println("! j = " + (!j));
              /*
                 Операторы присваивания --------------------------------------
                 =	Простой оператор присваивания, присваивает значения из правой стороны операндов
@@ -124,21 +116,32 @@ public class Homework {
                 int c = 0;
                 c = a + b;
                 System.out.println("c = a + b = " + c ); */
-        int i = 5;
-        int j = 7;
-        int k;
-        k = i+j;
-        System.out.println("k = i+j = " + k);
-        k += 5;
-        System.out.println("k +=5 " + k);
-        k -= j;
-        System.out.println("k -=j " + k);
-        k *= i;
-        System.out.println("k *=i " + k);
-        k /= j;
-        System.out.println("k /=j " + k);
-        k %= i;
-        System.out.println("k %=i " + k);
+        int k = 2;
+        int l = 4;
+        int m = 5;
+        m = k + l;
+        System.out.println("m = k + l = " + m);
+        m += 3;
+        System.out.println("m+= 3 = " + m);
+        m -= 1;
+        System.out.println("m-=1 = " + m);
+        m *= 2;
+        System.out.println("m*= 2 = " + m);
+        m /= 4;
+        System.out.println("m /= 4 = " + m);
+        m %= 2;
+        System.out.println("m%=2 = " + m);
+
+        m += k;
+        System.out.println("m+= k = " + m);
+        m -= l;
+        System.out.println("m-=l = " + m);
+        m *= k;
+        System.out.println("m*= k = " + m);
+        m /= k;
+        System.out.println("m /= k = " + m);
+        m %= l;
+        System.out.println("m%=l = " + m);
 
 
         /* TODO: 2020-08-07
@@ -154,50 +157,69 @@ public class Homework {
                 7.2. Используя созданную переменную и цикл for вывести в консоль числа 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0
                 7.3. Сделать п.7.2. используя цикл while
                 -------------------------------------------------------------------- */
-        // #5.1
-        String Loop = "I'm good in loops ";
-        // #5.2
-        for (int l = 0; l < 10; l++) {
-            System.out.println(Loop + l);
+
+        String str = "Я разбираюсь в циклах!";
+
+        for (int r = 0; r < 10; r++) {
+            System.out.println(str);
         }
-        // #5.3
-        int m = 9;
-        while (m >= 0) {
-            System.out.println(Loop + m);
-            m--;
+
+        int n = 0;
+        while (n < 10) {
+            System.out.println(str + n);
+            n++;
         }
-        // #6.2
-        for ( int n = 0; n <= 8; n+=2) {
-            System.out.println(n);
+
+        for (int o = 0; o <= 8; o += 2) {
+            System.out.println(o);
         }
-        // #6.1 and 6.3
-        int o = 0;
-        while(o<=8) {
-            System.out.println("while loop " + o);
-            o +=2;
+
+        int o1 = 0;
+        while (o1 <= 8) {
+            System.out.println(o1);
+            o1 += 2;
         }
-        // #7.2
-        for ( int p =10; p >= 0; p--) {
-            System.out.println("for loop - " + p);
+
+        for (int p = 10; p >= 0; p--) {
+            System.out.println(p);
         }
-        // # 7.1 and 7.3
-        int q = 10;
-        while (q >= 0) {
-            System.out.println("while loop - " + q);
-            q--;
+
+        int p1 = 10;
+        while (p1 >= 0) {
+            System.out.println(p1);
+            p1--;
         }
+
         //  Middle level
-
         /* TODO: 2020-08-07
-                8.1. Используя вложенныe циклы for вывести в консоль "Я люблю Java!" 10 раз
-                --------------------------------------------------------------------
-                9.1. Используя цикл for со значением счетчика от 0 до 10 вывести в консоль "Ох уж эти циклы!" 5 раз */
+                8.1. Используя вложенныe циклы for вывести в консоль "Я люблю Java!" 10 раз */
 
-                //  Hard level
+        for (int t = 0; t < 1; t++) {
+            for (int t1 = 0; t1 <= 9; t1++) {
+                System.out.println("Я люблю Java!");
+            }
+        }
 
+       /*       9.1. Используя цикл for со значением счетчика от 0 до 10 вывести в консоль "Ох уж эти циклы!" 5 раз */
+
+        for (int a1 = 0; a1 < 10; a1 += 2) {
+            System.out.println("Ох уж эти циклы!");
+        }
+
+
+
+        //  Hard level
         /* TODO: 2020-08-07
                 10.1. Используя цикл for со значением счетчика от 0 до 10 вывести "Я действительно разбираюсь
                 в циклах!" 20 раз */
 
+
+        for (int a2 = 0; a2 < 10; a2++) {
+            System.out.println("Я действительно разбираюсь в циклах!");
+            System.out.println("Я действительно разбираюсь в циклах!");
+        }
+
+
     }
 }
+
