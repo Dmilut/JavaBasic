@@ -1,7 +1,7 @@
 package com.dmilut.lesson_04.homework;
 
 public class HomeworkOlga {
-    public static void homeworkOlga(String[] args){
+    public static void main(String[] args){
         /*  TODO: 2020-08-05
                 1.1. Создать переменные a и b типа int
                 1.2. Инициализировать переменные любыми значениями
