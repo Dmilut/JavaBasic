@@ -5,12 +5,11 @@ public class HomeworkRam {
     public static void main(String[] args) {
 
         //  Easy level
-
             /*  Арифметические операторы -----------------------------------
              +	Складывает значения по обе стороны от оператора
              -	Вычитает правый операнд из левого операнда
              *	Умножает значения по обе стороны от оператора
-             /	Оператор деления делит левый операнд на правый операнд
+             /	Оператор делени делит левый операнд на правый операнд
              %	Делит левый операнд на правый операнд и возвращает остаток
              ++	Инкремент - увеличивает значение операнда на 1
              --	Декремент - уменьшает значение операнда на 1 */
@@ -25,6 +24,20 @@ public class HomeworkRam {
                 int b = 2;
                 System.out.println(a + b);
                 System.out.println(a - b); */
+
+        int a = 1;
+        int b = 2;
+        b--;
+        int c = 4;
+        c++;
+
+        System.out.println(a + c);
+        System.out.println(c - b);
+        System.out.println(c * b);
+        System.out.println((a + b) / b);
+        System.out.println(c % b);
+        System.out.println(b);
+        System.out.println(c);
 
             /*  Операторы сравнения ---------------------------------------
              ==	Проверяет, равны или нет значения двух операндов, если да, то условие становится истинным
@@ -48,6 +61,16 @@ public class HomeworkRam {
                 int b = 2;
                 System.out.println("a == b = " + (a == b)); */
 
+        int a1 = 4;
+        int b1 = 3;
+
+        System.out.println(a1 == b1);
+        System.out.println(a1 != b1);
+        System.out.println(a1 > b1);
+        System.out.println(a1 < b1);
+        System.out.println(a1 >= b1);
+        System.out.println(a1 <= b1);
+
                 /*  Логические операторы ---------------------------------------
                 &&	Называется логический оператор «И». Если оба операнда являются не равны нулю,
                     то условие становится истинным
@@ -65,6 +88,12 @@ public class HomeworkRam {
                 boolean a = true;
                 boolean b = false;
                 System.out.println("a && b = " + (a&&b)); */
+
+        boolean a2 = true;
+        boolean b2 = false;
+        System.out.println("a && b = " + (a2 && b2));
+        System.out.println("a && b = " + (a2 || b2));
+        System.out.println("a ! b = " + (a2 != b2));
 
              /*
                 Операторы присваивания --------------------------------------
@@ -89,33 +118,106 @@ public class HomeworkRam {
                 c = a + b;
                 System.out.println("c = a + b = " + c ); */
 
+        int a3 = 2;
+        int b3 = 7;
+        int c3 = 3;
+        int s3 = 12;
+        int d3 = 33;
+        int f3 = 44;
+        int r3 = 15;
+        int t3 = 12;
+        System.out.println(c3 += a3);
+        System.out.println(c3 -= b3);
+        System.out.println(c3 += b3);
+        System.out.println(s3 *= d3);
+        System.out.println(f3 /= a3);
+        System.out.println(r3 %= t3);
+
         /* TODO: 2020-08-07
                 5.1. Создать переменую String со значением "Я разбираюсь в циклах!"
                 5.2. Используя цикл for вывести значение переменной в консоль 10 раз
-                5.3. Сделать п.5.2. используя цикл while
-                --------------------------------------------------------------------
+                5.3. Сделать п.5.2. используя цикл while */
+
+        String text = "Я разбираюсь в циклах!";
+        System.out.println("Задача 5.2.");
+        for (int i = 0; i <= 9; i++) {
+            System.out.println(text);
+        }
+
+        int a4 = 0;
+        System.out.println("Задача 5.3.");
+        while (a4 < 10) {
+            a4++;
+            System.out.println(text);
+        }
+
+           /*     --------------------------------------------------------------------
                 6.1. Создать переменную int со значением 0
                 6.2. Используя созданную переменную и цикл for вывести в консоль числа 0, 2, 4, 6, 8
                 6.3. Сделать п.6.2. используя цикл while
-                --------------------------------------------------------------------
-                7.1. Создать переменную int со значением 10
-                7.2. Используя созданную переменную и цикл for вывести в консоль числа 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0
-                7.3. Сделать п.7.2. используя цикл while
                 -------------------------------------------------------------------- */
 
-        //  Middle level
+        System.out.println("Задача 6.2.");
+        for (int i = 0; i < 9; i = i + 2) {
+            System.out.println(i);
+        }
 
+
+        int a5 = 0;
+        System.out.println("Задача 6.3.");
+        while (a5 <= 7) {
+            a5 = a5 + 2;
+            System.out.println(a5);
+        }
+
+        /*
+        7.1.Создать переменную int со значением 10
+        7.2.Используя созданную переменную и цикл for вывести в консоль числа 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0
+        7.3.Сделать п.7.2. используя цикл while
+        -------------------------------------------------------------------- */
+
+        System.out.println("Задача 7.2.");
+        for (int i = 10; i >= 0; i--) {
+            System.out.println(i);
+        }
+
+        int a7 = 10;
+        System.out.println("Задача 7.3.");
+        while (a7 >= 0) {
+            System.out.println(a7);
+            --a7;
+        }
+
+        //  Middle level
         /* TODO: 2020-08-07
                 8.1. Используя вложенныe циклы for вывести в консоль "Я люблю Java!" 10 раз
                 --------------------------------------------------------------------
                 9.1. Используя цикл for со значением счетчика от 0 до 10 вывести в консоль "Ох уж эти циклы!" 5 раз */
 
-        //  Hard level
 
+        String text1 = "Я люблю Java!";
+        System.out.println("Задача 8.1.");
+        for (int i = 0; i <= 9; i++) {
+            System.out.println(text1);
+        }
+
+        String text2 = "Ох уж эти циклы!";
+        System.out.println("Задача 9.1.");
+        for (int i = 0; i <= 9; i = i + 2) {
+            System.out.println(text2);
+        }
+
+        //  Hard level
         /* TODO: 2020-08-07
                 10.1. Используя цикл for со значением счетчика от 0 до 10 вывести "Я действительно разбираюсь
                 в циклах!" 20 раз */
 
+        String text3 = "Я действительно разбираюсь в циклах!";
+        int count = 0;
+        for (float i = 10f; i >= 0.5; i = i - 0.5f) {
+            System.out.println(text3 + "count = " + count);
+            count++;
+        }
     }
 }
 
