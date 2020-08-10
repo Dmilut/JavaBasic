@@ -25,8 +25,11 @@ public class HomeworkYulia {
                 int b = 2;
                 System.out.println(a + b);
                 System.out.println(a - b); */
+
+
         int a = 29;
         int b = 15;
+        System.out.println("Задача 1.");
         System.out.println(b + a);
         System.out.println(b - a);
         System.out.println(a - b + a);
@@ -34,7 +37,6 @@ public class HomeworkYulia {
         System.out.println(a * b / 2);
         System.out.println(a / b);
         System.out.println(a / b - b);
-        ;
         System.out.println(a % b);
         System.out.println(a % b + b);
         System.out.println(++a);
@@ -65,6 +67,7 @@ public class HomeworkYulia {
 
         int c = 5;
         int d = 10;
+        System.out.println("Задача 2.");
         System.out.println("c == d = " + (c == d));
         System.out.println("c != d =" + (c != d));
         System.out.println("d < c =" + (d < c));
@@ -92,6 +95,7 @@ public class HomeworkYulia {
 
         boolean e = false, f = false;
         boolean g = true, h = true;
+        System.out.println("Задача 3.");
         System.out.println("e && f = " + (e && f));
         System.out.println("g && h = " + (g && h));
         System.out.println("e && h = " + (e && h));
@@ -125,10 +129,12 @@ public class HomeworkYulia {
                 int c = 0;
                 c = a + b;
                 System.out.println("c = a + b = " + c ); */
+
         int i = 5;
         int j = 7;
         int k;
         k = i + j;
+        System.out.println("Задача 4.");
         System.out.println("k = i+j = " + k);
         k += 5;
         System.out.println("k +=5 " + k);
@@ -140,7 +146,6 @@ public class HomeworkYulia {
         System.out.println("k /=j " + k);
         k %= i;
         System.out.println("k %=i " + k);
-
 
         /* TODO: 2020-08-07
                 5.1. Создать переменую String со значением "Я разбираюсь в циклах!"
@@ -155,38 +160,52 @@ public class HomeworkYulia {
                 7.2. Используя созданную переменную и цикл for вывести в консоль числа 10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0
                 7.3. Сделать п.7.2. используя цикл while
                 -------------------------------------------------------------------- */
+
         // #5.1
         String Loop = "I'm good in loops ";
         // #5.2
+        System.out.println("Задача 5.2.");
         for (int l = 0; l < 10; l++) {
             System.out.println(Loop + l);
         }
+
         // #5.3
         int m = 9;
+        System.out.println("Задача 5.3.");
         while (m >= 0) {
             System.out.println(Loop + m);
             m--;
         }
+
         // #6.2
+        System.out.println("Задача 6.2.");
         for (int n = 0; n <= 8; n += 2) {
             System.out.println(n);
         }
+
         // #6.1 and 6.3
         int o = 0;
+        System.out.println("Задача 6.3.");
         while (o <= 8) {
             System.out.println("while loop " + o);
             o += 2;
         }
+
         // #7.2
+        System.out.println("Задача 7.2.");
         for (int p = 10; p >= 0; p--) {
             System.out.println("for loop - " + p);
         }
+
         // # 7.1 and 7.3
         int q = 10;
+        System.out.println("Задача 7.3.");
         while (q >= 0) {
             System.out.println("while loop - " + q);
             q--;
         }
+
+
         //  Middle level
 
         /* TODO: 2020-08-07
