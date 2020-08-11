@@ -212,12 +212,34 @@ public class HomeworkYulia {
                 8.1. Используя вложенныe циклы for вывести в консоль "Я люблю Java!" 10 раз
                 --------------------------------------------------------------------
                 9.1. Используя цикл for со значением счетчика от 0 до 10 вывести в консоль "Ох уж эти циклы!" 5 раз */
+        //8.1
+        System.out.println("Задача 8.1");
+        String java = "I love java! ";
+        for (int r = 0; r <= 1; r++) {
+            for (int r1 = 0; r1 <= 4; r1++) {
+                System.out.println(java + r1);
+            }
+        }
+        //9.1
+        System.out.println("Задача 9.1");
+        String loops1 = "Oh, that loops! ";
+        for (int s = 0; s<=9; s+=2) {
+            System.out.println(loops1 +s);
+        }
 
         //  Hard level
 
         /* TODO: 2020-08-07
                 10.1. Используя цикл for со значением счетчика от 0 до 10 вывести "Я действительно разбираюсь
                 в циклах!" 20 раз */
+        //10.1
+        System.out.println("Задача 10.1");
+        String loops = "I'm really good at loops ";
+        for (float t = 0.0f; t <= 10.0; t+=0.5) {
+                System.out.println(loops +t);
+        }
 
     }
+
 }
+
