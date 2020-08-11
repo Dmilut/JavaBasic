@@ -157,34 +157,47 @@ public class HomeworkVika {
                 -------------------------------------------------------------------- */
 
         // #5.1
-        String Loop = "I'm good in loops ";
+        String text = "I love cycles";
         // #5.2
         System.out.println("Задача 5.2.");
-        for (int l = 0; l < 10; l++) {
-            System.out.println(Loop + l);
+        for (int v = 0; v < 10; v++) {
+            System.out.println(text);
         }
+        System.out.println();
 
         // #5.3
-        int m = 9;
         System.out.println("Задача 5.3.");
-        while (m >= 0) {
-            System.out.println(Loop + m);
-            m--;
+        String text1 = "I love cycles";
+        int d1 = 1;
+        while (d1 <= 10) {
+            System.out.println(text1);
+            d1++;
         }
+
+        System.out.println();
 
         // #6.2
         System.out.println("Задача 6.2.");
-        for (int n = 0; n <= 8; n += 2) {
-            System.out.println(n);
+        int number9 = 0;
+        for(int i3 = 0; i3 <= 8; i3++) {
+
+            if(i3 % 2 == 0) {
+                System.out.println(number9 + i3);
+            }
         }
+        System.out.println();
 
         // #6.1 and 6.3
-        int o = 0;
         System.out.println("Задача 6.3.");
-        while (o <= 8) {
-            System.out.println("while loop " + o);
-            o += 2;
+        int number10 = 0;
+        while(number10 <= 8) {
+            number10++;
+            if(number10 % 2 == 0) {
+                System.out.println(number10);
+            }
         }
+
+        System.out.println();
 
         // #7.2
         System.out.println("Задача 7.2.");
@@ -214,10 +227,8 @@ public class HomeworkVika {
         }
 
         System.out.println('\n' + "Задача 9.1");
-        for (int a1 = 1; a1 <= 1; a1++) {
-            for (int b1 = 1; b1 <= 5; b1++) {
-                System.out.println("Ох уж эти циклы!" + " ");
-            }
+        for (int a1 = 0; a1 < 10; a1 += 2) {
+            System.out.println("Ох уж эти циклы!");
         }
 
         //  Hard level
@@ -225,11 +236,11 @@ public class HomeworkVika {
                 10.1. Используя цикл for со значением счетчика от 0 до 10 вывести "Я действительно разбираюсь
                 в циклах!" 20 раз */
         System.out.println('\n' + "Задача 10.1");
-        for (int a1 = 1; a1 <= 1; a1++) {
-            for (int b1 = 1; b1 <= 20; b1++) {
-                System.out.println("Я действительно разбираюсь в циклах!" + " ");
-            }
+        for (int a2 = 0; a2 < 10; a2++) {
+            System.out.println("Я действительно разбираюсь в циклах!");
+            System.out.println("Я действительно разбираюсь в циклах!");
         }
+
 
     }
 }
