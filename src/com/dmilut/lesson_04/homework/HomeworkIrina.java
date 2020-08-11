@@ -195,10 +195,8 @@ public class HomeworkIrina {
 
         String hard = " Я действительно разбираюсь в циклах !";
         System.out.println('\n' + "Задача 10.");
-        for (int k1 = 0; k1 < 10; k1++) {
-            System.out.println(hard);
-        }
-        for (int k2 = 0; k2 < 20; k2 += 2) {
+        //float n1 = 0.5f;
+        for (float n1 = 0f; n1 < 10; n1 = n1 + 0.5f) {
             System.out.println(hard);
         }
     }
