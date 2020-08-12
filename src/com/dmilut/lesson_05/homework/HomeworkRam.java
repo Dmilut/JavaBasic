@@ -31,13 +31,18 @@ public class HomeworkRam {
 
         int q = 0;
 
-        for (; q < 1; q++) {
-            if (q == 0) ;
-            System.out.println("Налево пойдешь - коня потеряешь");
-            if (q == 1) ;
-            System.out.println("направо пойдешь - жизнь потеряешь");
-            if (q == 2) ;
-            System.out.println("прямо пойдешь - жив будешь,\n" + "да себя позабудешь");
+        for (; q < 2; q++) {
+            if (q == 0) {
+                System.out.println("Налево пойдешь - коня потеряешь");
+            } else {
+                System.out.println("Направо пойдешь - жизнь потеряешь");
+                if (q == 2) {
+                } else {
+                    System.out.println("Прямо пойдешь - жив будешь, да себя позабудешь");
+                }
+            }
+
+
 
 
 //        Задача 4
