@@ -9,7 +9,7 @@ public class HomeworkVika {
         do {
             System.out.println("Напиши меня в консоли 5 раз" + " это " + count + "раз");
             count++;
-        } while (count <= 5);
+        } while (count < 5);
 
         System.out.println(" 2.1. Используя вложенные цикл for нарисовать следующую фигуру в консоли");
 
@@ -71,17 +71,24 @@ public class HomeworkVika {
 
         System.out.println( " 6.1 Напишите программу, которая выводит на консоль простые числа в промежутке от [2, 100].");
 
-        for (int i = 2; i <= 100; i++) {
-            if (i % 1 == 0 || i % i == 0) {
-                System.out.println(i);
+        int x, y;
+        for (x = 1; x <101; x++) {
+            y = 0;
+            for (int i = 1; i <= x; i++) {
+                if (x % i == 0)
+                    y++;
             }
+            if (y <= 2)
+                System.out.println(x);
+
         }
-
-
-
-
-
-
-
     }
 }
+
+
+
+
+
+
+
+
