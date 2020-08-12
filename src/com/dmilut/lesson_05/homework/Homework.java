@@ -10,7 +10,8 @@ public class Homework {
         int count = 0;
         doit{
           System.out.println("Напиши меня в консоли 5 раз" + " это " + count + "раз");
-        } wilhe (!(count <= 100500)); */
+        } wilhe (!(count
+         <= 100500)); */
 
         /* TODO: 8/10/20
             2.1. Используя вложенные цикл for нарисовать следующую фигуру в консоли:
