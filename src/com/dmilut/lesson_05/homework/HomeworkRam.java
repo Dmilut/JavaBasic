@@ -43,8 +43,6 @@ public class HomeworkRam {
             }
 
 
-
-
 //        Задача 4
 
             for (int i1 = 0; i < 10; i++) {
@@ -75,19 +73,15 @@ public class HomeworkRam {
         }
 
 
-
 //                Задача 6
         int w = 0;
 //        int r = ;
-          for (; w <= 100; w++) {
-             if (w % 2 == 0 && w!=0 && w % w == 0) {
-                 System.out.println(w);
+        for (; w <= 100; w++) {
+            if (w % 2 == 0 && w != 0 && w % w == 0) {
+                System.out.println(w);
 
 
-
-
-                        }
-                    }
-                }
             }
-
+        }
+    }
+}
