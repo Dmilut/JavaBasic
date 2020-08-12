@@ -72,10 +72,10 @@ public class HomeworkRam {
 
 
 //                Задача 6
-        int w = 2;
-        int r = 2;
+        int w = 0;
+//        int r = ;
           for (; w <= 100; w++) {
-             if (w % r == 0 && w % w == 0) {
+             if (w % 2 == 0 && w!=0 && w % w == 0) {
                  System.out.println(w);
 
 
