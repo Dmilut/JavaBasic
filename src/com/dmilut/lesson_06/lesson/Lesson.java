@@ -54,6 +54,8 @@ public class Lesson {
                 {8, 1, 2, 3}};
 
         System.out.println("Вариант с циклом for:");
+        System.out.println("twoArray.length = " + twoArray.length);
+        System.out.println("twoArray[0].length = " + twoArray[0].length);
 
         for (int i = 0; i < twoArray.length; i++) {
 
