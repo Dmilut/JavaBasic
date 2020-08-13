@@ -66,7 +66,7 @@ public class Lesson {
             System.out.println();
         }
 
-        System.out.println('\n' + "Вариант с циклом foreach:");
+        System.out.println('\n' + " Вариант с циклом foreach:");
 
         for (int[] element : twoArray) {
             for (int element1 : element) {
