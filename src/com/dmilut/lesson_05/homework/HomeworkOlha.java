@@ -103,5 +103,19 @@ System.out.println("Опять циклы!");
 /* TODO: 8/10/20
 Напишите программу, которая выводит на консоль простые числа в промежутке от [2, 100].
 Используйте для решения этой задачи оператор "%" (остаток от деления) и циклы. */
+        System.out.println("Problem 6");
+
+        int currentNumber, dividers;
+        for (currentNumber = 1; currentNumber < 100; currentNumber++)
+        {
+            dividers = 0;
+            for(int i = 1; i <=currentNumber; i++)
+            {
+                if (currentNumber % i == 0)
+                    dividers++;
+            }
+            if (dividers <=2)
+                System.out.println(currentNumber);
+        }
     }
 }
