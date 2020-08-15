@@ -36,8 +36,8 @@ public class HomeworkRam {
                 System.out.println("Налево пойдешь - коня потеряешь");
             } else {
                 System.out.println("Направо пойдешь - жизнь потеряешь");
-                if (q == 2) {
-                } else {
+            if (q == 2) {
+            } else {
                     System.out.println("Прямо пойдешь - жив будешь, да себя позабудешь");
                 }
             }
