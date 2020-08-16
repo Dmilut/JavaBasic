@@ -1,5 +1,8 @@
 package com.dmilut.lesson_06.homework;
 
+import java.sql.SQLOutput;
+import java.util.Random;
+
 public class HomeworkYulia {
 
     public static void main(String[] args) {
@@ -128,5 +131,69 @@ public class HomeworkYulia {
         for  (int d=9; d >=0; d--) {
             System.out.println(array6[d]);
         }
+        //Hard level
+        /* TODO: 8/12/20
+            10.1. Нарисовать в консоли поле для игры в "крестики-нолики" из 9 клеток используя данные из многомерного
+             массива
+            10.2. Записать в поле произвольно поставленный "крестик"
+            10.3. Записать в поле произвольно поставленный "нолик", проверив, что он ставится на свободное место
+            10.4. Вывести поле с "крестиками" и "ноликами" в консоль
+         */
+        System.out.println('\n' + "Task 10.1");
+        int [][] field = new int [3][3];
+        // 2 will be as "крестик" and 1 will be as "нолик"
+        Random random = new Random();
+        int counter = 0;
+        while (counter<7) {
+            int r = random.nextInt(3);
+            int c = random.nextInt(3);
+            int step = random.nextInt(2)+1;
+            if (field[r][c]==0) {
+                field[r][c]=step;
+                counter++;
+            }
+        }
+
+        for (int i = 0; i < field.length; i++) {
+
+            for (int j = 0; j < field[i].length; j++) {
+
+                System.out.print(field[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+
+        /* TODO: 8/12/20
+            11.1. Создать многомерный массив, который бы хранил информацию о игровом поле игры "морской бой" с размером
+            поля 10x10
+            11.2. Заполнить поле кораблями из расчета:
+                5 1-клеточных
+                4 2-клеточных
+                3 3-клеточных
+                2 4-клеточных
+                1 5-клеточный
+            11.3. Вывести поле с кораблями в консоль
+         */
+        System.out.println('\n' + "Task 11.1");
+        int[][] shipBattle = new int [10][10];
+        shipBattle = new int[][]{
+                {4,4,4,4,0,5,5,5,5,5},
+                {0,0,0,0,0,0,0,0,0,0},
+                {1,0,3,3,3,0,0,2,2,0},
+                {0,0,0,0,0,0,0,0,0,0},
+                {2,2,0,3,3,3,0,3,3,3},
+                {0,0,0,0,0,0,0,0,0,0},
+                {1,0,0,2,2,0,0,0,2,2},
+                {0,0,0,0,0,0,0,0,0,0},
+                {1,0,0,0,1,0,0,0,0,0},
+                {0,0,1,0,0,0,4,4,4,4}};
+        for( int[] element : shipBattle) {
+            for (int element2 : element) {
+                System.out.print(element2 + " ");
+            }
+            System.out.println();
+        }
+
     }
 }
