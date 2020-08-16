@@ -27,14 +27,31 @@ public class HomeworkIrina {
            |  ___  |
            ---------
             */
+        //easy way
 
+        System.out.println('\n' + "Задача 2.1.");
+        for (int c = 0; c < 1; c++) {
+            for (int d = 0; d < 1; d++) {
+                System.out.println(" -------");
+            }
+            for (int e = 0; e < 1; e++) {
+                System.out.println(" | _ 0 |");
+            }
+            for (int f = 0; f < 1; f++) {
+                System.out.println(" | ___ |");
+            }
+            for (int g = 0; g < 1; g++) {
+                System.out.println("---------");
+            }
+        }
 
+        //hard way
         System.out.println('\n' + "Задача 2.1." + '\n');
 
         for (int a = 0; a < 4; a++) {
             for (int b = 0; b < 9; b++) {
                 if ((a == 0 && b > 0 && b < 8) || (a == 1 && b == 3) || (a == 2 && b > 2 && b < 6) || (a == 3)) {
-                    System.out.println("_");
+                    System.out.print("_");
                 } else if ((a > 0 && a < 3) && (b == 0 || b == 8)) {
                     System.out.print("|");
                 } else if (a == 1 && b == 5) {
@@ -43,11 +60,9 @@ public class HomeworkIrina {
                     System.out.print(" ");
                 }
             }
-            System.out.println("\n");
+            System.out.println("");
         }
-
         // Don`t understand why it doesn`t work. Somewhere mistake, I can`t find
-
 
 
 
@@ -111,7 +126,7 @@ public class HomeworkIrina {
             Напишите программу, которая выводит на консоль простые числа в промежутке от [2, 100].
             Используйте для решения этой задачи оператор "%" (остаток от деления) и циклы. */
 
-        System.out.println('\n' + "Задача 6.1." + '\n');
+       /* System.out.println('\n' + "Задача 6.1." + '\n');
 
         System.out.println('\n' + "Задача Hard level");
         int[] array = new int[100];
@@ -138,11 +153,11 @@ public class HomeworkIrina {
 
             }
 
-        }
+        }*/
         // Doesn`t work
 
 
-        int currentNumber, dividers;
+        /*int currentNumber, dividers;
         for (currentNumber = 1; currentNumber < 100; currentNumber++)
         {
             dividers = 0;
@@ -153,7 +168,10 @@ public class HomeworkIrina {
             }
             if (dividers <=2)
                 System.out.println(currentNumber);
-        }
+        }*/
+
+
+
     }
 }
 

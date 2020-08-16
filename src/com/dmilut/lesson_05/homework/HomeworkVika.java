@@ -18,15 +18,17 @@ public class HomeworkVika {
         //System.out.println(" | ___ |");
         //System.out.println("---------");
 
-        for(int i = 1; i <= 1; i++) {
-            for(int a = 1; a <= 1; a++  ) {
+        for (int i = 1; i <= 1; i++) {
+            for (int a = 1; a <= 1; a++) {
                 System.out.println(" -------");
             }
-            for(int b = 1; b <=1; b++) {
+            for (int b = 1; b <= 1; b++) {
                 System.out.println(" | _ 0 |");
-            }for(int c = 1; c <=1; c++) {
+            }
+            for (int c = 1; c <= 1; c++) {
                 System.out.println(" | ___ |");
-            } for(int d =1; d <= 1; d++) {
+            }
+            for (int d = 1; d <= 1; d++) {
                 System.out.println("---------");
             }
         }
@@ -36,19 +38,20 @@ public class HomeworkVika {
         int a = 1;
         int b = 5;
 
-        if(a > b) {
+        if (a > b) {
             System.out.println("Налево пойдешь - коня потеряешь");
-        }if (a < b) {
+        }
+        if (a < b) {
             System.out.println("направо пойдешь - жизнь потеряешь");
-        }else {
+        } else {
             System.out.println("прямо пойдешь - жив будешь,да себя позабудешь");
         }
 
         System.out.println("4.1. Используя оператор break прервать выполнение цикла");
 
-        for(int i = 0; i < 10; i++) {
+        for (int i = 0; i < 10; i++) {
             System.out.println("Опять циклы!");
-            if (i == 6){
+            if (i == 6) {
                 break;
             }
         }
@@ -69,19 +72,23 @@ public class HomeworkVika {
             System.out.println("В четвертую четверть.");
         }
 
-        System.out.println( " 6.1 Напишите программу, которая выводит на консоль простые числа в промежутке от [2, 100].");
+        System.out.println(" 6.1 Напишите программу, которая выводит на консоль простые числа в промежутке от [2, 100].");
 
-        int x, y;
-        for (x = 1; x <101; x++) {
-            y = 0;
-            for (int i = 1; i <= x; i++) {
-                if (x % i == 0)
-                    y++;
+        int countDivider;
+        for (int i = 2; i <= 100; i++) {
+            countDivider = 2;
+
+            for (int j = 2; j < i; j++) {
+                if (i % j == 0) {
+                    countDivider++;
+                }
             }
-            if (y <= 2)
-                System.out.println(x);
 
+            if (countDivider == 2) {
+                System.out.print(" " + i);
+            }
         }
+
     }
 }
 
