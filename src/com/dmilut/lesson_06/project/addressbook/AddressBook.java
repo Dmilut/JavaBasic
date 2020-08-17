@@ -1,5 +1,8 @@
 package com.dmilut.lesson_06.project.addressbook;
 
+import com.dmilut.lesson_06.project.addressbook.entity.Address;
+import com.dmilut.lesson_06.project.addressbook.entity.Contact;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
