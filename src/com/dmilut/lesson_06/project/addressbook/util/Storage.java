@@ -4,8 +4,8 @@ import com.dmilut.lesson_06.project.addressbook.entity.Contact;
 
 public class Storage {
 
-    public final int STORAGE_SIZE = 100;
+    public static final int STORAGE_SIZE = 100;
 
-    public Contact[] contacts = new Contact[STORAGE_SIZE];
+    public static Contact[] contacts = new Contact[STORAGE_SIZE];
 
 }
