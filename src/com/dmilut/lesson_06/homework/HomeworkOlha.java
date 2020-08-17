@@ -10,9 +10,15 @@ public class HomeworkOlha {
             1.3. Инициализировать массив из п.1.1. с набором данных: 0,1,2,3,4,5,6,7,8,9 двумя различными путями
          */
 
-        System.out.println("Problem 1");
+        System.out.println('\n' + "Problem 1");
         /*1.1, 1.2, 1.3.1 */
-        int[] array = new int[10];
+        System.out.println('\n' + "Задание 1.1.");
+        int[] array;
+
+        System.out.println('\n' + "Задание 1.2.");
+        array = new int[10];
+
+        System.out.println('\n' + "Задание 1.3.");
         array[0] = 1;
         array[1] = 2;
         array[2] = 3;
@@ -23,10 +29,10 @@ public class HomeworkOlha {
         array[7] = 8;
         array[8] = 9;
         array[9] = 10;
-        System.out.println(array [3]);
+        System.out.println(array[3]);
 
-        int [] array1 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}; /* 1.3.2 */
-        System.out.println(array1 [1]);
+        int[] array1 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}; /* 1.3.2 */
+        System.out.println(array1[1]);
 
 
         /* TODO: 8/12/20
@@ -35,7 +41,7 @@ public class HomeworkOlha {
          */
         System.out.println("Problem 2");
         /*2.1*/
-        String [] arrayWord = {"Я"," ", "люблю", " ", "массивы", " ", "очень", " ", "сильно", "!"};
+        String[] arrayWord = {"Я", " ", "люблю", " ", "массивы", " ", "очень", " ", "сильно", "!"};
         /*2.2*/
         for (int i = 0; i < arrayWord.length; i++) {
             System.out.print(arrayWord[i]);
@@ -48,28 +54,29 @@ public class HomeworkOlha {
             3.3. Сделать п.3.1. с циклом while
          */
         System.out.println("Problem 3");
+        int[] arrayNum = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
 
         /*3.1*/
-        int [] arrayNum = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
+        System.out.println('\n' + "Задание 3.1.");
         for (int i = 0; i < arrayNum.length; i++) {
-            System.out.println(arrayNum[i]);
+            System.out.print(arrayNum[i] + " ");
         }
 
         /*3.2*/
-        int [] aNum = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
-        for (int num : aNum) {
+        System.out.println('\n' + "Задание 3.2.");
+        int[] aNum = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
+        for (int num : arrayNum) {
             System.out.print(num);
         }
 
         /*3.3*/
-        int [] aNum1 = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
+        System.out.println('\n' + "Задание 3.3.");
+        int[] aNum1 = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
         int a = 0;
-        while (a <= 2)
-        {
-            System.out.println(aNum1[a]);
+        while (a < aNum.length) {
+            System.out.print(aNum1[a] + " ");
             a++;
         }
-
 
 
         /* TODO: 8/12/20
@@ -78,8 +85,9 @@ public class HomeworkOlha {
             {10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
             в консоль
          */
-        System.out.println("Problem 4");
 
+        System.out.println("Problem 4");
+        System.out.println('\n' + "Задание 4.1.");
         int[][] arr = {
                 {0, 1, 2, 3, 4, 5, 6, 7, 8, 9},
                 {10, 11, 12, 13, 14, 15, 16, 17, 18, 19}};
@@ -98,87 +106,84 @@ public class HomeworkOlha {
             Сделать это используя цикл.
          */
         System.out.println("Problem 5");
+        String[] arrayColor = {"синий!", "зелёный!", "красный!", "фиолетовый!", "чёрный!", "жёлтый!", "белый!"};
 
-                 String [] arrayColor = {"синий!", "зелёный!", "красный!", "фиолетовый!", "чёрный!", "жёлтый!", "белый!"};
-                 System.out.print("Цвет настроения - " + arrayColor[1]);
+        System.out.println('\n' + "Задание 5.2.");
+        System.out.print("Цвет настроения - " + arrayColor[1]);
 
-          System.out.println("Problem 5a");
+        System.out.println("Problem 5a");
 
-                   String [] arrayColor = {"синий!", "зелёный!", "красный!", "фиолетовый!", "чёрный!", "жёлтый!", "белый!"};
-                    for (String element : arrayColor){
-                   System.out.print("Цвет настроения - " + element + "");
-                    }
+        for (String element : arrayColor) {
+            System.out.print("Цвет настроения - " + element + "");
+        }
 
-          System.out.println("Problem 5b");
+        System.out.println("Problem 5b");
 
-                   String [] arrayColor = {"синий!", "зелёный!", "красный!", "фиолетовый!", "чёрный!", "жёлтый!", "белый!"};
-                   for (int i = 0; i < arrayColor.length; i++) {
-                   System.out.println("Цвет настроения - " + arrayColor[i] + " ");
-                   }
+        for (int i = 0; i < arrayColor.length; i++) {
+            System.out.println("Цвет настроения - " + arrayColor[i] + " ");
+        }
 
-                 /* TODO: 8/12/20
-              6.1. Найти и вывести в консоль наименьшее число из произвольного массива int
-         */
-          System.out.println("Problem 6a");
+        /* TODO: 8/12/20
+                6.1. Найти и вывести в консоль наименьшее число из произвольного массива int */
 
-                   int n = 0;
-                   int [] myArrayNum = {9, 78, 35, 69, 5, 104, 31, -2, 11, 300};
-                    for (int element:myArrayNum){
-                        if (element < n){
-                            n = element;
-                        }
-                    }
-                    System.out.println (n);
+        System.out.println("Problem 6a");
+        int[] myArrayNum = {9, 78, 35, 69, 5, 104, 31, -2, 11, 300};
+
+        System.out.println('\n' + "Задание 6.1.");
+        int n = 0;
+
+        for (int element : myArrayNum) {
+            if (element < n) {
+                n = element;
+            }
+        }
+        System.out.println(n);
                     
         /* TODO: 8/12/20
             7.1. Найти и вывести в консоль наибольшее число из произвольного массива int
          */
 
-          System.out.println("Problem 7");
-          
-              int n1 = 0;
-             int [] myArrayNum = {9, 78, 35, 69, 5, 104, 31, -2, 11, 350};
-              for (int element:myArrayNum){
-                  if (element > n1){
-                      n1 = element;
-                  }
-              }
-              System.out.println (n1);
+        System.out.println("Problem 7");
+        System.out.println('\n' + "Задание 7.1.");
+        int n1 = 0;
+        for (int element : myArrayNum) {
+            if (element > n1) {
+                n1 = element;
+            }
+        }
+        System.out.println(n1);
 
         /* TODO: 8/12/20
             8.1. Найти и вывести в консоль только четные числа из произвольного массива int
          */
         System.out.println("Problem 8");
+        System.out.println('\n' + "Задание 8.1.");
 
-         	int [] myArrayNum = {9, 78, 35, 69, 5, 104, 31, -2, 11, 350};
-         	 for (int i2 = 0 ; i2 < myArrayNum.length ; i2++)
-         	 {
-             if(myArrayNum[i2] % 2 == 0)
-             {
-                 System.out.println(myArrayNum[i2] + "");
-                 }
-               }
+        int[] myArrayNum1 = {9, 78, 35, 69, 5, 104, 31, -2, 11, 350};
+
+        for (int i2 = 0; i2 < myArrayNum1.length; i2++) {
+            if (myArrayNum1[i2] % 2 == 0) {
+                System.out.println(myArrayNum1[i2] + "");
+            }
+        }
 
         /* TODO: 8/12/20
             9.1. Используя цикл for вывести все элементы массива [9, 8, 7, 6, 5, 4, 3, 2, 1, 0] в консоль в порядке
              возрастания
          */
-           System.out.println("Problem 9");
+        System.out.println("Problem 9");
 
-        int [] myArray = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
+        int[] myArray = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
         for (int i = 0; i < myArray.length; i++) {
-            for (int j = i+1; j < myArray.length; j++) {
-                if(myArray[i] > myArray[j]) {
+            for (int j = i + 1; j < myArray.length; j++) {
+                if (myArray[i] > myArray[j]) {
                     int d = myArray[i];
                     myArray[i] = myArray[j];
                     myArray[j] = d;
                 }
             }
-            System.out.println(myArray[i]);
+            System.out.print(myArray[i] + " ");
         }
-
-
-
 
 
         //Hard level
