@@ -3,9 +3,9 @@ package com.dmilut.lesson_06.project.addressbook;
 import com.dmilut.lesson_06.project.addressbook.entity.Address;
 import com.dmilut.lesson_06.project.addressbook.entity.Contact;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
+
+import static com.dmilut.lesson_06.project.addressbook.util.Util.inputText;
 
 public class AddressBook {
 
@@ -66,14 +66,6 @@ public class AddressBook {
 
     }
 
-    public static String inputText() throws IOException {
-
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-
-        String text = reader.readLine();
-
-        return text;
-    }
 }
 
 
