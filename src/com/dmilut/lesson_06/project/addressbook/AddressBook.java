@@ -2,6 +2,7 @@ package com.dmilut.lesson_06.project.addressbook;
 
 import com.dmilut.lesson_06.project.addressbook.entity.Address;
 import com.dmilut.lesson_06.project.addressbook.entity.Contact;
+import com.dmilut.lesson_06.project.addressbook.util.Util;
 
 import java.io.IOException;
 
@@ -19,6 +20,9 @@ public class AddressBook {
      */
 
     public static void main(String[] args) throws IOException {
+
+        new Util().initApp();
+
 
         System.out.println("Введите контакт:");
 

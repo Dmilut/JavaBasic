@@ -4,7 +4,7 @@ import com.dmilut.lesson_06.project.addressbook.entity.Contact;
 import com.dmilut.lesson_06.project.addressbook.util.Storage;
 
 public class ContactService {
-    StorageService storageService = new StorageService();
+    private StorageService storageService = new StorageService();
 
     public void createContact(String firstName, String lastName, long phoneNumber) {
         Contact contact = new Contact();
