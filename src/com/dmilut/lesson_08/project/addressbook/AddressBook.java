@@ -39,7 +39,7 @@ public class AddressBook {
             System.out.println("print contacts          - вывод в консоль всех контактов ================================");
             System.out.println("search by name          - поиск по имени контакта =======================================");
             System.out.println("=========================================================================================");
-            System.out.println("Введите комманду:");
+            System.out.println("Введите комманду");
 
             command = inputText();
 
@@ -53,6 +53,7 @@ public class AddressBook {
                 }
                 break;
                 case "search by name": {
+                    System.out.println("Введите имя");
                     String name = inputText();
                     Contact contact = contactService.getContactByFirstName(name);
 

@@ -11,9 +11,9 @@ public class Util {
     private ContactService contactService = new ContactService();
 
     public void initApp() {
-        contactService.createContact("TestName1", "TestLast1", 1234567890L);
-        contactService.createContact("TestName2", "TestLast2", 2345678901L);
-        contactService.createContact("TestName3", "TestLast3", 3456789012L);
+        contactService.createContact("TestName1", "TestLastName1", 1234567890L);
+        contactService.createContact("TestName2", "TestLastName2", 2345678901L);
+        contactService.createContact("TestName3", "TestLastName3", 3456789012L);
     }
 
     public static String inputText() throws IOException {
