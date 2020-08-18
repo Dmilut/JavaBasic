@@ -12,7 +12,6 @@ public class StorageService {
     }
 
     public Contact[] getAllContact() {
-
         return Storage.contacts;
     }
 

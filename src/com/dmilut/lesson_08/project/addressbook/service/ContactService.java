@@ -2,6 +2,10 @@ package com.dmilut.lesson_08.project.addressbook.service;
 
 import com.dmilut.lesson_08.project.addressbook.entity.Contact;
 
+import java.io.IOException;
+
+import static com.dmilut.lesson_08.project.addressbook.util.Util.inputText;
+
 public class ContactService {
     private StorageService storageService = new StorageService();
 
@@ -11,7 +15,10 @@ public class ContactService {
         contact.lastName = lastName;
         contact.phoneNumber = phoneNumber;
 
+        saveContact(contact);
+    }
 
+    public void saveContact(Contact contact) {
         storageService.saveContact(contact);
     }
 
@@ -19,6 +26,10 @@ public class ContactService {
         Contact contact = storageService.getByFirstName(firstName);
 
         return contact;
+    }
+
+    public Contact[] getAllContacts() {
+        return storageService.getAllContact();
     }
 
     public void updateContact(Contact contact) {
@@ -31,9 +42,33 @@ public class ContactService {
         storageService.deleteContact(contact);
     }
 
+    public void inputContact() throws IOException {
+        Contact contact = new Contact();
+        System.out.println("Введите имя             ");
+        contact.firstName = inputText();
+
+        System.out.println("Введите фамилию         ");
+        contact.lastName = inputText();
+
+        System.out.println("Введите номер телефона  ");
+        contact.phoneNumber = Long.parseLong(inputText());
+
+        saveContact(contact);
+    }
+
     public void printContact(Contact contact) {
-        System.out.println("Имя             " + contact.firstName);
-        System.out.println("Фамилия         " + contact.lastName);
-        System.out.println("Номер телефона  " + contact.phoneNumber);
+        System.out.println("=========================================================================================");
+        System.out.println("Имя                     " + contact.firstName);
+        System.out.println("Фамилия                 " + contact.lastName);
+        System.out.println("Номер телефона          " + contact.phoneNumber);
+        System.out.println("=========================================================================================");
+    }
+
+    public void printContacts(Contact[] contacts) {
+        for (Contact contact : contacts) {
+            if (contact != null) {
+                printContact(contact);
+            }
+        }
     }
 }

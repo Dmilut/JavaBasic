@@ -14,7 +14,6 @@ public class Util {
         contactService.createContact("TestName1", "TestLast1", 1234567890L);
         contactService.createContact("TestName2", "TestLast2", 2345678901L);
         contactService.createContact("TestName3", "TestLast3", 3456789012L);
-
     }
 
     public static String inputText() throws IOException {

@@ -1,7 +1,7 @@
 package com.dmilut.lesson_08.project.addressbook;
 
-import com.dmilut.lesson_08.project.addressbook.entity.Address;
 import com.dmilut.lesson_08.project.addressbook.entity.Contact;
+import com.dmilut.lesson_08.project.addressbook.service.ContactService;
 import com.dmilut.lesson_08.project.addressbook.util.Util;
 
 import java.io.IOException;
@@ -9,6 +9,9 @@ import java.io.IOException;
 import static com.dmilut.lesson_08.project.addressbook.util.Util.inputText;
 
 public class AddressBook {
+
+    private static ContactService contactService = new ContactService();
+    private static Util util = new Util();
 
     /*
      * NOTE : =====================================================================================================
@@ -21,55 +24,50 @@ public class AddressBook {
 
     public static void main(String[] args) throws IOException {
 
-        new Util().initApp();
+        util.initApp();
 
+        System.out.println("=========================================================================================");
+        System.out.println("                        Добро пожаловать в адресную книгу                                ");
+        System.out.println("=========================================================================================");
 
-        System.out.println("Введите контакт:");
+        String command = "start";
 
-        Contact contact = new Contact();
-        Address address = new Address();
+        while (command.equals("start") || command.equals("continue")) {
 
-        System.out.println("Введите имя:");
-        contact.firstName = inputText();
+            System.out.println("Подсказка по коммандам ==================================================================");
+            System.out.println("enter contact           - ввод нового контакта ==========================================");
+            System.out.println("print contacts          - вывод в консоль всех контактов ================================");
+            System.out.println("search by name          - поиск по имени контакта =======================================");
+            System.out.println("=========================================================================================");
+            System.out.println("Введите комманду:");
 
-        System.out.println("Введите фамилию:");
-        contact.lastName = inputText();
+            command = inputText();
 
-        System.out.println("Введите номер телефона:");
-        contact.phoneNumber = Long.parseLong(inputText());
+            switch (command) {
+                case "enter contact": {
+                    contactService.inputContact();
+                }
+                break;
+                case "print contacts": {
+                    contactService.printContacts(contactService.getAllContacts());
+                }
+                break;
+                case "search by name": {
+                    String name = inputText();
+                    Contact contact = contactService.getContactByFirstName(name);
 
-        System.out.println("Ввод адреса:");
+                    contactService.printContact(contact);
+                }
+                break;
+                default: {
+                    System.out.println("Вы ошиблись!!!");
+                }
+            }
 
-        System.out.println("Введите номер дома:");
-        address.houseNumber = inputText();
-
-        System.out.println("Введите улицу:");
-        address.streetName = inputText();
-
-        System.out.println("Введите город:");
-        address.cityName = inputText();
-
-        System.out.println("Введите штат:");
-        address.stateName = inputText();
-
-        System.out.println("Введите зип-код:");
-        address.zipCode = Integer.parseInt(inputText());
-
-        contact.address = address;
-
-        System.out.println("Вы записали контакт:");
-        System.out.println("Имя: " + contact.firstName);
-        System.out.println("Фамилия: " + contact.lastName);
-        System.out.println("Номер телефона: " + contact.phoneNumber);
-        System.out.println("Адрес контакта --------------------------------");
-        System.out.println("Номер дома: " + address.houseNumber);
-        System.out.println("Улица: " + contact.address.streetName);
-        System.out.println("Город: " + contact.address.cityName);
-        System.out.println("Штат: " + contact.address.stateName);
-        System.out.println("Зип код: " + contact.address.zipCode);
-
+            System.out.println('\n' + "Для продолжения введите continue");
+            command = inputText();
+        }
     }
-
 }
 
 
