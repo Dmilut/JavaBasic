@@ -13,12 +13,12 @@ public class HomeworkVahe {
         System.out.println('\n' + "Задача 1");
         //Method 1
         int[] array;
-        array = new int [10];
-        array = new int [] {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+        array = new int[10];
+        array = new int[]{0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
 
         //Method 2
         int[] array1;
-        array1 = new int [10];
+        array1 = new int[10];
         for (int b = 0; b < array1.length; b++) {
             array1[b] = b;
         }
@@ -59,7 +59,7 @@ public class HomeworkVahe {
         System.out.println('\n' + "With while");
         int[] array5 = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
         int f = 0;
-        while (f < array5.length){
+        while (f < array5.length) {
             System.out.print(array5[f] + " ");
             f++;
         }
@@ -74,7 +74,7 @@ public class HomeworkVahe {
         System.out.println('\n' + "Задача 4");
         int[][] twoArray = {
                 {0, 1, 2, 3, 4, 5, 6, 7, 8, 9},
-                {10, 11, 12, 13, 14, 15, 16, 17, 18,19}};
+                {10, 11, 12, 13, 14, 15, 16, 17, 18, 19}};
         for (int i = 0; i < twoArray.length; i++) {
             for (int j = 0; j < twoArray[i].length; j++) {
                 System.out.print(twoArray[i][j] + " ");
@@ -90,8 +90,8 @@ public class HomeworkVahe {
             Сделать это используя цикл.
          */
         System.out.println('\n' + "Задача 5");
-        String [] array6 ={"розовый", "черный", "красный", "желтый", "белый"};
-        for (int g=0; g<array6.length; g++){
+        String[] array6 = {"розовый", "черный", "красный", "желтый", "белый"};
+        for (int g = 0; g < array6.length; g++) {
             System.out.println("Цвет настроения" + " " + array6[g]);
         }
         System.out.println();
@@ -130,7 +130,7 @@ public class HomeworkVahe {
         System.out.println('\n' + "Задача 8");
         int[] array9 = {12, -24, 33, 66, -125, 10, 20, 30};
         for (int h : array9) {
-            if (h % 2 == 0){
+            if (h % 2 == 0) {
                 System.out.print(h + " ");
             }
         }
@@ -142,7 +142,7 @@ public class HomeworkVahe {
          */
         System.out.println('\n' + "Задача 9");
         int[] array10 = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
-        for (int k = array10.length - 1; k >=0; k--) {
+        for (int k = array10.length - 1; k >= 0; k--) {
             System.out.print(array10[k] + " ");
         }
         System.out.println();
@@ -160,17 +160,17 @@ public class HomeworkVahe {
         String cell = "|___|";
         String tic = "|_x_|";
         String tac = "|_o_|";
-        String [][] array11 = new String[3][3];
+        String[][] array11 = new String[3][3];
 
         for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++){
+            for (int j = 0; j < 3; j++) {
                 array11[i][j] = cell;
             }
         }
 
         System.out.println('\n' + "Print blank Tic-tac-toe board");
         for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++){
+            for (int j = 0; j < 3; j++) {
                 System.out.print(array11[i][j]);
             }
             System.out.println("\n");
@@ -179,19 +179,19 @@ public class HomeworkVahe {
         Random r = new Random();
         int rand1 = r.nextInt(3);
 
-        if(array11[rand1][rand1] == cell) {
+        if (array11[rand1][rand1] == cell) {
             array11[rand1][rand1] = tic;
         }
 
         int rand2 = r.nextInt(3);
-        if(array11[rand2][rand2] == cell) {
+        if (array11[rand2][rand2] == cell) {
             array11[rand2][rand2] = tac;
         }
 
         System.out.println('\n' + "Print filled in Tic-tac-toe board");
 
         for (int i = 0; i < 3; i++) {
-            for (int j = 0; j < 3; j++){
+            for (int j = 0; j < 3; j++) {
                 System.out.print(array11[i][j]);
             }
             System.out.println("\n");
@@ -213,31 +213,31 @@ public class HomeworkVahe {
         System.out.println('\n' + "Задача 11");
         String cell1 = "|_|";
         String tic1 = "|x|";
-        String [][] array12 = new String[10][10];
+        String[][] array12 = new String[10][10];
         for (int i = 0; i < 10; i++) {
-            for (int j = 0; j < 10; j++){
+            for (int j = 0; j < 10; j++) {
                 array12[i][j] = cell1;
             }
         }
 
         System.out.println('\n' + "Print blank board");
         for (int i = 0; i < 10; i++) {
-            for (int j = 0; j < 10; j++){
+            for (int j = 0; j < 10; j++) {
                 System.out.print(array12[i][j]);
             }
             System.out.println();
         }
 
-        for (int j=0; j<5; j++){
-            array12[0][j]=tic1;
+        for (int j = 0; j < 5; j++) {
+            array12[0][j] = tic1;
         }
-        for (int i = 2; i < 5; i+=2) {
-            for (int j = 0; j < 4; j++){
+        for (int i = 2; i < 5; i += 2) {
+            for (int j = 0; j < 4; j++) {
                 array12[i][j] = tic1;
             }
         }
-        for (int i = 2; i < 7; i+=2) {
-            for (int j = 5; j < 8; j++){
+        for (int i = 2; i < 7; i += 2) {
+            for (int j = 5; j < 8; j++) {
                 array12[i][j] = tic1;
             }
         }
@@ -247,17 +247,17 @@ public class HomeworkVahe {
         }
 
         for (int j = 0; j < 8; j++) {
-            if (j!=2 && j!=5){
+            if (j != 2 && j != 5) {
                 array12[8][j] = tic1;
             }
         }
-        for (int i = 0; i < 9; i+=2) {
+        for (int i = 0; i < 9; i += 2) {
             array12[i][9] = tic1;
         }
 
         System.out.println('\n' + "Print filled board");
         for (int i = 0; i < 10; i++) {
-            for (int j = 0; j < 10; j++){
+            for (int j = 0; j < 10; j++) {
                 System.out.print(array12[i][j]);
             }
             System.out.println();
