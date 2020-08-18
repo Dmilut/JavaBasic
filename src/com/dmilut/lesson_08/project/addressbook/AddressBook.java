@@ -1,12 +1,12 @@
-package com.dmilut.lesson_06.project.addressbook;
+package com.dmilut.lesson_08.project.addressbook;
 
-import com.dmilut.lesson_06.project.addressbook.entity.Address;
-import com.dmilut.lesson_06.project.addressbook.entity.Contact;
-import com.dmilut.lesson_06.project.addressbook.util.Util;
+import com.dmilut.lesson_08.project.addressbook.entity.Address;
+import com.dmilut.lesson_08.project.addressbook.entity.Contact;
+import com.dmilut.lesson_08.project.addressbook.util.Util;
 
 import java.io.IOException;
 
-import static com.dmilut.lesson_06.project.addressbook.util.Util.inputText;
+import static com.dmilut.lesson_08.project.addressbook.util.Util.inputText;
 
 public class AddressBook {
 

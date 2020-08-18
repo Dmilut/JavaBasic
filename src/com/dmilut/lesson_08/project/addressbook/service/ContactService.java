@@ -1,7 +1,6 @@
-package com.dmilut.lesson_06.project.addressbook.service;
+package com.dmilut.lesson_08.project.addressbook.service;
 
-import com.dmilut.lesson_06.project.addressbook.entity.Contact;
-import com.dmilut.lesson_06.project.addressbook.util.Storage;
+import com.dmilut.lesson_08.project.addressbook.entity.Contact;
 
 public class ContactService {
     private StorageService storageService = new StorageService();

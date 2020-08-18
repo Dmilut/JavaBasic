@@ -1,6 +1,6 @@
-package com.dmilut.lesson_06.project.addressbook.util;
+package com.dmilut.lesson_08.project.addressbook.util;
 
-import com.dmilut.lesson_06.project.addressbook.entity.Contact;
+import com.dmilut.lesson_08.project.addressbook.entity.Contact;
 
 public class Storage {
 
