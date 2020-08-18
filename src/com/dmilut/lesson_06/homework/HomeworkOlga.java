@@ -145,7 +145,7 @@ public class HomeworkOlga {
             System.out.print(array9[x] + " ");
         }
 
-                //Hard level
+        //Hard level
                 /* TODO: 8/12/20
                     10.1. Нарисовать в консоли поле для игры в "крестики-нолики" из 9 клеток используя данные из многомерного
                      массива
@@ -156,9 +156,9 @@ public class HomeworkOlga {
 
         System.out.println('\n' + "Задача 10.1-10.4");
         String[][] array10 = new String[3][3];
-        for (int i = 0; i < 3; i++){
+        for (int i = 0; i < 3; i++) {
             System.out.println();
-            for (int j = 0; j < 3; j++){
+            for (int j = 0; j < 3; j++) {
                 array10[i][j] = (" [ ] ");
                 System.out.print(array10[i][j]);
             }
