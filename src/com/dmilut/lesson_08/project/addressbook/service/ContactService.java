@@ -30,4 +30,10 @@ public class ContactService {
 
         storageService.deleteContact(contact);
     }
+
+    public void printContact(Contact contact) {
+        System.out.println("Имя             " + contact.firstName);
+        System.out.println("Фамилия         " + contact.lastName);
+        System.out.println("Номер телефона  " + contact.phoneNumber);
+    }
 }
