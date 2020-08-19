@@ -17,6 +17,5 @@ public class Lesson {
         System.out.println(petia.age);
 
 
-
     }
 }
