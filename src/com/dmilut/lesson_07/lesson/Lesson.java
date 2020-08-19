@@ -17,5 +17,16 @@ public class Lesson {
         System.out.println(petia.age);
 
 
+        Human vasia = new Human();
+        vasia.sex = 'm';
+        Human petia = new Human('m', 40);
+        //System.out.println(vasia.sex);
+        //System.out.println(vasia.age);
+        boolean a = vasia.isPlaying("Orange");
+        System.out.println(petia.sex);
+        System.out.println(petia.age);
+
+
+
     }
 }
