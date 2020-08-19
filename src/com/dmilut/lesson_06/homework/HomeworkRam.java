@@ -105,6 +105,7 @@ public class HomeworkRam {
         System.out.println("Задание 5");
 
 
+
         // Middle level
         /* TODO: 8/12/20
             5.1. Создать массив с названиями 5 цветов на ваше усмотрение (н.п.: розовый, черный, красный, желтый, белый)
@@ -181,12 +182,12 @@ public class HomeworkRam {
             9.1. Используя цикл for вывести все элементы массива [9, 8, 7, 6, 5, 4, 3, 2, 1, 0] в консоль в порядке
              возрастания
          */
-            int[] array12 = {15, 36, 98, 52, 14, 75, 42, 23, 10};
-            int p = 0;
-
-            for (int l = 0; l < array12.length; l++) {
-
-                System.out.println(array12[l]);
+/*
+        int[] array11 = {15, 36, 98, 52, 14, 75, 42, 23, 10};
+        int m = 0;*/
+//         for (int l = 0; l < array11.length; l++){
+//
+//                  System.out.println(array11[l]);
 
 
      /*   for (int b : array11) {
@@ -196,7 +197,6 @@ public class HomeworkRam {
                 System.out.println(array11[b]);
 */
 
-            }
         }
     }
 }
