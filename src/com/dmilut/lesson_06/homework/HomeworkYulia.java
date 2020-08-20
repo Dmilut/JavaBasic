@@ -176,7 +176,7 @@ public class HomeworkYulia {
             11.3. Вывести поле с кораблями в консоль
          */
         System.out.println('\n' + "Task 11.1");
-        int[][] shipBattle = new int [10][10];
+        int[][] shipBattle;
         shipBattle = new int[][]{
                 {4,4,4,4,0,5,5,5,5,5},
                 {0,0,0,0,0,0,0,0,0,0},
