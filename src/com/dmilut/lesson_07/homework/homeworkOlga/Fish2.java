@@ -1,6 +1,4 @@
-package com.dmilut.lesson_07.homework.Olga;
-
-import com.dmilut.lesson_05.homework.HomeworkOlga;
+package com.dmilut.lesson_07.homework.homeworkOlga;
 
 public class Fish2{
             /* TODO: 8/17/20

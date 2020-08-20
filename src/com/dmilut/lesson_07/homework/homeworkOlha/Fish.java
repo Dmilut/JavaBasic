@@ -1,4 +1,4 @@
-package com.dmilut.lesson_07.homework.Homework_Olha;
+package com.dmilut.lesson_07.homework.homeworkOlha;
 
 //  Easy level
         /* TODO: 8/17/20

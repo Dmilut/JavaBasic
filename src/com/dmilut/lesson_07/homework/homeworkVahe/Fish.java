@@ -1,4 +1,4 @@
-package com.dmilut.lesson_07.homework.Vahe;
+package com.dmilut.lesson_07.homework.homeworkVahe;
 
 //  Easy level
         /* TODO: 8/17/20

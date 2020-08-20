@@ -1,4 +1,4 @@
-package com.dmilut.lesson_07.homework;
+package com.dmilut.lesson_07.homework.homeworkOlha;
 
 public class HomeworkOlha {
 
