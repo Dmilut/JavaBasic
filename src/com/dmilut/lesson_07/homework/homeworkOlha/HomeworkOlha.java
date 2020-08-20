@@ -10,7 +10,7 @@ public class HomeworkOlha {
 
         Fish myFish = new Fish();
 
-        //Fish myFish ("seabass", 12, "gray");
+        Fish myFish1 = new Fish("Tuna", 10f, "Grey", false);
 
     }
 
