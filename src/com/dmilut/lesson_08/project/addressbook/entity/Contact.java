@@ -1,4 +1,4 @@
-package com.dmilut.lesson_06.project.addressbook.entity;
+package com.dmilut.lesson_08.project.addressbook.entity;
 
 public class Contact {
 

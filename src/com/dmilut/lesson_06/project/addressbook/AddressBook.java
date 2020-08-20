@@ -1,18 +1,15 @@
 package com.dmilut.lesson_06.project.addressbook;
 
-import com.dmilut.lesson_06.project.addressbook.entity.Address;
-import com.dmilut.lesson_06.project.addressbook.entity.Contact;
-
+import java.io.BufferedReader;
 import java.io.IOException;
-
-import static com.dmilut.lesson_06.project.addressbook.util.Util.inputText;
+import java.io.InputStreamReader;
 
 public class AddressBook {
 
     /*
      * NOTE : =====================================================================================================
      * Задача   -   написать программу, которая будет решать проблему из реальной жизни.
-     * Level 3  -   провести анализ предметной области
+     * Level 2  -   провести анализ предметной области
      *          -   записать сущности предметной области как классы программы
      *          -   записать поля классов
      * ============================================================================================================
@@ -66,6 +63,14 @@ public class AddressBook {
 
     }
 
+    public static String inputText() throws IOException {
+
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+
+        String text = reader.readLine();
+
+        return text;
+    }
 }
 
 

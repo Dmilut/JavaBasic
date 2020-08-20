@@ -14,21 +14,21 @@ public class HomeworkYulia {
             1.3. Инициализировать массив из п.1.1. с набором данных: 0,1,2,3,4,5,6,7,8,9 двумя различными путями
          */
         System.out.println("Task 1.1");
-        int [] array;
+        int[] array;
         array = new int[10];
         // Option 1 how to initialize
-        int [] array2 = {9,8,7,6,5,4,3,2,1,0};
+        int[] array2 = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
         // Option 2 how to initialize
-        array = new int[]{0,1,2,3,4,5,6,7,8,9};
+        array = new int[]{0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
 
 
         /* TODO: 8/12/20
             2.1. Строку "Я люблю массивы очень сильно!" сохранить в массиве разбив по словам и символам
             2.2. Вывести в консоль все элменты массива из п.2.1. так, чтобы получилась первоначальная строка
          */
-        System.out.println('\n'+"Task 2.1, 2.2");
-        String [] wordsArray = {"I", " ","love"," ", "arrays", " ", "very", " ", "much", "!"};
-        for (int i=0; i<wordsArray.length; i++){
+        System.out.println('\n' + "Task 2.1, 2.2");
+        String[] wordsArray = {"I", " ", "love", " ", "arrays", " ", "very", " ", "much", "!"};
+        for (int i = 0; i < wordsArray.length; i++) {
             System.out.print(wordsArray[i]);
         }
 
@@ -37,19 +37,19 @@ public class HomeworkYulia {
             3.2. Сделать п.3.1. с циклом foreach
             3.3. Сделать п.3.1. с циклом while
          */
-        System.out.println('\n'+"Task 3.1");
-        for (int i1=0; i1<array2.length; i1++) {
+        System.out.println('\n' + "Task 3.1");
+        for (int i1 = 0; i1 < array2.length; i1++) {
             System.out.println(array2[i1]);
         }
 
-        System.out.println('\n'+"Task 3.2");
-        for ( int i2 : array2) {
+        System.out.println('\n' + "Task 3.2");
+        for (int i2 : array2) {
             System.out.println(i2);
         }
 
-        System.out.println('\n'+"Task 3.3");
-        int zero =0;
-        while (zero< array.length){
+        System.out.println('\n' + "Task 3.3");
+        int zero = 0;
+        while (zero < array.length) {
             System.out.println(array2[zero]);
             zero++;
         }
@@ -60,10 +60,10 @@ public class HomeworkYulia {
             {10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
             в консоль
          */
-        System.out.println('\n'+"Task 4.1");
-        int [] [] doubleArray = {
+        System.out.println('\n' + "Task 4.1");
+        int[][] doubleArray = {
                 {0, 1, 2, 3, 4, 5, 6, 7, 8, 9},
-                {10, 11, 12, 13, 14, 15, 16, 17, 18, 19} };
+                {10, 11, 12, 13, 14, 15, 16, 17, 18, 19}};
         for (int i = 0; i < doubleArray.length; i++) {
 
             for (int j = 0; j < doubleArray[i].length; j++) {
@@ -80,8 +80,8 @@ public class HomeworkYulia {
             Сделать это используя цикл.
          */
         System.out.println('\n' + "Task 5.1 & 5.2");
-        String [] color = {"pink", "black", "red", "yellow", "while"};
-        for (int i=0; i<color.length; i++) {
+        String[] color = {"pink", "black", "red", "yellow", "while"};
+        for (int i = 0; i < color.length; i++) {
             System.out.println("The color of my mood is " + color[i]);
         }
 
@@ -89,20 +89,20 @@ public class HomeworkYulia {
             6.1. Найти и вывести в консоль наименьшее число из произвольного массива int
          */
         System.out.println('\n' + "Task 6.1");
-        int [] array3 = {5, 15, 20, 22, 29, -31, 100, 55, 20, 3, 10};
+        int[] array3 = {5, 15, 20, 22, 29, -31, 100, 55, 20, 3, 10};
         int min = array3[0];
         for (int element : array3) {
-            if (element < min)   {
+            if (element < min) {
                 min = element;
             }
         }
-         System.out.println("Minimum number is: " + min);
+        System.out.println("Minimum number is: " + min);
 
         /* TODO: 8/12/20
             7.1. Найти и вывести в консоль наибольшее число из произвольного массива int
          */
         System.out.println('\n' + "Task 7.1");
-        int [] array4 = {700, 644, 32, 890, 874, 23, -987, 1245, 8999, 546};
+        int[] array4 = {700, 644, 32, 890, 874, 23, -987, 1245, 8999, 546};
         int max = array4[0];
         for (int check : array4) {
             if (check > max) {
@@ -115,10 +115,10 @@ public class HomeworkYulia {
             8.1. Найти и вывести в консоль только четные числа из произвольного массива int
          */
         System.out.println('\n' + "Task 8.1");
-        int [] array5 = {2, 13, 5, 8, 10, 12, 17, 22, 33, 4, 1, 0};
+        int[] array5 = {2, 13, 5, 8, 10, 12, 17, 22, 33, 4, 1, 0};
         for (int i = 0; i < array5.length; i++) {
-            if (array5[i]%2==0) {
-                System.out.println("Even numbers are: "+ array5[i]);
+            if (array5[i] % 2 == 0) {
+                System.out.println("Even numbers are: " + array5[i]);
             }
         }
 
@@ -127,8 +127,8 @@ public class HomeworkYulia {
              возрастания
          */
         System.out.println('\n' + "Task 9.1");
-        int [] array6 = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
-        for  (int d=9; d >=0; d--) {
+        int[] array6 = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
+        for (int d = 9; d >= 0; d--) {
             System.out.println(array6[d]);
         }
         //Hard level
@@ -140,16 +140,16 @@ public class HomeworkYulia {
             10.4. Вывести поле с "крестиками" и "ноликами" в консоль
          */
         System.out.println('\n' + "Task 10.1");
-        int [][] field = new int [3][3];
+        int[][] field = new int[3][3];
         // 2 will be as "крестик" and 1 will be as "нолик"
         Random random = new Random();
         int counter = 0;
-        while (counter<7) {
+        while (counter < 7) {
             int r = random.nextInt(3);
             int c = random.nextInt(3);
-            int step = random.nextInt(2)+1;
-            if (field[r][c]==0) {
-                field[r][c]=step;
+            int step = random.nextInt(2) + 1;
+            if (field[r][c] == 0) {
+                field[r][c] = step;
                 counter++;
             }
         }
@@ -176,19 +176,19 @@ public class HomeworkYulia {
             11.3. Вывести поле с кораблями в консоль
          */
         System.out.println('\n' + "Task 11.1");
-        int[][] shipBattle;
+        int[][] shipBattle = new int[10][10];
         shipBattle = new int[][]{
-                {4,4,4,4,0,5,5,5,5,5},
-                {0,0,0,0,0,0,0,0,0,0},
-                {1,0,3,3,3,0,0,2,2,0},
-                {0,0,0,0,0,0,0,0,0,0},
-                {2,2,0,3,3,3,0,3,3,3},
-                {0,0,0,0,0,0,0,0,0,0},
-                {1,0,0,2,2,0,0,0,2,2},
-                {0,0,0,0,0,0,0,0,0,0},
-                {1,0,0,0,1,0,0,0,0,0},
-                {0,0,1,0,0,0,4,4,4,4}};
-        for( int[] element : shipBattle) {
+                {4, 4, 4, 4, 0, 5, 5, 5, 5, 5},
+                {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+                {1, 0, 3, 3, 3, 0, 0, 2, 2, 0},
+                {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+                {2, 2, 0, 3, 3, 3, 0, 3, 3, 3},
+                {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+                {1, 0, 0, 2, 2, 0, 0, 0, 2, 2},
+                {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+                {1, 0, 0, 0, 1, 0, 0, 0, 0, 0},
+                {0, 0, 1, 0, 0, 0, 4, 4, 4, 4}};
+        for (int[] element : shipBattle) {
             for (int element2 : element) {
                 System.out.print(element2 + " ");
             }

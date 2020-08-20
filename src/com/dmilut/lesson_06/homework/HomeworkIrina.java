@@ -139,7 +139,6 @@ public class HomeworkIrina {
         }
 
 
-
         /* TODO: 8/12/20
             6.1. Найти и вывести в консоль наименьшее число из произвольного массива int
          */
@@ -155,8 +154,6 @@ public class HomeworkIrina {
             }
         }
         System.out.println("min number is " + min);
-
-
 
 
         /* TODO: 8/12/20
@@ -208,11 +205,11 @@ public class HomeworkIrina {
          */
         System.out.println('\n');
         System.out.println("Task 10");
-        for(int v1=0;v1<7;v1++){
-            for(int h1=0;h1<4;h1++) {
-                if(v1==0||v1==2||v1==4||v1==6) {
+        for (int v1 = 0; v1 < 7; v1++) {
+            for (int h1 = 0; h1 < 4; h1++) {
+                if (v1 == 0 || v1 == 2 || v1 == 4 || v1 == 6) {
                     System.out.print("_ ");
-                }else if(v1==1||v1==3||v1==5){
+                } else if (v1 == 1 || v1 == 3 || v1 == 5) {
                     System.out.print("| ");
                 }
 
@@ -221,11 +218,7 @@ public class HomeworkIrina {
 
         }
 
-        //int[]h1=new int[4];
-        //h1
-
-
-        /* TODO: 8/12/20
+                /* TODO: 8/12/20
             11.1. Создать многомерный массив, который бы хранил информацию о игровом поле игры "морской бой" с размером
             поля 10x10
             11.2. Заполнить поле кораблями из расчета:
@@ -237,6 +230,6 @@ public class HomeworkIrina {
             11.3. Вывести поле с кораблями в консоль
          */
 
-        }
     }
+}
 
