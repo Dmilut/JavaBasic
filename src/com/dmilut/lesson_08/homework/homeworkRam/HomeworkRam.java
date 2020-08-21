@@ -1,4 +1,4 @@
-package com.dmilut.lesson_07.homework;
+package com.dmilut.lesson_08.homework.homeworkRam;
 
 public class HomeworkRam {
 
@@ -6,7 +6,6 @@ public class HomeworkRam {
 
     }
 }
-
 
 
 
