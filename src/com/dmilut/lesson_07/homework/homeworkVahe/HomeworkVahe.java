@@ -1,5 +1,4 @@
 package com.dmilut.lesson_07.homework.homeworkVahe;
-import com.dmilut.lesson_07.homework.homeworkVahe.Fish;
 
 public class HomeworkVahe {
 
