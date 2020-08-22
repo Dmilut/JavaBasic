@@ -1,7 +1,5 @@
-package com.dmilut.lesson_07.homework;
-import com.dmilut.lesson_07.homework.Vahe.Fish;
-
-import java.lang.reflect.Array;
+package com.dmilut.lesson_07.homework.homeworkVahe;
+import com.dmilut.lesson_07.homework.homeworkVahe.Fish;
 
 public class HomeworkVahe {
 

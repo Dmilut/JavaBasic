@@ -1,4 +1,4 @@
-package com.dmilut.lesson_07.homework.Ram;
+package com.dmilut.lesson_07.homework.homeworkRam;
 
 
 public class Dog {

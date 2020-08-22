@@ -1,4 +1,4 @@
-package com.dmilut.lesson_07.homework.Olga;
+package com.dmilut.lesson_07.homework.homeworkOlga;
 
 public class Fish {
                     //  Easy level
