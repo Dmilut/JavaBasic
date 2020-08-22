@@ -43,13 +43,13 @@ public class Fish {
         this.age = age;
         this.size = size;
         this.edible = true;
-    }
+
 
     /* TODO: 8/17/20
         2.1. Создать экземпляр класса Fish используя пустой конструктор
         2.2. Создать экземпляр класса Fish используя конструктор для инициализации полей */
-    Fish myFish = new Fish();
+        Fish myFish = new Fish();
 
-    Fish Whale = new Fish("whale", "black", 10, 1000, false);
 
+    }
 }
