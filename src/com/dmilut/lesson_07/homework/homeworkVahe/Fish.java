@@ -10,43 +10,43 @@ package com.dmilut.lesson_07.homework.homeworkVahe;
 
 //1.1
 public class Fish {
-        //1.2
-        private String name;
-        private int size;
-        private String color;
-        private boolean edible;
+    //1.2
+    private String name;
+    private int size;
+    private String color;
+    private boolean edible;
 
-        //1.3
-        public double swim(double hours) {
-            if(size <= 1) {
-                return 10 * hours;
-            }
-            else if (1<size && size <=3) {
-                return 20*hours;
-            }
-            return 25*hours;
+    //1.3
+    public double swim(double hours) {
+        if(size <= 1) {
+            return 10 * hours;
         }
-
-        public String eat(String food) {
-            if (food == "Fish") {
-                return "Carnivore";
-            }
-            return "Herbivore";
+        else if (1<size && size <=3) {
+            return 20*hours;
         }
+        return 25*hours;
+    }
 
-        //1.4
-
-        public Fish (){
+    public String eat(String food) {
+        if (food == "Fish") {
+            return "Carnivore";
         }
+        return "Herbivore";
+    }
+
+    //1.4
+
+    public Fish (){
+    }
 
 
-        //1.5
-        public Fish(String name, int size, String color, boolean edible){
-            this.name = name;
-            this.size = size;
-            this.color = color;
-            this.edible = edible;
-        }
+    //1.5
+    public Fish(String name, int size, String color, boolean edible){
+        this.name = name;
+        this.size = size;
+        this.color = color;
+        this.edible = edible;
+    }
 
     public int getSize() {
         return size;
