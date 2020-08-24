@@ -38,6 +38,19 @@ public class HomeworkOlga {
         dog.sleep();
         dog.eat("bone");
         dog.bark();
+
+        AnimalManager newAnimal= new AnimalManager();
+        Monkey chimpanzee = new Monkey("Brandon", 8, "wild", "black");
+        Dog greyhound = new Dog("Lucy", 1, "domestic", "grey");
+        System.out.println();
+        System.out.println(chimpanzee.name + " is " + chimpanzee.age + ". It is a " + chimpanzee.type + " animal. His color is " + chimpanzee.color);
+        System.out.println(greyhound.name + " is " + greyhound.age + ". It is a " + greyhound.type + " animal. Her color is " + greyhound.color);
+        newAnimal.addAnimal(chimpanzee);
+        newAnimal.updateAnimal(chimpanzee,50);
+        newAnimal.deleteAnimal(chimpanzee, 50);
+        newAnimal.addAnimal(greyhound);
+        newAnimal.updateAnimal(greyhound,51);
+        newAnimal.deleteAnimal(greyhound, 51);
         }
     }
 

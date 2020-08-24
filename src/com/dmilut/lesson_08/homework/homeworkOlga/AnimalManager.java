@@ -25,15 +25,15 @@ public class AnimalManager {
         AnimalManager.animals[emptySlotIndex] = animal;
         }
 
-    public void updateAnimal(Animal animal) {
+    public void updateAnimal(Animal animal, int emptySlotIndex ) {
 
-        AnimalManager.animals[getFirstEmptySlotIndex()] = animal;
+        AnimalManager.animals[emptySlotIndex] = animal;
     }
 
 
-    public void deleteAnimal(Animal animal) {
+    public void deleteAnimal(Animal animal, int emptySlotIndex) {
 
-        AnimalManager.animals[getFirstEmptySlotIndex()] = null;
+        AnimalManager.animals[emptySlotIndex] = null;
     }
 
     private int getFirstEmptySlotIndex() {
