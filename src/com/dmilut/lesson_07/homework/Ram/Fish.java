@@ -72,13 +72,13 @@ public class Fish {
             большей рыбы */
 
 
-//        public static void compare();
+//        public static void compare ();
 //        Fish fish1 = new Fish(30, "black", true);
 //        Fish fish2 = new Fish(20, "red", false);
 //        if (fish1.size >= fish2.size)
 //
-//        System.out.println(fish1);
-
+//            System.out.println(fish1);
+//
 
 
 
