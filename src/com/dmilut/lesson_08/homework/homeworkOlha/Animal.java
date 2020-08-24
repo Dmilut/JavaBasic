@@ -13,17 +13,19 @@ public class Animal {
     String species;
     String color;
 
-      void move () {
-          System.out.println ("Movement");
+    void move() {
+        System.out.println("Movement");
 
-      }
-      void eat () {
-          System.out.println ("I can eat");
+    }
 
-      }
-      void sleep () {
-          System.out.println ("I can sleep");
-      }
+    void eat() {
+        System.out.println("I can eat");
+
+    }
+
+    void sleep() {
+        System.out.println("I can sleep");
+    }
 
 
 }
