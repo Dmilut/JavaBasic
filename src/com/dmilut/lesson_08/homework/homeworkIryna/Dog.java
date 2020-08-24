@@ -1,4 +1,4 @@
-package com.dmilut.lesson_08.homework.homeworkIrina;
+package com.dmilut.lesson_08.homework.homeworkIryna;
 
  /* TODO: 8/20/20
         3.1. Реализовать класс Dog наследованный от Animal

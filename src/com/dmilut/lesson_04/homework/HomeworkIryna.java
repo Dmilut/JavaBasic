@@ -1,6 +1,6 @@
 package com.dmilut.lesson_04.homework;
 
-public class HomeworkIrina {
+public class HomeworkIryna {
     public static void main(String[] args) {
 
         /*  TODO: 2020-08-05

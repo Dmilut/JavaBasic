@@ -1,6 +1,6 @@
 package com.dmilut.lesson_05.homework;
 
-public class HomeworkIrina {
+public class HomeworkIryna {
     public static void main(String[] args) {
 
         // Easy level

@@ -1,4 +1,4 @@
-package com.dmilut.lesson_07.homework.homeworkIrina;
+package com.dmilut.lesson_07.homework.homeworkIryna;
 
 public class Fish2 {
 

@@ -1,4 +1,4 @@
-package com.dmilut.lesson_08.homework.homeworkIrina;
+package com.dmilut.lesson_08.homework.homeworkIryna;
 
 public class Animal {
 

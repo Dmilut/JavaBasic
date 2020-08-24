@@ -1,6 +1,6 @@
-package com.dmilut.lesson_08.homework.homeworkIrina;
+package com.dmilut.lesson_08.homework.homeworkIryna;
 
-public class HomeworkIrina {
+public class HomeworkIryna {
 
     public static void main(String[] args) {
 
