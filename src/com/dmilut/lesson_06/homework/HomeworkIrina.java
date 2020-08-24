@@ -218,6 +218,16 @@ public class HomeworkIrina {
 
         }
 
+        System.out.println('\n' + "Задача 10.1-10.4");
+        String[][] array10 = new String[3][3];
+        for (int i = 0; i < 3; i++) {
+            System.out.println();
+            for (int j = 0; j < 3; j++) {
+                array10[i][j] = (" [ ] ");
+                System.out.print(array10[i][j]);
+            }
+        }
+
                 /* TODO: 8/12/20
             11.1. Создать многомерный массив, который бы хранил информацию о игровом поле игры "морской бой" с размером
             поля 10x10
