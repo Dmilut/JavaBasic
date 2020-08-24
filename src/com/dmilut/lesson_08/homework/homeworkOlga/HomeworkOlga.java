@@ -6,6 +6,7 @@ public class HomeworkOlga {
                     4.2. У созданного объекта класса Animal вызвать методы eat, sleep и move */
 
     public static void main(String[] args) {
+
         Animal cat = new Animal("Cat Molly", 2, "domestic", "grey");
         System.out.println();
         System.out.println(cat.name + " is " + cat.age + ". It is a " + cat.type + " animal. Her color is " + cat.color);

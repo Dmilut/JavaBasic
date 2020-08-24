@@ -21,7 +21,6 @@ public class Animal {
         this.color = color;
     }
 
-
     public void move() {
         System.out.println("Какое-то движение");
     }
