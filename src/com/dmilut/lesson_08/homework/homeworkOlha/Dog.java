@@ -1,6 +1,6 @@
 package com.dmilut.lesson_08.homework.homeworkOlha;
 
-public class Dog extends Animal{
+public class Dog extends Animal {
 
     /* TODO: 8/20/20
         3.1. Реализовать класс Dog наследованный от Animal
@@ -15,5 +15,5 @@ public class Dog extends Animal{
     void bark() {
         System.out.println("Woof-woof!");
     }
-    
+
 }
