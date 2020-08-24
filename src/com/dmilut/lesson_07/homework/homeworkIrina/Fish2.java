@@ -24,7 +24,11 @@ public class Fish2 {
             большей рыбы *//*
 
 
+<<<<<<< Updated upstream
        *//* public static void isBigger(smallFish,bigFish) {
+=======
+        public static void isBigger(Fish smallFish, Fish bigFish) {
+>>>>>>> Stashed changes
 
             if (bigFish.size > smallFish.size) {
                 System.out.println(bigFish.name);
