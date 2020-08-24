@@ -52,10 +52,10 @@ public class HomeworkVahe {
         dog.move();
         dog.bark();
 
-
         // Hard level
-    /* TODO: 8/20/20
-        7.5. В классе Homework... (в своем пакете) продемонстрировать работу созданных методов */
+        /* TODO: 8/20/20
+            7.5. В классе Homework... (в своем пакете) продемонстрировать работу созданных методов */
+
         AnimalManager animalManager = new AnimalManager();
 
         // Add two monkeys and one dog
@@ -81,7 +81,7 @@ public class HomeworkVahe {
 
         System.out.println("Animals after adding 2 monkeys and a dog");
 
-        for (int i = 0; i < animalManager.getAnimalCount(); i++){
+        for (int i = 0; i < animalManager.getAnimalCount(); i++) {
             animalManager.printAnimal(i);
             System.out.println();
         }
@@ -90,7 +90,7 @@ public class HomeworkVahe {
 
         System.out.println("Animals after deleting 2nd monkey");
 
-        for (int i = 0; i < animalManager.getAnimalCount(); i++){
+        for (int i = 0; i < animalManager.getAnimalCount(); i++) {
             animalManager.printAnimal(i);
             System.out.println();
         }
@@ -99,7 +99,7 @@ public class HomeworkVahe {
 
         System.out.println("Animals after updating 2nd monkey");
 
-        for (int i = 0; i < animalManager.getAnimalCount(); i++){
+        for (int i = 0; i < animalManager.getAnimalCount(); i++) {
             animalManager.printAnimal(i);
             System.out.println();
         }
