@@ -8,11 +8,10 @@ public class AnimalManager {
             Monkey и Dog
         7.3. Закрыть доступ к массиву из других классов
         7.4. Для работы с массивом из других классов реализовать методы addAnimal, updateAnimal, deleteAnimal. Учитывая,
-        что все записи в массиве должны храниться подряд (без пустых ячеек между ними).
-     */
+        что все записи в массиве должны храниться подряд (без пустых ячеек между ними). */
 
     public static final int ANIMAL_MANAGER_SIZE = 100;
-    private static Animal [] animals = new Animal[ANIMAL_MANAGER_SIZE];
+    private static Animal[] animals = new Animal[ANIMAL_MANAGER_SIZE];
 
     public void addAnimal(Animal animal) {
         int index = getAnimalCount();
