@@ -6,7 +6,7 @@ public class HomeworkIryna {
       4.1. Создать объект класса Animal, инициализировать его поля и вывести их значения в консоль
       4.2. У созданного объекта класса Animal вызвать методы eat, sleep и move */
     public void Animal(String name, int age, String type, String color) {
-        Animal animal = new Animal("Max ", 3, " striped ", " orange ");
+        com.dmilut.lesson_08.homework.homeworkIrina.Animal animal = new com.dmilut.lesson_08.homework.homeworkIrina.Animal("Max ", 3, " striped ", " orange ");
         System.out.println(name + age + type + color);
     }
 
@@ -54,7 +54,7 @@ public class HomeworkIryna {
        6.3. У созданного объекта класса Dog вызвать унаследованный метод move */
 
     public void Dog(String name, int age, String type, String color) {
-    Dog dog = new Dog("Betty", 6, "yorkie", "silver");
+    com.dmilut.lesson_08.homework.homeworkIrina.Dog dog = new com.dmilut.lesson_08.homework.homeworkIrina.Dog("Betty", 6, "yorkie", "silver");
     System.out.println(name + age + type + color);
     }
 
@@ -95,10 +95,6 @@ public class HomeworkIryna {
         что все записи в массиве должны храниться подряд (без пустых ячеек между ними).
         7.5. В классе Homework... (в своем пакете) продемонстрировать работу созданных методов */
 
-<<<<<<<<< Temporary merge branch 1:src/com/dmilut/lesson_08/homework/homeworkIrina/HomeworkIrina.java
-
-=========
->>>>>>>>> Temporary merge branch 2:src/com/dmilut/lesson_08/homework/homeworkIryna/HomeworkIryna.java
     }
 }
 

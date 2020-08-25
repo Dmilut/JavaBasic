@@ -4,26 +4,24 @@ package com.dmilut.lesson_08.homework.homeworkIryna;
         2.1. Реализовать класс Monkey наследованный от Animal
         2.2. Переопределить метод move, так, чтобы он выводил в консоль "Лазанье по деревьям" */
 
-public class Monkey extends Animal {
+public class Monkey extends com.dmilut.lesson_08.homework.homeworkIrina.Animal {
 
 
     public Monkey(String name, int age, String type, String color) {
         super(name, age, type, color);
     }
 
-<<<<<<<<< Temporary merge branch 1:src/com/dmilut/lesson_08/homework/homeworkIrina/Monkey.java
 //    @Override
 //    public void move(String move) {
 //        super.move(move);
 //        System.out.println("Climbing the trees");
 //    }
 
-=========
-    @Override
-    public void move(String move) {
-        super.move(move);
-        System.out.println("Climbing the trees");
-    }
+//    @Override
+//    public void move(String move) {
+//        super.move(move);
+//        System.out.println("Climbing the trees");
+//    }
 
     /* TODO: 8/20/20
         5.1. Создать объект класса Monkey, инициализировать унаследованные поля и вывести их значения в консоль
@@ -46,7 +44,7 @@ public class Monkey extends Animal {
     public void monkeyMove() {
         System.out.println("It jumps funny");
     }
->>>>>>>>> Temporary merge branch 2:src/com/dmilut/lesson_08/homework/homeworkIryna/Monkey.java
+
 }
 
 
