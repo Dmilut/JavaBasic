@@ -1,11 +1,11 @@
-package com.dmilut.lesson_08.homework.homeworkIrina;
+package com.dmilut.lesson_08.homework.homeworkIryna;
 
  /* TODO: 8/20/20
         3.1. Реализовать класс Dog наследованный от Animal
         3.2. Переопределить метод move, так, чтобы он выводил в консоль "Бег"
         3.3. Реализовать метод bark */
 
-public class Dog extends Animal {
+public class Dog extends com.dmilut.lesson_08.homework.homeworkIrina.Animal {
 
     public Dog(String name, int age, String type, String color) {
         super(name, age, type, color);
