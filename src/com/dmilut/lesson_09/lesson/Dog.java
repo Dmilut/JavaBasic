@@ -4,6 +4,10 @@ public class Dog extends Mammal{
 
     private String name;
 
+    public Dog(String name){
+        this.name = name;
+    }
+
     public String getName() {
         return name;
     }
@@ -11,14 +15,5 @@ public class Dog extends Mammal{
     public void setName(String name) {
         this.name = name;
     }
-
- /*   public Dog(String name){
-        this.name = name;
-    }
-
-    public String getName() {
-        return name;
-    }
-*/
 
 }
