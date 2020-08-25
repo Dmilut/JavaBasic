@@ -4,7 +4,6 @@ public class HomeworkYulia {
 
     public static void main(String[] args) {
 
-
     /* TODO: 8/20/20
         4.1. Создать объект класса Animal, инициализировать его поля и вывести их значения в консоль
         4.2. У созданного объекта класса Animal вызвать методы eat, sleep и move */
@@ -23,7 +22,6 @@ public class HomeworkYulia {
         monkey.eat();
         monkey.sleep();
         monkey.move();
-
 
     /* TODO: 8/20/20
         6.1. Создать объект класса Dog, инициализировать унаследованные поля и вывести их значения в консоль

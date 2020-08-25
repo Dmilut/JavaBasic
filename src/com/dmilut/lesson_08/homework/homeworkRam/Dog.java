@@ -1,4 +1,4 @@
-package com.dmilut.lesson_08.homework.homeworkOlha;
+package com.dmilut.lesson_08.homework.homeworkRam;
 
 public class Dog extends Animal {
 
@@ -7,13 +7,20 @@ public class Dog extends Animal {
         3.2. Переопределить метод move, так, чтобы он выводил в консоль "Бег"
         3.3. Реализовать метод bark */
 
+    {
+        System.out.println("Task 3");
+    }
+
     @Override
-    void move() {
-        System.out.println("Run");
+    public void move() {
+
+        super.move();
+
+        System.out.println("run");
     }
 
-    void bark() {
-        System.out.println("Woof-woof!");
-    }
 
+    public void bark() {
+        System.out.println("wof");
+    }
 }

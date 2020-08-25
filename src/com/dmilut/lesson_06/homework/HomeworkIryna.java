@@ -2,7 +2,7 @@ package com.dmilut.lesson_06.homework;
 
 import java.util.ArrayList;
 
-public class HomeworkIrina {
+public class HomeworkIryna {
     public static void main(String[] args) {
 
         // Easy level
