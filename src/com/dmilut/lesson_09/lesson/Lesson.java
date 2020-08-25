@@ -4,13 +4,13 @@ public class Lesson {
 
     public static void main(String[] args) {
 
-        /*Dog dog = new Dog("Betty");
-        //dog.setName("Betty");
-        String name = dog.getName();
+        Dog dog = new Dog("Betty");
 
-        System.out.println(name);
         System.out.println(dog.getName());
-*/
+
+        dog.setName("Nord");
+
+        System.out.println(dog.getName());
     }
 
 }
