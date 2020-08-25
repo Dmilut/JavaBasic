@@ -1,4 +1,4 @@
-package com.dmilut.lesson_08.homework.homeworkIrina;
+package com.dmilut.lesson_08.homework.homeworkIryna;
 
  /* TODO: 8/20/20
         3.1. Реализовать класс Dog наследованный от Animal
@@ -19,22 +19,27 @@ public class Dog extends Animal {
     public void bark(String bark) {
         System.out.println("Barking");
     }
+
     /* TODO: 8/20/20
         6.1. Создать объект класса Dog, инициализировать унаследованные поля и вывести их значения в консоль
         6.2. У созданного объекта класса Dog вызвать методы eat, sleep, move, bark
         6.3. У созданного объекта класса Dog вызвать унаследованный метод move */
 
     Dog dog = new Dog("Betty", 6, "yorkie", "silver");
-    public void dogEat(){
+
+    public void dogEat() {
         System.out.println("It eats bone");
     }
-    public void dogSleep(){
+
+    public void dogSleep() {
         System.out.println("It sleeps on the bed");
     }
-    public void dogMove(){
+
+    public void dogMove() {
         System.out.println("It dances cute");
     }
-    public void dogBark(){
+
+    public void dogBark() {
         System.out.println("It barks loudly");
     }
     // не понимаю как это сделать  6.3. У созданного объекта класса Dog вызвать унаследованный метод move */
