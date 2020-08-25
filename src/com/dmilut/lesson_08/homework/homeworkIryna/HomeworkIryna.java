@@ -3,10 +3,11 @@ package com.dmilut.lesson_08.homework.homeworkIryna;
 public class HomeworkIryna {
 
     /* TODO: 8/20/20
-      4.1. Создать объект класса Animal, инициализировать его поля и вывести их значения в консоль
-      4.2. У созданного объекта класса Animal вызвать методы eat, sleep и move */
+        4.1. Создать объект класса Animal, инициализировать его поля и вывести их значения в консоль
+        4.2. У созданного объекта класса Animal вызвать методы eat, sleep и move */
+
     public void Animal(String name, int age, String type, String color) {
-        com.dmilut.lesson_08.homework.homeworkIrina.Animal animal = new com.dmilut.lesson_08.homework.homeworkIrina.Animal("Max ", 3, " striped ", " orange ");
+        Animal animal = new Animal("Max ", 3, " striped ", " orange ");
         System.out.println(name + age + type + color);
     }
 
@@ -21,8 +22,6 @@ public class HomeworkIryna {
     public void tigerSleep() {
         System.out.println("It sleeps");
     }
-
-
 
     /* TODO: 8/20/20
         5.1. Создать объект класса Monkey, инициализировать унаследованные поля и вывести их значения в консоль
@@ -49,13 +48,13 @@ public class HomeworkIryna {
 
 
     /* TODO: 8/20/20
-       6.1. Создать объект класса Dog, инициализировать унаследованные поля и вывести их значения в консоль
-       6.2. У созданного объекта класса Dog вызвать методы eat, sleep, move, bark
-       6.3. У созданного объекта класса Dog вызвать унаследованный метод move */
+        6.1. Создать объект класса Dog, инициализировать унаследованные поля и вывести их значения в консоль
+        6.2. У созданного объекта класса Dog вызвать методы eat, sleep, move, bark
+        6.3. У созданного объекта класса Dog вызвать унаследованный метод move */
 
     public void Dog(String name, int age, String type, String color) {
-    com.dmilut.lesson_08.homework.homeworkIrina.Dog dog = new com.dmilut.lesson_08.homework.homeworkIrina.Dog("Betty", 6, "yorkie", "silver");
-    System.out.println(name + age + type + color);
+        Dog dog = new Dog("Betty", 6, "yorkie", "silver");
+        System.out.println(name + age + type + color);
     }
 
     public void dogEat() {

@@ -4,8 +4,7 @@ package com.dmilut.lesson_08.homework.homeworkIryna;
         2.1. Реализовать класс Monkey наследованный от Animal
         2.2. Переопределить метод move, так, чтобы он выводил в консоль "Лазанье по деревьям" */
 
-public class Monkey extends com.dmilut.lesson_08.homework.homeworkIrina.Animal {
-
+public class Monkey extends Animal {
 
     public Monkey(String name, int age, String type, String color) {
         super(name, age, type, color);
