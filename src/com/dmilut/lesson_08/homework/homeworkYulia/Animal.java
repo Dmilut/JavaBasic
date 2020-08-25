@@ -11,8 +11,8 @@ public class Animal {
     String type;
     String color;
 
-    public Animal( String name, int age, String type, String color) {
-        this.name=name;
+    public Animal(String name, int age, String type, String color) {
+        this.name = name;
         this.age = age;
         this.type = type;
         this.color = color;

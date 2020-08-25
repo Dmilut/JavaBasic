@@ -1,4 +1,4 @@
-package com.dmilut.lesson_07.homework.homeworkIrina;
+package com.dmilut.lesson_07.homework.homeworkIryna;
 
 //  Easy level
         /* TODO: 8/17/20
