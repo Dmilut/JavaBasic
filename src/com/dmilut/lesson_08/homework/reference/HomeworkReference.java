@@ -65,7 +65,7 @@ public class HomeworkReference {
         animalManager.printAnimals();
 
         dog.age = 5;
-        animalManager.updateAnimal(monkey);
+        animalManager.updateAnimal(dog);
         animalManager.printAnimals();
 
     }
