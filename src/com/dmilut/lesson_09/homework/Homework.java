@@ -3,12 +3,11 @@ package com.dmilut.lesson_09.homework;
 public class Homework {
 
     // Easy level
-<<<<<<< HEAD
 
     // Medium level
 
     // Hard level
-=======
+
     /* TODO: 8/24/20
         1.1. Реализовать абстрактный класс Animal
         1.2. Реализовать абстрактный метод voice */
@@ -43,5 +42,4 @@ public class Homework {
         проверяться на наличие в массивах puppies, kittens, dogs, cats и в зависимости от того, щенок (котенок) это
         или взрослая особь, будет предлагаться соответствующее питание. */
 
->>>>>>> 1bc8cc7a826a7ee15a0f9e279be01e698061bfba
 }
