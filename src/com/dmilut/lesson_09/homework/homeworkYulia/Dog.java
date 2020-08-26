@@ -1,6 +1,6 @@
 package com.dmilut.lesson_09.homework.homeworkYulia;
 
-public class Dog extends Animal{
+public class Dog extends Animal {
        /* TODO: 8/24/20
         2.1. Объявить класс Dog наследованный от Animal
         2.2. Объявить метод voice */

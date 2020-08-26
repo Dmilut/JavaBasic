@@ -11,7 +11,6 @@ public class AnimalManager {
         в зависимости от результата работы методов из п. 6.3. */
 
 
-
     // Hard level
     /* TODO: 8/24/20
         7.1. Творческое задание. Реализовать метод selectionOfFood в классе AnimalManager в котором животное будет

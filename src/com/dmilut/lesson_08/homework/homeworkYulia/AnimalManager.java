@@ -11,12 +11,12 @@ public class AnimalManager {
         что все записи в массиве должны храниться подряд (без пустых ячеек между ними).
         7.5. В классе Homework... (в своем пакете) продемонстрировать работу созданных методов */
 
-    private Animal []  animals = new Animal[100];
+    private Animal[] animals = new Animal[100];
 
     public boolean addAnimal(Animal animal) {
-        for (int i=0; i < animals.length; i++) {
-            if(animals [i]== null) {
-                animals[i]=animal;
+        for (int i = 0; i < animals.length; i++) {
+            if (animals[i] == null) {
+                animals[i] = animal;
                 return true;
             }
         }
@@ -24,9 +24,9 @@ public class AnimalManager {
     }
 
     public boolean updateAnimal(Animal animal) {
-        for(int i =0; i< animals.length; i++) {
-            if(animals[i].name.equals(animal.name)){
-                animals[i]=animal;
+        for (int i = 0; i < animals.length; i++) {
+            if (animals[i].name.equals(animal.name)) {
+                animals[i] = animal;
                 return true;
             }
 
@@ -35,8 +35,8 @@ public class AnimalManager {
     }
 
     public boolean deleteAnimal(Animal animal) {
-        for(int i=0; i<animals.length; i++) {
-            if(animals[i].name.equals(animal.name)) {
+        for (int i = 0; i < animals.length; i++) {
+            if (animals[i].name.equals(animal.name)) {
                 animals[i].name = null;
             }
         }

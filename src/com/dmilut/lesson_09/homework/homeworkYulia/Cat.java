@@ -1,6 +1,6 @@
 package com.dmilut.lesson_09.homework.homeworkYulia;
 
-public class Cat extends Animal{
+public class Cat extends Animal {
 
     /* TODO: 8/24/20
       3.1. Объявить класс Cat наследованный от Animal
