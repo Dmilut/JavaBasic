@@ -5,7 +5,7 @@ package com.dmilut.lesson_08.homework.homeworkIryna;
         3.2. Переопределить метод move, так, чтобы он выводил в консоль "Бег"
         3.3. Реализовать метод bark */
 
-public class Dog extends Animal {
+public class Dog extends com.dmilut.lesson_08.homework.homeworkIrina.Animal {
 
     public Dog(String name, int age, String type, String color) {
         super(name, age, type, color);
