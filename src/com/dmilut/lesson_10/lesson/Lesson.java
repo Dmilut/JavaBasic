@@ -2,6 +2,7 @@ package com.dmilut.lesson_10.lesson;
 
 public class Lesson {
 
+<<<<<<< HEAD
     protected int test = 10;
 
     public static void main(String[] args) {
@@ -25,6 +26,10 @@ public class Lesson {
 
         System.out.println(bug.getColor());*/
 
+=======
+    public static void main(String[] args) {
+
+>>>>>>> 9c9eb9f... Lesson 10 structure is added
     }
 
 }
