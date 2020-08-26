@@ -3,8 +3,8 @@ package com.dmilut.lesson_09.homework.homeworkYulia;
 public class Cat extends Animal {
 
     /* TODO: 8/24/20
-      3.1. Объявить класс Cat наследованный от Animal
-      3.2. Объявить метод voice */
+        3.1. Объявить класс Cat наследованный от Animal
+        3.2. Объявить метод voice */
 
     @Override
     public void voice() {
@@ -14,6 +14,7 @@ public class Cat extends Animal {
     /* TODO: 8/24/20
         5.1. Добавить в класс Cat поля name, age, weight, type
         5.2. Реализовать геттеры и сеттеры для этих полей */
+
     String name;
     int age;
     int weight;
