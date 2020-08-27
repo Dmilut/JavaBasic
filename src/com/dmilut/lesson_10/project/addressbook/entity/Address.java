@@ -2,6 +2,7 @@ package com.dmilut.lesson_10.project.addressbook.entity;
 
 public class Address {
 
+<<<<<<< HEAD
     private String houseNumber;
     private String streetName;
     private String cityName;
@@ -55,5 +56,12 @@ public class Address {
     public void setZipCode(int zipCode) {
         this.zipCode = zipCode;
     }
+=======
+    public String houseNumber;
+    public String streetName;
+    public String cityName;
+    public String stateName;
+    public int zipCode;
+>>>>>>> 5a25157... AddressBook 10 init commit
 
 }

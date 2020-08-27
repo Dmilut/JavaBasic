@@ -22,14 +22,22 @@ public class StorageService {
     }
 
     public void updateContact(Contact contact) {
+<<<<<<< HEAD
         int index = getContactIndexByFirstName(contact.getFirstName());
+=======
+        int index = getContactIndexByFirstName(contact.firstName);
+>>>>>>> 5a25157... AddressBook 10 init commit
 
         Storage.contacts[index] = contact;
     }
 
 
     public void deleteContact(Contact contact) {
+<<<<<<< HEAD
         int index = getContactIndexByFirstName(contact.getFirstName());
+=======
+        int index = getContactIndexByFirstName(contact.firstName);
+>>>>>>> 5a25157... AddressBook 10 init commit
 
         Storage.contacts[index] = null;
     }
@@ -51,7 +59,11 @@ public class StorageService {
         int index = 0;
 
         for (int i = 0; i < Storage.contacts.length; i++) {
+<<<<<<< HEAD
             if (Storage.contacts[i].getFirstName().equals(firstName)) {
+=======
+            if (Storage.contacts[i].firstName.equals(firstName)) {
+>>>>>>> 5a25157... AddressBook 10 init commit
                 index = i;
                 break;
             }
@@ -60,4 +72,8 @@ public class StorageService {
         return index;
     }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5a25157... AddressBook 10 init commit
 }

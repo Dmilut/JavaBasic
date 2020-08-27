@@ -2,6 +2,7 @@ package com.dmilut.lesson_10.project.addressbook.entity;
 
 public class Contact {
 
+<<<<<<< HEAD
     private String firstName;
     private String lastName;
     private long phoneNumber;
@@ -46,4 +47,11 @@ public class Contact {
         this.address = address;
     }
 
+=======
+    public String firstName;
+    public String lastName;
+    public long phoneNumber;
+
+    public Address address;
+>>>>>>> 5a25157... AddressBook 10 init commit
 }
