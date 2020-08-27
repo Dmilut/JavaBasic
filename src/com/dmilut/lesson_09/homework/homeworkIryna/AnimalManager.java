@@ -7,19 +7,35 @@ package com.dmilut.lesson_09.homework.homeworkIryna;
         6.3. Реализовать методы в котором кошки и собаки будут складываться в массивы puppies, kittens, dogs, cats
         в зависимости от результата работы методов из п. 6.3. */
 
-import java.util.Objects;
 
-public class AnimalManager<kittenFood> {
-    public void puppies() {
+public class AnimalManager {
+
+    public void  puppies() {
+        int age;
+        for(age=0;age<=2;age++ ){
+            System.out.println("The dog less or equal 2 is puppy");
+        }
     }
 
     public void adultDogs() {
+        int age;
+        for(age=20;age>2;age-- ){
+            System.out.println("The dog older than 2 is adultDog");
+        }
     }
 
     public void kittens() {
+        int age;
+        for(age=0;age<=2;age++ ){
+            System.out.println("The cat less or equal 2 is puppy");
+        }
     }
 
     public void adultCats() {
+        int age;
+        for(age=20;age>2;age-- ){
+            System.out.println("The cat older than 2 is adultCat");
+        }
     }
 
     String[] adultDogs;

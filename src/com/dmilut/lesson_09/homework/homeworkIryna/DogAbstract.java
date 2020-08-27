@@ -5,9 +5,6 @@ package com.dmilut.lesson_09.homework.homeworkIryna;
         2.2. Реализовать метод voice */
 
 public class DogAbstract extends AnimalAbstract {
-    public DogAbstract() {
-
-    }
 
     @Override
     public void voice() {
