@@ -20,9 +20,8 @@ public class ContactService {
     }
 
     public Contact getContactByFirstName(String firstName) {
-        Contact contact = storageService.getByFirstName(firstName);
 
-        return contact;
+        return storageService.getByFirstName(firstName);
     }
 
     public Contact[] getAllContacts() {
@@ -48,7 +47,7 @@ public class ContactService {
         String lastName = inputText();
 
         System.out.println("Введите номер телефона  ");
-        Long phoneNumber = Long.parseLong(inputText());
+        long phoneNumber = Long.parseLong(inputText());
 
         Contact contact = new Contact(firstName, lastName, phoneNumber);
 

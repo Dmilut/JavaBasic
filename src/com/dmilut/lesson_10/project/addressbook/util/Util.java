@@ -19,8 +19,6 @@ public class Util {
     public static String inputText() throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-        String text = reader.readLine();
-
-        return text;
+        return reader.readLine();
     }
 }
