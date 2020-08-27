@@ -4,9 +4,6 @@ package com.dmilut.lesson_09.homework.homeworkIryna;
         1.2. Реализовать абстрактный метод voice*/
 
 public abstract class AnimalAbstract {
-    public AnimalAbstract() {
-
-    }
 
     public abstract void voice();
 }
