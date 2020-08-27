@@ -7,6 +7,12 @@ public class Contact {
     private long phoneNumber;
     private Address address;
 
+    public Contact(String firstName, String lastName, long phoneNumber) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.phoneNumber = phoneNumber;
+    }
+
     public String getFirstName() {
         return firstName;
     }

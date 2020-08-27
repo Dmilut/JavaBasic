@@ -10,10 +10,7 @@ public class ContactService {
     private StorageService storageService = new StorageService();
 
     public void createContact(String firstName, String lastName, long phoneNumber) {
-        Contact contact = new Contact();
-        contact.setFirstName(firstName);
-        contact.setLastName(lastName);
-        contact.setPhoneNumber(phoneNumber);
+        Contact contact = new Contact(firstName, lastName, phoneNumber);
 
         saveContact(contact);
     }
@@ -43,15 +40,17 @@ public class ContactService {
     }
 
     public void inputContact() throws IOException {
-        Contact contact = new Contact();
+
         System.out.println("Введите имя             ");
-        contact.setFirstName(inputText());
+        String firstName = inputText();
 
         System.out.println("Введите фамилию         ");
-        contact.setLastName(inputText());
+        String lastName = inputText();
 
         System.out.println("Введите номер телефона  ");
-        contact.setPhoneNumber(Long.parseLong(inputText()));
+        Long phoneNumber = Long.parseLong(inputText());
+
+        Contact contact = new Contact(firstName, lastName, phoneNumber);
 
         saveContact(contact);
     }
