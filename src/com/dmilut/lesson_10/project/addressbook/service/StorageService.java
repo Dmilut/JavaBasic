@@ -22,14 +22,14 @@ public class StorageService {
     }
 
     public void updateContact(Contact contact) {
-        int index = getContactIndexByFirstName(contact.firstName);
+        int index = getContactIndexByFirstName(contact.getFirstName());
 
         Storage.contacts[index] = contact;
     }
 
 
     public void deleteContact(Contact contact) {
-        int index = getContactIndexByFirstName(contact.firstName);
+        int index = getContactIndexByFirstName(contact.getFirstName());
 
         Storage.contacts[index] = null;
     }
@@ -51,7 +51,7 @@ public class StorageService {
         int index = 0;
 
         for (int i = 0; i < Storage.contacts.length; i++) {
-            if (Storage.contacts[i].firstName.equals(firstName)) {
+            if (Storage.contacts[i].getFirstName().equals(firstName)) {
                 index = i;
                 break;
             }
@@ -59,6 +59,5 @@ public class StorageService {
 
         return index;
     }
-
 
 }

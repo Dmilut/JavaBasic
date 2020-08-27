@@ -11,9 +11,9 @@ public class ContactService {
 
     public void createContact(String firstName, String lastName, long phoneNumber) {
         Contact contact = new Contact();
-        contact.firstName = firstName;
-        contact.lastName = lastName;
-        contact.phoneNumber = phoneNumber;
+        contact.setFirstName(firstName);
+        contact.setLastName(lastName);
+        contact.setPhoneNumber(phoneNumber);
 
         saveContact(contact);
     }
@@ -45,22 +45,22 @@ public class ContactService {
     public void inputContact() throws IOException {
         Contact contact = new Contact();
         System.out.println("Введите имя             ");
-        contact.firstName = inputText();
+        contact.setFirstName(inputText());
 
         System.out.println("Введите фамилию         ");
-        contact.lastName = inputText();
+        contact.setLastName(inputText());
 
         System.out.println("Введите номер телефона  ");
-        contact.phoneNumber = Long.parseLong(inputText());
+        contact.setPhoneNumber(Long.parseLong(inputText()));
 
         saveContact(contact);
     }
 
     public void printContact(Contact contact) {
         System.out.println("=========================================================================================");
-        System.out.println("Имя                     " + contact.firstName);
-        System.out.println("Фамилия                 " + contact.lastName);
-        System.out.println("Номер телефона          " + contact.phoneNumber);
+        System.out.println("Имя                     " + contact.getFirstName());
+        System.out.println("Фамилия                 " + contact.getLastName());
+        System.out.println("Номер телефона          " + contact.getPhoneNumber());
         System.out.println("=========================================================================================");
     }
 
