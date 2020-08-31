@@ -15,10 +15,17 @@ public class Cat extends Animal {
         5.1. Добавить в класс Cat поля name, age, weight, type
         5.2. Реализовать геттеры и сеттеры для этих полей */
 
-    String name;
-    int age;
-    int weight;
-    String type;
+    private String name;
+    private int age;
+    private int weight;
+    private String type;
+
+    public Cat(String name, int age, int weight, String type) {
+        this.name = name;
+        this.age = age;
+        this.weight = weight;
+        this.type = type;
+    }
 
     public String getName() {
         return name;
@@ -50,5 +57,15 @@ public class Cat extends Animal {
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    @Override
+    public String toString() {
+        return "Cat{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", weight=" + weight +
+                ", type='" + type + '\'' +
+                '}';
     }
 }
