@@ -1,6 +1,6 @@
 package com.dmilut.lesson_09.homework.homeworkVahe;
 
-/* TODO: 8/24/20
+    /* TODO: 8/24/20
         6.1. Реализовать класс AnimalManager
         6.2. Реализовать методы в котором кошки и собаки будут сортироваться в зависимости от возраста на 2 категории:
          щенки (котята) и взрослые особи
@@ -76,8 +76,7 @@ public class AnimalManager {
         return index;
     }
 
-
-// Hard level
+    // Hard level
     /* TODO: 8/24/20
         7.1. Творческое задание. Реализовать метод selectionOfFood в классе AnimalManager в котором животное будет
         проверяться на наличие в массивах puppies, kittens, dogs, cats и в зависимости от того, щенок (котенок) это
