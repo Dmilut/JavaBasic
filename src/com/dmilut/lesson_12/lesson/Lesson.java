@@ -3,13 +3,16 @@ package com.dmilut.lesson_12.lesson;
 import com.dmilut.lesson_12.lesson.cloneDemo.Car;
 import com.dmilut.lesson_12.lesson.cloneDemo.Driver;
 import com.dmilut.lesson_12.lesson.compareDemo.Person;
+import com.dmilut.lesson_12.lesson.finalizeDemo.Cup;
+import com.dmilut.lesson_12.lesson.finalizeDemo.Spoon;
 
 public class Lesson {
 
     public static void main(String[] args) throws CloneNotSupportedException {
 
-        cloneDemo();
-        compareDemo();
+        //cloneDemo();
+        //compareDemo();
+        finalizeDemo();
 
     }
 
@@ -24,7 +27,6 @@ public class Lesson {
 
         System.out.println("person1.equals(person2)?\t" + person1.equals(person2));
         System.out.println("person1.equals(person3)?\t" + person1.equals(person3));
-
     }
 
     private static void cloneDemo() throws CloneNotSupportedException {
@@ -46,6 +48,11 @@ public class Lesson {
 
         System.out.println("Имя водителя:\t\t\t" + car.getDriver());
         System.out.println("Имя водителя у клона:\t" + clonedCar.getDriver());
+    }
 
+    private static void finalizeDemo() {
+        Cup cup = new Cup(new Spoon());
+        cup = null;
+        System.gc();
     }
 }
