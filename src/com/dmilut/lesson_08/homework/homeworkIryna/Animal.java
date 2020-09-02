@@ -9,11 +9,20 @@ public class Animal {
         1.3. Реализовать метод move, так, чтобы он выводил в консоль "Какое-то движение"
         1.4. Реализовать методы eat, sleep */
 
- String name;
- int age;
- String type;
- String color;
+    String name;
+    int age;
+    String type;
+    String color;
 
+    public Animal() {
+    }
+
+    public Animal(String name, int age, String type, String color) {
+        this.name = name;
+        this.age = age;
+        this.type = type;
+        this.color = color;
+    }
 
     public void move() {
         System.out.println("Some movement");

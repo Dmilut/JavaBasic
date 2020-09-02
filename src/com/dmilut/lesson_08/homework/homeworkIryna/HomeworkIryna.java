@@ -74,8 +74,6 @@ public class HomeworkIryna {
         animalManager.deleteAnimal(dog);
         animalManager.printAnimals();
 
-
-
     }
 }
 

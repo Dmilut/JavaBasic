@@ -1,9 +1,8 @@
-package com.dmilut.lesson_09.homework.homeworkOlga;
+package com.dmilut.lesson_12.homework.homeworkOlga;
 
 public class HomeworkOlga {
 
     public static void main(String[] args) {
-
     }
 }
 
