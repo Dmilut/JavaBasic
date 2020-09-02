@@ -4,7 +4,7 @@ package com.dmilut.lesson_09.homework.homeworkOlha;
         2.1. Объявить класс Dog наследованный от Animal
         2.2. Объявить метод voice */
 
-public class Dog extends Animal{
+public class Dog extends Mammal{
 
     public Dog() {
     }

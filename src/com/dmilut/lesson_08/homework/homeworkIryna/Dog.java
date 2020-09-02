@@ -7,16 +7,20 @@ package com.dmilut.lesson_08.homework.homeworkIryna;
 
 public class Dog extends Animal {
 
+    public Dog() {
+
+    }
+
     public Dog(String name, int age, String type, String color) {
         super(name, age, type, color);
     }
 
     @Override
-    public void move(String move) {
+    public void move() {
         System.out.println("Running");
     }
 
-    public void bark(String bark) {
+    public void bark() {
         System.out.println("Barking");
     }
 
@@ -25,7 +29,7 @@ public class Dog extends Animal {
         6.2. У созданного объекта класса Dog вызвать методы eat, sleep, move, bark
         6.3. У созданного объекта класса Dog вызвать унаследованный метод move */
 
-    Dog dog = new Dog("Betty", 6, "yorkie", "silver");
+    //Dog dog = new Dog("Betty", 6, "yorkie", "silver");
 
     public void dogEat() {
         System.out.println("It eats bone");
