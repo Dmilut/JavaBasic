@@ -33,9 +33,9 @@ public class HomeworkVahe {
         System.out.println("This is homework 3.1");
 
         try {
-            String res = checkIfContainsSubstring("Vahe Gemilyan", "Saint Peter");
+            checkIfContainsSubstring("Vahe Gemilyan", "Saint Peter");
         } catch (MyException e) {
-            e.printStackTrace();
+            e.getMessage();
         }
         finally {
             System.out.println("Homework done.");
@@ -66,7 +66,7 @@ public class HomeworkVahe {
     }
 
     // 3.1 method
-    public static String checkIfContainsSubstring(String text, String substring) throws MyException {
+    public static void checkIfContainsSubstring(String text, String substring) throws MyException {
         String s = null;
         try {
             if (text.contains(substring)){
@@ -74,12 +74,12 @@ public class HomeworkVahe {
             }
             s.contains("match");
         } catch (NullPointerException e) {
+            System.out.println(e.getClass());
             System.out.println(e.getMessage());
         }
 
         if (s == null) {
-            throw new MyException("String can not be empty!");
+            throw new MyException("String cannot be empty!");
         }
-        return s;
     }
 }
