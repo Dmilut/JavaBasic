@@ -4,11 +4,6 @@ public class HomeworkVahe {
 
     public static void main(String[] args) {
 
-<<<<<<< HEAD
-    }
-}
-
-=======
     /* TODO: 8/31/20
         1.1. Реализовать метод c блоком try-catch-finally обрабатывающий деление числа на 0
      */
@@ -88,4 +83,3 @@ public class HomeworkVahe {
         }
     }
 }
->>>>>>> cfb7e163d3c28aa4adea3352da09b2f87c7d97c2

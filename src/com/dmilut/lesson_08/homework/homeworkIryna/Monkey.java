@@ -6,7 +6,11 @@ package com.dmilut.lesson_08.homework.homeworkIryna;
 
 public class Monkey extends Animal {
 
-    @Override
+    public Monkey(String name, int age, String type, String color) {
+        super(name, age, type, color);
+    }
+
+    //@Override
     public void move() {
         System.out.println("Climbing the trees");
     }

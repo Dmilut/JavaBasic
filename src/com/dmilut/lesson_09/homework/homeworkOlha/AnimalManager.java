@@ -14,7 +14,7 @@ public class AnimalManager {
 
 
         for (Mammal mammal : mammals) {
-            if (mammal instanceof Dog) {
+      /*      if (mammal instanceof Dog) {
 
                 if (mammal.getAge() <= middleAge) {
                     System.out.println(mammal.getName() + " is puppy!");
@@ -29,7 +29,7 @@ public class AnimalManager {
                 } else {
                     System.out.println(mammal.getName() + " is cat!");
                 }
-            }
+            }*/
 
 
         }

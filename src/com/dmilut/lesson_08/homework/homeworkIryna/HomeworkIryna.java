@@ -29,7 +29,7 @@ public class HomeworkIryna {
 
     public void Monkey(String name, int age, String type, String color) {
         //super.clone(name, age, type,color).equals(Animal();)
-        Monkey monkey = new Monkey("Dasha", 10, "ape", "black");
+        //Monkey monkey = new Monkey("Dasha", 10, "ape", "black");
         System.out.println(name + age + type + color);
     }
 
