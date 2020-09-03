@@ -3,11 +3,12 @@ package com.dmilut.lesson_11.homework.homeworkIryna;
 
 public class HomeworkIryna {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws MyException {
 
         String[] cats = {"Ashley", "Zoya", "Lilly", "Goldy", "Bella"};
         int catNum = 1;
         int zero = 0;
+        printString("test");
 
         /* TODO: 8/31/20
         1.1. Реализовать метод c блоком try-catch-finally обрабатывающий деление числа на 0
@@ -42,9 +43,9 @@ public class HomeworkIryna {
         3.1. Реализовать метод c генерацией собственного исключения
      */
 
-    static void printString(String myMethod){
+    static void printString(String myMethod) throws MyException {
         if (myMethod==null){
-            throw new NullPointerException("myMethod is null");
+            throw new MyException("myMethod is null");
         }
         System.out.println("MyMethod is"+myMethod);
     }
