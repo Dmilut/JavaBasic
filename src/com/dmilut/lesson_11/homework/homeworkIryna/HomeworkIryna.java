@@ -1,18 +1,10 @@
 package com.dmilut.lesson_11.homework.homeworkIryna;
 
-<<<<<<< HEAD
-=======
 
->>>>>>> cfb7e163d3c28aa4adea3352da09b2f87c7d97c2
 public class HomeworkIryna {
 
     public static void main(String[] args) {
 
-<<<<<<< HEAD
-    }
-}
-
-=======
         String[] cats = {"Ashley", "Zoya", "Lilly", "Goldy", "Bella"};
         int catNum = 1;
         int zero = 0;
@@ -63,4 +55,3 @@ public class HomeworkIryna {
     }
 
 }
->>>>>>> cfb7e163d3c28aa4adea3352da09b2f87c7d97c2

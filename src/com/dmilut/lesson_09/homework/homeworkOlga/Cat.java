@@ -1,32 +1,4 @@
 package com.dmilut.lesson_09.homework.homeworkOlga;
-<<<<<<< HEAD
-
-/* TODO: 8/24/20
-    3.1. Реализовать класс Cat наследованный от Animal
-    3.2. Реализовать метод voice */
-public class Cat extends Mammal {
-
-    /* TODO: 8/24/20
-        5.1. Добавить в класс Cat поля name, age, weight, type
-        5.2. Реализовать геттеры и сеттеры для этих полей */
-
-    public int weight;
-    public String type;
-
-    public Cat(String name, int age, int weight, String type) {
-        this.name = name;
-        this.age = age;
-        this.weight = weight;
-        this.type = type;
-
-    }
-
-    @Override
-    public void voice() {
-        System.out.println("meow");
-    }
-
-=======
                 /* TODO: 8/24/20
                 3.1. Реализовать класс Cat наследованный от Animal
                 3.2. Реализовать метод voice */
@@ -60,7 +32,6 @@ public class Cat extends Animal {
     public void setAge(int age) {
         this.age = age;
     }
->>>>>>> cfb7e163d3c28aa4adea3352da09b2f87c7d97c2
 
     public int getWeight() {
         return weight;
@@ -78,9 +49,6 @@ public class Cat extends Animal {
         this.type = type;
     }
 
-<<<<<<< HEAD
-
-=======
     public Cat(String name, int age, int weight, String type) {
         this.name = name;
         this.age = age;
@@ -88,5 +56,4 @@ public class Cat extends Animal {
         this.type = type;
 
     }
->>>>>>> cfb7e163d3c28aa4adea3352da09b2f87c7d97c2
 }
