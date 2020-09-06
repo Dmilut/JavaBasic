@@ -21,6 +21,12 @@ public class StorageService {
         return contact;
     }
 
+    public Contact getByLastName(String lastName) {
+        Contact contact = Storage.contacts[getContactIndexByLastName(lastName)];
+
+        return contact;
+    }
+
     public void updateContact(Contact contact) {
         int index = getContactIndexByFirstName(contact.getFirstName());
 
@@ -52,6 +58,19 @@ public class StorageService {
 
         for (int i = 0; i < Storage.contacts.length; i++) {
             if (Storage.contacts[i].getFirstName().equals(firstName)) {
+                index = i;
+                break;
+            }
+        }
+
+        return index;
+    }
+
+    private int getContactIndexByLastName(String lastName) {
+        int index = 0;
+
+        for (int i = 0; i < Storage.contacts.length; i++) {
+            if (Storage.contacts[i].getLastName().equals(lastName)) {
                 index = i;
                 break;
             }

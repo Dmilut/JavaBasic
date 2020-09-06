@@ -20,9 +20,24 @@ public class ContactService {
         storageService.saveContact(contact);
     }
 
+    public Contact searchByFirstName(String firstName) throws IOException {
+
+        return getContactByFirstName(firstName);
+    }
+
+    public Contact searchByLastName(String lastName) throws IOException {
+
+        return getContactByLastName(lastName);
+    }
+
     public Contact getContactByFirstName(String firstName) {
 
         return storageService.getByFirstName(firstName);
+    }
+
+    public Contact getContactByLastName(String lastName) {
+
+        return storageService.getByLastName(lastName);
     }
 
     public Contact[] getAllContacts() {

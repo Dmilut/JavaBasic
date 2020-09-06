@@ -50,12 +50,17 @@ public class AddressBook {
                     contactService.printContacts(contactService.getAllContacts());
                 }
                 break;
-                case "search by name": {
+                case "search by first name": {
                     System.out.println("Введите имя");
-                    String name = inputText();
-                    Contact contact = contactService.getContactByFirstName(name);
+                    String firstName = inputText();
 
-                    contactService.printContact(contact);
+                    contactService.printContact(contactService.searchByFirstName(firstName));
+                }
+                case "search by last name": {
+                    System.out.println("Введите фамилию");
+                    String lastName = inputText();
+
+                    contactService.printContact(contactService.getContactByLastName(lastName));
                 }
                 break;
                 default: {
