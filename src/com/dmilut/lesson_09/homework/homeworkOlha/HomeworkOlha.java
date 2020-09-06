@@ -21,9 +21,9 @@ public class HomeworkOlha {
         cat2.setName("TestCatName2");
         cat2.setAge(36);
 
-        Mammal[] mammals = {dog1, dog2, cat1, cat2};
+        //Mammal[] mammals = {dog1, dog2, cat1, cat2};
 
-        animalManager.sortMammal(mammals);
+        //animalManager.sortMammal(mammals);
 
     }
 }

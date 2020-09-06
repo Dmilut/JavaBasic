@@ -14,10 +14,17 @@ public class Dog extends Animal {
         4.1. Добавить в класс Dog поля name, age, weight, type
         4.2. Реализовать геттеры и сеттеры для этих полей */
 
-    String name;
-    int age;
-    int weight;
-    String type;
+    private String name;
+    private int age;
+    private int weight;
+    private String type;
+
+    public Dog(String name, int age, int weight, String type) {
+        this.name = name;
+        this.age = age;
+        this.weight = weight;
+        this.type = type;
+    }
 
     public String getName() {
         return name;
@@ -49,5 +56,15 @@ public class Dog extends Animal {
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    @Override
+    public String toString() {
+        return "Dog{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", weight=" + weight +
+                ", type='" + type + '\'' +
+                '}';
     }
 }
