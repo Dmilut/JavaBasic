@@ -35,7 +35,10 @@ public class AddressBook {
             System.out.println("Подсказка по коммандам ==================================================================");
             System.out.println("enter contact           - ввод нового контакта ==========================================");
             System.out.println("print contacts          - вывод в консоль всех контактов ================================");
-            System.out.println("search by name          - поиск по имени контакта =======================================");
+            System.out.println("search by first name    - поиск по имени контакта =======================================");
+            System.out.println("search by last name     - поиск по фамилии контакта =====================================");
+            System.out.println("search by city          - поиск по городу ===============================================");
+            System.out.println("delete by first name    - удаление контакта =============================================");
             System.out.println("=========================================================================================");
             System.out.println("Введите комманду");
 
@@ -69,12 +72,19 @@ public class AddressBook {
                     contactService.printContact(contactService.getContactByCityName(cityName));
                 }
                 break;
+                case "delete by first name": {
+                    System.out.println("Введите имя");
+                    String firstName = inputText();
+
+                    contactService.deleteContactByFirstName(firstName);
+                }
+                break;
                 default: {
                     System.out.println("Вы ошиблись!!!");
                 }
             }
 
-            System.out.println('\n' + "Для продолжения введите continue");
+            System.out.println('\n' + "Для продолжения введите continue или что-нибудь другое если хотите выйти");
             command = inputText();
         }
     }

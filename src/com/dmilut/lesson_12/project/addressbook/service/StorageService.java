@@ -40,8 +40,8 @@ public class StorageService {
     }
 
 
-    public void deleteContact(Contact contact) {
-        int index = getContactIndexByFirstName(contact.getFirstName());
+    public void deleteByFirstName(String firstName) {
+        int index = getContactIndexByFirstName(firstName);
 
         Storage.contacts[index] = null;
     }
@@ -63,7 +63,7 @@ public class StorageService {
         int index = 0;
 
         for (int i = 0; i < Storage.contacts.length; i++) {
-            if (Storage.contacts[i].getFirstName().equals(firstName)) {
+            if (Storage.contacts[i] != null && Storage.contacts[i].getFirstName().equals(firstName)) {
                 index = i;
                 break;
             }
@@ -76,7 +76,7 @@ public class StorageService {
         int index = 0;
 
         for (int i = 0; i < Storage.contacts.length; i++) {
-            if (Storage.contacts[i].getLastName().equals(lastName)) {
+            if (Storage.contacts[i] != null && Storage.contacts[i].getLastName().equals(lastName)) {
                 index = i;
                 break;
             }
@@ -89,7 +89,7 @@ public class StorageService {
         int index = 0;
 
         for (int i = 0; i < Storage.contacts.length; i++) {
-            if (Storage.contacts[i].getAddress().getCityName().equals(cityName)) {
+            if (Storage.contacts[i] != null && Storage.contacts[i].getAddress().getCityName().equals(cityName)) {
                 index = i;
                 break;
             }

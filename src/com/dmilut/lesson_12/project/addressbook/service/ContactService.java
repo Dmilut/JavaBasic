@@ -54,9 +54,9 @@ public class ContactService {
         storageService.updateContact(contact);
     }
 
-    public void deleteContact(Contact contact) {
+    public void deleteContactByFirstName(String firstName) {
 
-        storageService.deleteContact(contact);
+        storageService.deleteByFirstName(firstName);
     }
 
     public void inputContact() throws IOException {
