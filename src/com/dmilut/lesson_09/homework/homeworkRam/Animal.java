@@ -1,7 +1,11 @@
 package com.dmilut.lesson_09.homework.homeworkRam;
 
-public class Animal {
+public abstract class Animal {
 
-    public void voice() {
-    }
+//    Task 1
+
+    public abstract void voice();
 }
+
+
+
