@@ -40,6 +40,11 @@ public class ContactService {
         return storageService.getByLastName(lastName);
     }
 
+    public Contact getContactByCityName(String cityName) {
+
+        return storageService.getByCityName(cityName);
+    }
+
     public Contact[] getAllContacts() {
         return storageService.getAllContact();
     }
@@ -107,4 +112,6 @@ public class ContactService {
             }
         }
     }
+
+
 }

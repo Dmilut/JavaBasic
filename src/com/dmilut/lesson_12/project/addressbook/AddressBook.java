@@ -62,6 +62,12 @@ public class AddressBook {
 
                     contactService.printContact(contactService.getContactByLastName(lastName));
                 }
+                case "search by city": {
+                    System.out.println("Введите город");
+                    String cityName = inputText();
+
+                    contactService.printContact(contactService.getContactByCityName(cityName));
+                }
                 break;
                 default: {
                     System.out.println("Вы ошиблись!!!");

@@ -27,6 +27,12 @@ public class StorageService {
         return contact;
     }
 
+    public Contact getByCityName(String cityName) {
+        Contact contact = Storage.contacts[getContactIndexByCityName(cityName)];
+
+        return contact;
+    }
+
     public void updateContact(Contact contact) {
         int index = getContactIndexByFirstName(contact.getFirstName());
 
@@ -78,5 +84,20 @@ public class StorageService {
 
         return index;
     }
+
+    private int getContactIndexByCityName(String cityName) {
+        int index = 0;
+
+        for (int i = 0; i < Storage.contacts.length; i++) {
+            if (Storage.contacts[i].getAddress().getCityName().equals(cityName)) {
+                index = i;
+                break;
+            }
+        }
+
+        return index;
+    }
+
+
 
 }
