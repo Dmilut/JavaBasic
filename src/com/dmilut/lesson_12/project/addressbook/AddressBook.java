@@ -1,6 +1,5 @@
 package com.dmilut.lesson_12.project.addressbook;
 
-import com.dmilut.lesson_12.project.addressbook.entity.Contact;
 import com.dmilut.lesson_12.project.addressbook.service.ContactService;
 import com.dmilut.lesson_12.project.addressbook.util.Util;
 
