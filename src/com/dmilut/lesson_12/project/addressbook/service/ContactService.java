@@ -40,6 +40,11 @@ public class ContactService {
         return storageService.getByLastName(lastName);
     }
 
+    public Contact getContactByCityName(String cityName) {
+
+        return storageService.getByCityName(cityName);
+    }
+
     public Contact[] getAllContacts() {
         return storageService.getAllContact();
     }
@@ -49,9 +54,9 @@ public class ContactService {
         storageService.updateContact(contact);
     }
 
-    public void deleteContact(Contact contact) {
+    public void deleteContactByFirstName(String firstName) {
 
-        storageService.deleteContact(contact);
+        storageService.deleteByFirstName(firstName);
     }
 
     public void inputContact() throws IOException {
@@ -107,4 +112,6 @@ public class ContactService {
             }
         }
     }
+
+
 }
