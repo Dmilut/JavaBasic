@@ -24,7 +24,7 @@ public class Lesson {
 
     }
 
-    // Iterative linear search
+    // Iterative linear search - сложность O(n)
     public static int linearSearch(int[] array, int elementToSearch) {
 
         for (int index = 0; index < array.length; index++) {
@@ -35,7 +35,7 @@ public class Lesson {
     }
 
 
-    // Iterative binary search
+    // Iterative binary search - сложность O(lg(n))
     public static int binarySearch(int[] array, int elementToSearch) {
 
         int firstIndex = 0;
