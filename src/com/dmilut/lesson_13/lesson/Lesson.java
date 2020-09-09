@@ -24,18 +24,21 @@ public class Lesson {
 
     }
 
-    // Iterative linear search - сложность O(n)
+    // Iterative linear search, O(n)
     public static int linearSearch(int[] array, int elementToSearch) {
 
+        // В цикле обходим все элементы массива и сравниваем с искомым
         for (int index = 0; index < array.length; index++) {
             if (array[index] == elementToSearch)
+                // Возвращаем индекс найденного элемента
                 return index;
         }
+        // Если во время проверки ничего не нашли, то возвращаем -1
         return -1;
     }
 
 
-    // Iterative binary search - сложность O(lg(n))
+    // Iterative binary search, O(lg(n))
     public static int binarySearch(int[] array, int elementToSearch) {
 
         int firstIndex = 0;
@@ -65,6 +68,7 @@ public class Lesson {
         return -1;
     }
 
+    // Вспомогательный метод для генерации упорядоченного по возрастанию массива
     private static int[] longArrayBuilder(int arraySize) {
         int[] array = new int[arraySize];
         int value = 0;
