@@ -1,6 +1,6 @@
 package com.dmilut.lesson_13.homework.reference;
 
-public class HomeworkRefernce {
+public class HomeworkReference {
 
 
     public static void main(String[] args) {
