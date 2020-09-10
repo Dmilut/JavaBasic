@@ -4,7 +4,7 @@ public class HomeworkYulia {
 
     public static void main(String[] args) {
 
-        int arr[] = {11, 12, 15, 16, 20, 43, 58, 75, 95};
+        int[] arr = {11, 12, 15, 16, 20, 43, 58, 75, 95};
 
         int searchValue = 75;
 
@@ -30,7 +30,7 @@ public class HomeworkYulia {
     }
 
     //Linear search with recursion
-    static int recSearch(int arr[], int left, int right, int searchValue) {
+    static int recSearch(int[] arr, int left, int right, int searchValue) {
         if (right < 1)
             return -1;
         if (arr[left] == searchValue)
@@ -41,7 +41,7 @@ public class HomeworkYulia {
     }
 
     //Binary search with recursion
-    int recursionBinary(int arr[], int left, int right, int searchValue) {
+    int recursionBinary(int[] arr, int left, int right, int searchValue) {
         if (right >= left) {
             int mid = left + (right - left) / 2;
             if (arr[mid] == searchValue)
