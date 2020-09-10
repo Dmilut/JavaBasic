@@ -7,6 +7,8 @@ public class HomeworkYulia {
         int arr[] = {11, 12, 15, 16, 20, 43, 58, 75, 95};
 
         int searchValue = 75;
+
+        //Linear recursion
         int index = recSearch(arr, 0, arr.length - 1, searchValue);
         if (index != -1) {
             System.out.println("Element " + searchValue + " was found in index " + index);
@@ -14,6 +16,8 @@ public class HomeworkYulia {
             System.out.println("Sorry, element " + searchValue + " wasn't found");
         }
 
+
+        //Binary recursion
         HomeworkYulia binaryRecursion = new HomeworkYulia();
         int length = arr.length;
         int result = binaryRecursion.recursionBinary(arr, 0, length - 1, searchValue);
