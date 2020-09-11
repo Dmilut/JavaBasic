@@ -1,13 +1,14 @@
-package com.dmilut.lesson_13.homework.homeworkIryna;
+package com.dmilut.lesson_13.homework.reference;
 
-public class HomeworkIryna {
+public class HomeworkReference {
 
 
     public static void main(String[] args) {
-        int[] testArray = {13,46,98,56,98,68,23,74,59,10};
 
-        System.out.println(linearSearch(testArray, 0, 23));
-        System.out.println(binarySearch(testArray, 0, testArray.length - 1, 46));
+        int[] testArray = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+
+        System.out.println(linearSearch(testArray, 0, 6));
+        System.out.println(binarySearch(testArray, 0, testArray.length - 1, 11));
 
     }
 
@@ -42,14 +43,14 @@ public class HomeworkIryna {
         2.2. Продемонстрировать работу метода
      */
     // Recursive binary search without cycles, O(log(n))
-    public static int binarySearch(int[] array, int firstIndex, int lastIndex, int elementToSearch) {
+    public static int binarySearch(int[] array, int startIndex, int finishIndex, int elementToSearch) {
 
         // Вычисляем индекс среднего элемента
-        int midIndex = firstIndex + (lastIndex - firstIndex) / 2;
+        int midIndex = startIndex + (finishIndex - startIndex) / 2;
 
         // Вывод отладочной информации
-        System.out.println("firstIndex=\t\t" + firstIndex);
-        System.out.println("lastIndex=\t" + lastIndex);
+        System.out.println("startIndex=\t\t" + startIndex);
+        System.out.println("finishIndex=\t" + finishIndex);
         System.out.println("midIndex=\t\t" + midIndex);
         System.out.println("============================");
 
@@ -59,23 +60,22 @@ public class HomeworkIryna {
         }
 
         // Проверяем, что последний элемент из проверяемых не == искомому
-        if (firstIndex == lastIndex) {
+        if (startIndex == finishIndex) {
             return -1;
         }
 
         // В случае, если искомый элемент в левой половине, делаем активным левый массив
         if (elementToSearch < array[midIndex]) {
-            lastIndex = midIndex - 1;
+            finishIndex = midIndex - 1;
         }
 
         // В случае, если искомый элемент в правой половине, делаем активным правый массив
         if (elementToSearch > array[midIndex]) {
-            firstIndex = midIndex + 1;
+            startIndex = midIndex + 1;
         }
 
         // Рекурсивно вызываем этот же метод с новыми значениями аргументов
-        return binarySearch(array, firstIndex, lastIndex, elementToSearch);
+        return binarySearch(array, startIndex, finishIndex, elementToSearch);
     }
 
-    }
-
+}
