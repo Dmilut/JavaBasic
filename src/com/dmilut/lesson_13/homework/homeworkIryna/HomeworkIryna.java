@@ -1,69 +1,81 @@
 package com.dmilut.lesson_13.homework.homeworkIryna;
 
 public class HomeworkIryna {
-    // Easy level
-    /* TODO: 9/7/20
-        1.1. Написать метод реализующий алгоритм линейного поиска без использования циклов*/
-    public static int linearSearch(int[] ints, int elementToSearch) {
-        return elementToSearch;
-    }
-    public static void print (int elementToSearch, int index){
 
-    }
-
-    public static void print1 (int elementToSearch1, int index1){
-
-    }
-    public int recursionFucn(int[] ints1, int elementToSearch1) {
-        int firstIndex = 0;
-        int lastIndex = ints1.length - 1;
-        System.out.println("Binary Search");
-        recursionFucn(ints1, elementToSearch1);
-        while(firstIndex <= lastIndex) {
-            int middleIndex = (firstIndex + lastIndex) / 4;
-
-            if (ints1[middleIndex] == elementToSearch1) {
-                return middleIndex;
-            }
-
-            else if (ints1[middleIndex] < elementToSearch1)
-                firstIndex = middleIndex + 1;
-
-
-            else if (ints1[middleIndex] > elementToSearch1)
-                lastIndex = middleIndex - 1;
-
-        }
-        return -1;
-    }
 
     public static void main(String[] args) {
-        /*1.2. Продемонстрировать работу метода*/
+        int[] testArray = {13,46,98,56,98,68,23,74,59,10};
 
-        System.out.println("Linear search");
-        int elementToSearch = 33;
-        int index= linearSearch(new int[]{11,22,33,44,55,66,77,88,99}, elementToSearch);
+        System.out.println(linearSearch(testArray, 0, 23));
+        System.out.println(binarySearch(testArray, 0, testArray.length - 1, 46));
 
-        print(elementToSearch, index);
-        System.out.println(elementToSearch);
+    }
+
+    // Easy level
+    /* TODO: 9/7/20
+        1.1. Написать метод реализующий алгоритм линейного поиска без использования циклов
+        1.2. Продемонстрировать работу метода
+     */
+    // Recursive linear search without cycles, O(n)
+    public static int linearSearch(int[] array, int index, int elementToSearch) {
+
+        // Вывод отладочной информации
+        System.out.println("index=\t" + index);
+
+        // Проверяем, что проверяемый элемент соответствует искомому
+        if (array[index] == elementToSearch) {
+            return index;
+        }
+
+        // Проверяем, что проверили все элементы
+        if (index == array.length - 1)
+            return -1;
+
+        // Рекурсивно вызываем этот же метод с новыми значениями аргументов
+        return linearSearch(array, index + 1, elementToSearch);
+    }
 
 
-
-        // Middle level
+    // Middle level
     /* TODO: 9/7/20
         2.1. Написать метод реализующий алгоритм бинарного поиска с использованием рекурсии
         2.2. Продемонстрировать работу метода
      */
-        System.out.println("Binary search");
-        int elementToSearch1 = 88;
-        int index1= linearSearch(new int[]{00,11,22,33,44,55,66,77,88,99}, elementToSearch);
+    // Recursive binary search without cycles, O(log(n))
+    public static int binarySearch(int[] array, int firstIndex, int lastIndex, int elementToSearch) {
 
-        print1(elementToSearch1, index1);
-        System.out.println(elementToSearch1);
+        // Вычисляем индекс среднего элемента
+        int midIndex = firstIndex + (lastIndex - firstIndex) / 2;
 
+        // Вывод отладочной информации
+        System.out.println("firstIndex=\t\t" + firstIndex);
+        System.out.println("lastIndex=\t" + lastIndex);
+        System.out.println("midIndex=\t\t" + midIndex);
+        System.out.println("============================");
+
+        // Проверяем средний элемент на соответствие искомому
+        if (array[midIndex] == elementToSearch) {
+            return midIndex;
+        }
+
+        // Проверяем, что последний элемент из проверяемых не == искомому
+        if (firstIndex == lastIndex) {
+            return -1;
+        }
+
+        // В случае, если искомый элемент в левой половине, делаем активным левый массив
+        if (elementToSearch < array[midIndex]) {
+            lastIndex = midIndex - 1;
+        }
+
+        // В случае, если искомый элемент в правой половине, делаем активным правый массив
+        if (elementToSearch > array[midIndex]) {
+            firstIndex = midIndex + 1;
+        }
+
+        // Рекурсивно вызываем этот же метод с новыми значениями аргументов
+        return binarySearch(array, firstIndex, lastIndex, elementToSearch);
+    }
 
     }
 
-
-
-}
