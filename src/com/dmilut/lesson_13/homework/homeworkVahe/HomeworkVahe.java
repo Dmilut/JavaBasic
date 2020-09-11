@@ -12,7 +12,7 @@ public class HomeworkVahe {
         print(elementToSearch, index);
         System.out.println();
 
-    // 2.2. Продемонстрировать работу метода бинарного поиска
+        // 2.2. Продемонстрировать работу метода бинарного поиска
 
         System.out.println("This is for binary method:");
 

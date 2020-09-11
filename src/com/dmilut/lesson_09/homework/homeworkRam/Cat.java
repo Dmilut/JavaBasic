@@ -6,10 +6,10 @@ public class Cat extends Animal {
     public void voice() {
     }
 
-    String name;
-    int age;
-    int weight;
-    String type;
+    private String name;
+    private int age;
+    private int weight;
+    private String type;
 
     public String getName(){
         return name;
@@ -18,6 +18,7 @@ public class Cat extends Animal {
     public void setName(String name) {
         this.name = name;
     }
+
 
     public int getAge(){
         return age;
