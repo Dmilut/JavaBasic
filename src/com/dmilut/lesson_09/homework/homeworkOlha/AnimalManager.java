@@ -9,14 +9,5 @@ public class AnimalManager {
         6.3. Реализовать методы в котором кошки и собаки будут складываться в массивы puppies, kittens, dogs, cats
         в зависимости от результата работы методов из п. 6.2. */
 
-   public void sortCat(Cat cat) {
-     int middleAge = 1;
-     if (cat.getAge () <= middleAge) {
-         System.out.println(cat.getName() + "is kitty");
-     } else {
-         System.out.println(cat.getName() + "is adult");
-     }
-
-   }
 
 }

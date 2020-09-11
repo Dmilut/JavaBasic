@@ -35,6 +35,21 @@ public class HomeworkYulia {
         dog.move();
         dog.bark();
 
+        // AnimalManager Work:
+
+        AnimalManager manager = new AnimalManager();
+        manager.addAnimal(new Dog("Gray", 15, "labrador", "beige"));
+        manager.addAnimal(new Dog("Pink", 7, "york", "white"));
+        manager.addAnimal(new Dog("Sharik", 9, "labrador", "beige"));
+        manager.addAnimal(new Dog("White", 0, "labrador", "beige"));
+        manager.addAnimal(new Monkey("Bet", 34, "gorila", "dark"));
+        manager.printAnimals();
+
+        manager.updateAnimal(new Dog("Gray", 111, "small", "brown"));
+        manager.printAnimals();
+
+        manager.deleteAnimal("Bet");
+        manager.printAnimals();
 
     }
 }

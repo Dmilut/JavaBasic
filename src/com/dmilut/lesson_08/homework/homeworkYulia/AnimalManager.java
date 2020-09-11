@@ -13,6 +13,17 @@ public class AnimalManager {
 
     private Animal[] animals = new Animal[100];
 
+    public void printAnimals() {
+        for (Animal animal : animals) {
+            if (animal != null) {
+
+                System.out.println(animal);
+            }
+        }
+        System.out.println("*******************");
+    }
+
+
     public boolean addAnimal(Animal animal) {
         for (int i = 0; i < animals.length; i++) {
             if (animals[i] == null) {
@@ -34,13 +45,14 @@ public class AnimalManager {
         return false;
     }
 
-    public boolean deleteAnimal(Animal animal) {
+    public boolean deleteAnimal(String animalName) {
         for (int i = 0; i < animals.length; i++) {
-            if (animals[i].name.equals(animal.name)) {
-                animals[i].name = null;
+            if (animals[i] != null && animals[i].name.equals(animalName)) {
+                animals[i] = null;
+                break;
             }
         }
         return false;
-    }
 
+    }
 }
