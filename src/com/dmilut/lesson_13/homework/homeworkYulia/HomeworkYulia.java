@@ -31,7 +31,7 @@ public class HomeworkYulia {
 
     //Linear search with recursion
     static int recSearch(int[] arr, int left, int right, int searchValue) {
-        if (right < 1)
+        if (right < left)
             return -1;
         if (arr[left] == searchValue)
             return left;
