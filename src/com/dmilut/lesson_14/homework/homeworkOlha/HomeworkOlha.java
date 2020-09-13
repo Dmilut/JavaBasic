@@ -1,7 +1,10 @@
 package com.dmilut.lesson_14.homework.homeworkOlha;
 
+import static java.util.Arrays.sort;
 import java.util.ArrayList;
 import java.util.LinkedList;
+
+
 
 public class HomeworkOlha {
 
@@ -13,6 +16,18 @@ public class HomeworkOlha {
 
         System.out.println("Task 1.1");
 
+        //creating array to sort
+        int[] array = {20, 34, 4, 50, 6, 98, 11, 28, 15, 35};
+
+        sort(array);
+
+        System.out.println("Array is sorted: ");
+
+        for (int i = 0; i < array.length; i++) {
+
+            System.out.print(array[i] + " ");
+        }
+
 
 
 
@@ -23,23 +38,34 @@ public class HomeworkOlha {
 
         System.out.println("\n Task 2.1");
 
+
         ArrayList<String> aList = new ArrayList<String>();
+
         aList.add("Steve");
+
         aList.add("Lucy");
+
         aList.add("Pat");
+
         aList.add("Angela");
+
+
         //displaying elements
         System.out.println(aList);
+
+
 
         //.get
         //Getting the object list which is present at the specified index
         Object firstvar = aList.get(0);
+
         System.out.println("First element: " + firstvar);
 
 
         //.add
         // Adding "Fabian" at the second position
         aList.add(1, "Fabian");
+
         //displaying elements
         System.out.println(aList);
 
@@ -66,7 +92,7 @@ public class HomeworkOlha {
     /* TODO: 9/10/20
         3.1. Реализовать custom Linked List (сделать свою реализацию) с методами add, remove, get, set */
 
-        System.out.println("\n Task 2.1");
+        System.out.println("\n Task 3.1");
 
         LinkedList<String> list = new LinkedList<String>();
 
