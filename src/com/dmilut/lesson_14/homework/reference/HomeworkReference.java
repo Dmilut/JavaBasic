@@ -39,7 +39,6 @@ public class HomeworkReference {
     /* TODO: 9/10/20
         1.1. Реализовать сортировку выбором с помощью рекурсии */
 
-
     // Recursive Selection Sort
     public static void selectionSort(int[] array, int startIndex) {
 
@@ -67,6 +66,7 @@ public class HomeworkReference {
         selectionSort(array, startIndex + 1);
     }
 
+    // Вспомогательный метод для вывода содержимого CustomArrayList в консоль
     private static void printCustomArrayList(CustomArrayList arrayList) {
         System.out.println("=================================");
         for (int i = 0; i < arrayList.length(); i++) {
@@ -75,6 +75,7 @@ public class HomeworkReference {
 
     }
 
+    // Вспомогательный метод для вывода содержимого массива в консоль
     private static void printArray(int[] array) {
         for (int element : array) {
             System.out.print(element + " ");

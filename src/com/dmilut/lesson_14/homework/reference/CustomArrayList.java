@@ -7,14 +7,17 @@ public class CustomArrayList {
     private Object[] objects;
     private final int DEFAULT_ARRAY_LENGTH = 5;
 
+    // Инициализация внутреннего массива через конструктор с размером по умолчанию
     public CustomArrayList() {
         objects = new Object[DEFAULT_ARRAY_LENGTH];
     }
 
+    // Инициализация внутреннего массива через конструктор с заданным размером
     public CustomArrayList(int length) {
         objects = new Object[length];
     }
 
+    // Реализация метода add
     public void add(Object element) {
         int index = getFirstEmptySlotIndex();
 
@@ -25,12 +28,13 @@ public class CustomArrayList {
         objects[index] = element;
     }
 
-
+    // Реализация метода remove - удаление элемента по известному индексу
     public void removeByIndex(int index) {
 
         objects[index] = null;
     }
 
+    // Реализация метода remove - удаление элемента по объекту
     public void removeByElement(Object element) {
         int index = 0;
         for (int i = 0; i < objects.length; i++) {
@@ -43,21 +47,24 @@ public class CustomArrayList {
         objects[index] = null;
     }
 
+    // Реализация метода get
     public Object get(int index) {
 
         return objects[index];
     }
 
+    // Реализация метода set
     public void set(int index, Object element) {
 
         objects[index] = element;
     }
 
+    // Реализация метода length
     public int length() {
         return objects.length;
     }
 
-
+    // Вспомогательный метод, возвращает первый пустой слот
     private int getFirstEmptySlotIndex() {
         int index = 0;
 
@@ -70,6 +77,7 @@ public class CustomArrayList {
         return index;
     }
 
+    // Вспомогательный метод, увеличивает размер внутреннего массива
     private void expandArray() {
         Object[] tempArray = new Object[this.objects.length + DEFAULT_ARRAY_LENGTH];
 
