@@ -10,7 +10,6 @@ public class HomeworkReference {
         selectionSort(testArray, 0);
         printArray(testArray);
 
-
         // Custom Array list test
         CustomArrayList testArrayList1 = new CustomArrayList();
         String testElement1 = "testElement1";
@@ -34,7 +33,26 @@ public class HomeworkReference {
         testArrayList1.add(testElement5);
         testArrayList1.add(testElement1);
         printCustomArrayList(testArrayList1);
+
+
+        // Custom Linked list test
+        CustomLinkedList testLinkedList = new CustomLinkedList();
+
+        testLinkedList.add("1");
+        testLinkedList.add("2");
+        testLinkedList.add("3");
+        testLinkedList.add("4");
+        testLinkedList.add("5");
+
+        System.out.println("=================================================");
+        System.out.println("LinkedList size\t\t\t\t" + testLinkedList.size());
+        System.out.println("Третий элемент\t\t\t\t" + testLinkedList.get(3));
+        testLinkedList.remove(3);
+        System.out.println("Третий элемент\t\t\t\t" + testLinkedList.get(3));
+        System.out.println("LinkedList size\t\t\t\t" + testLinkedList.size());
+
     }
+
 
     /* TODO: 9/10/20
         1.1. Реализовать сортировку выбором с помощью рекурсии */
@@ -68,7 +86,7 @@ public class HomeworkReference {
 
     // Вспомогательный метод для вывода содержимого CustomArrayList в консоль
     private static void printCustomArrayList(CustomArrayList arrayList) {
-        System.out.println("=================================");
+        System.out.println("=================================================");
         for (int i = 0; i < arrayList.length(); i++) {
             System.out.println("index= " + i + " ; element= " + arrayList.get(i));
         }
