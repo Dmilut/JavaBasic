@@ -4,14 +4,14 @@ public class HomeworkOlga {
 
     public static void main(String[] args) throws MyException  {
 
+
+                /* TODO: 8/31/20
+                1.1. Реализовать метод c блоком try-catch-finally обрабатывающий деление числа на 0
+                */
+
         String[] animals = {"dog", "cat", "bunny", "tortoise"};
         int animalNum = 1;
         int zero = 0;
-
-        /* TODO: 8/31/20
-        1.1. Реализовать метод c блоком try-catch-finally обрабатывающий деление числа на 0
-     */
-
         try {
             int divide = animalNum / zero;
         } catch (ArithmeticException e) {
@@ -22,9 +22,10 @@ public class HomeworkOlga {
 
 
 
-    /* TODO: 8/31/20
-        2.1. Реализовать метод c блоком try-catch-finally обрабатывающий выход за границы массива в цикле
-     */
+                /* TODO: 8/31/20
+                2.1. Реализовать метод c блоком try-catch-finally обрабатывающий выход за границы массива в цикле
+                */
+
         try {
             animals[4] = "hamster";
         } catch (ArrayIndexOutOfBoundsException e) {
@@ -36,9 +37,9 @@ public class HomeworkOlga {
     }
 
 
- /* TODO: 8/31/20
-        3.1. Реализовать метод c генерацией собственного исключения
-     */
+                /* TODO: 8/31/20
+                    3.1. Реализовать метод c генерацией собственного исключения
+                 */
 
     static void printString(String a) throws MyException{
         if (a == null) {
