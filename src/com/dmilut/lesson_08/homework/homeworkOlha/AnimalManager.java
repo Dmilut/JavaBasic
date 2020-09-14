@@ -1,6 +1,6 @@
 package com.dmilut.lesson_08.homework.homeworkOlha;
 
-// Hard level
+    // Hard level
     /* TODO: 8/20/20
         7.1. Реализовать класс AnimalManager
         7.2. В созданном классе реализовать поле - массив размерностью 100 в который можно помещать ссылки на объекты
@@ -22,7 +22,7 @@ public class AnimalManager {
     protected static Animal[] animals;
 
     static {
-        animals = new Animal;
+        animals = new Animal[ANIMALMANAGER_SIZE];
     }
 
     public void addAnimal(Animal animal) {
