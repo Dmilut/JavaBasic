@@ -49,6 +49,7 @@ public class HomeworkVahe {
         if (low < high){
             int indexOfMin = low;
             int min = array[low];
+
             for (int i = low + 1; i <= high; i++){
                 if (array[i] < min) {
                     min = array[i];
