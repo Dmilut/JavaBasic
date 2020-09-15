@@ -12,11 +12,10 @@ public class AddressBook {
     private static ContactService contactService = new ContactService();
     private static Util util = new Util();
 
-    /* TODO: 9/2/20
-        Добавить в проект метод delete contact
-        Добавить в проект метод search by last name
-        Добавить в проект метод search by city name
-        Добавить в проект метод print all contacts names, который выводит в консоль только имена и фамилии всех контактов
+    /* TODO: 9/9/20
+        1. Заменить реализацию Storage с массива на ArrayList
+        2. Рефакторинг
+        3. Добавить комментарии
      */
 
     public static void main(String[] args) throws IOException {
