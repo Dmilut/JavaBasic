@@ -9,11 +9,13 @@ public class CustomArrayList {
 
     // Инициализация внутреннего массива через конструктор с размером по умолчанию
     public CustomArrayList() {
+
         objects = new Object[DEFAULT_ARRAY_LENGTH];
     }
 
     // Инициализация внутреннего массива через конструктор с заданным размером
     public CustomArrayList(int length) {
+
         objects = new Object[length];
     }
 

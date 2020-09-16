@@ -31,12 +31,20 @@ public class Homework {
 
         CustomArrayList testArrayList1 = new CustomArrayList();
 
-        testArrayList1.add(1,arrayTest1);
+
+
+        testArrayList1.add(0,arrayTest1);
+        testArrayList1.add(1,arrayTest2);
+        testArrayList1.add(2,arrayTest3);
         System.out.println(testArrayList1.get(1));
 
         testArrayList1.set(2,arrayTest2);
         testArrayList1.removeByIndex(5);
         System.out.println(testArrayList1.toString());
+
+
+
+
 
 
 

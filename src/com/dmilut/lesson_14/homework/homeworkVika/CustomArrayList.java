@@ -2,7 +2,7 @@ package com.dmilut.lesson_14.homework.homeworkVika;
 
 public class CustomArrayList {
 
-    private int SIZE = 100;
+    private int SIZE = 10;
     private Object[] array;
 
     public CustomArrayList () {
