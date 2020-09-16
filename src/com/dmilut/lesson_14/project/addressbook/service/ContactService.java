@@ -4,10 +4,12 @@ import com.dmilut.lesson_14.project.addressbook.entity.Address;
 import com.dmilut.lesson_14.project.addressbook.entity.Contact;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 import static com.dmilut.lesson_08.project.addressbook.util.Util.inputText;
 
 public class ContactService {
+
     private StorageService storageService = new StorageService();
 
     public void createContact(String firstName, String lastName, long phoneNumber, Address address) {
@@ -18,16 +20,6 @@ public class ContactService {
 
     public void saveContact(Contact contact) {
         storageService.saveContact(contact);
-    }
-
-    public Contact searchByFirstName(String firstName) throws IOException {
-
-        return getContactByFirstName(firstName);
-    }
-
-    public Contact searchByLastName(String lastName) throws IOException {
-
-        return getContactByLastName(lastName);
     }
 
     public Contact getContactByFirstName(String firstName) {
@@ -45,18 +37,13 @@ public class ContactService {
         return storageService.getByCityName(cityName);
     }
 
-    public Contact[] getAllContacts() {
+    public ArrayList<Contact> getAllContacts() {
         return storageService.getAllContact();
-    }
-
-    public void updateContact(Contact contact) {
-
-        storageService.updateContact(contact);
     }
 
     public void deleteContactByFirstName(String firstName) {
 
-        storageService.deleteByFirstName(firstName);
+        storageService.removeContact(getContactByFirstName(firstName));
     }
 
     public void inputContact() throws IOException {
@@ -105,13 +92,11 @@ public class ContactService {
         System.out.println("=========================================================================================");
     }
 
-    public void printContacts(Contact[] contacts) {
+    public void printContacts(ArrayList<Contact> contacts) {
+
         for (Contact contact : contacts) {
-            if (contact != null) {
-                printContact(contact);
-            }
+            printContact(contact);
         }
     }
-
 
 }

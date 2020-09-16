@@ -3,100 +3,53 @@ package com.dmilut.lesson_14.project.addressbook.service;
 import com.dmilut.lesson_14.project.addressbook.entity.Contact;
 import com.dmilut.lesson_14.project.addressbook.util.Storage;
 
+import java.util.ArrayList;
+
 public class StorageService {
 
     public void saveContact(Contact contact) {
-        int emptySlotIndex = getFirstEmptySlotIndex();
-
-        Storage.contacts[emptySlotIndex] = contact;
+        Storage.getContacts().add(contact);
     }
 
-    public Contact[] getAllContact() {
-        return Storage.contacts;
+    public ArrayList<Contact> getAllContact() {
+        return Storage.getContacts();
     }
 
     public Contact getByFirstName(String firstName) {
-        Contact contact = Storage.contacts[getContactIndexByFirstName(firstName)];
+        for (Contact contact : Storage.getContacts()) {
 
-        return contact;
+            if (contact.getFirstName().equals(firstName)) {
+                return contact;
+            }
+        }
+
+        return null;
     }
 
     public Contact getByLastName(String lastName) {
-        Contact contact = Storage.contacts[getContactIndexByLastName(lastName)];
+        for (Contact contact : Storage.getContacts()) {
 
-        return contact;
+            if (contact.getLastName().equals(lastName)) {
+                return contact;
+            }
+        }
+
+        return null;
     }
 
     public Contact getByCityName(String cityName) {
-        Contact contact = Storage.contacts[getContactIndexByCityName(cityName)];
+        for (Contact contact : Storage.getContacts()) {
 
-        return contact;
-    }
-
-    public void updateContact(Contact contact) {
-        int index = getContactIndexByFirstName(contact.getFirstName());
-
-        Storage.contacts[index] = contact;
-    }
-
-
-    public void deleteByFirstName(String firstName) {
-        int index = getContactIndexByFirstName(firstName);
-
-        Storage.contacts[index] = null;
-    }
-
-    private int getFirstEmptySlotIndex() {
-        int index = 0;
-
-        for (int i = 0; i < Storage.contacts.length; i++) {
-            if (Storage.contacts[i] == null) {
-                index = i;
-                break;
+            if (contact.getAddress().getCityName().equals(cityName)) {
+                return contact;
             }
         }
 
-        return index;
+        return null;
     }
 
-    private int getContactIndexByFirstName(String firstName) {
-        int index = 0;
-
-        for (int i = 0; i < Storage.contacts.length; i++) {
-            if (Storage.contacts[i] != null && Storage.contacts[i].getFirstName().equals(firstName)) {
-                index = i;
-                break;
-            }
-        }
-
-        return index;
+    public void removeContact(Contact contact) {
+        Storage.getContacts().remove(contact);
     }
-
-    private int getContactIndexByLastName(String lastName) {
-        int index = 0;
-
-        for (int i = 0; i < Storage.contacts.length; i++) {
-            if (Storage.contacts[i] != null && Storage.contacts[i].getLastName().equals(lastName)) {
-                index = i;
-                break;
-            }
-        }
-
-        return index;
-    }
-
-    private int getContactIndexByCityName(String cityName) {
-        int index = 0;
-
-        for (int i = 0; i < Storage.contacts.length; i++) {
-            if (Storage.contacts[i] != null && Storage.contacts[i].getAddress().getCityName().equals(cityName)) {
-                index = i;
-                break;
-            }
-        }
-
-        return index;
-    }
-
 
 }

@@ -1,11 +1,14 @@
 package com.dmilut.lesson_14.project.addressbook.util;
 
+import java.util.ArrayList;
 import com.dmilut.lesson_14.project.addressbook.entity.Contact;
 
 public class Storage {
 
-    public static final int STORAGE_SIZE = 100;
+    private static final ArrayList<Contact> contacts = new ArrayList<>();
 
-    public static Contact[] contacts = new Contact[STORAGE_SIZE];
+    public static ArrayList<Contact> getContacts() {
+        return contacts;
+    }
 
 }
