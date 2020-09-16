@@ -11,6 +11,7 @@ public class Util {
 
     private ContactService contactService = new ContactService();
 
+    // Добавляем несколько тестовых контактов
     public void initApp() {
 
         Address testAddress1 = new Address("TestHouseNumber1", "TestStreet1", "TestCity1", "TestState1", 11111);
@@ -22,6 +23,7 @@ public class Util {
         contactService.createContact("TestName3", "TestLastName3", 3456789012L, testAddress3);
     }
 
+    // Ввод данных через консоль
     public static String inputText() throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 

@@ -97,8 +97,6 @@ public class AddressBook {
                 }
             }
 
-            //System.out.println('\n' + "Для продолжения введите continue или что-нибудь другое если хотите выйти");
-
         }
     }
 }
