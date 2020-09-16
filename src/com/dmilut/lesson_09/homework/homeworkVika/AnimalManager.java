@@ -1,13 +1,13 @@
-package com.dmilut.lesson_09.homework.homeworkOlha;
+package com.dmilut.lesson_09.homework.homeworkVika;
 
-public class AnimalManager {
-    // Medium level
-    /* TODO: 8/24/20
+/* TODO: 8/24/20
         6.1. Реализовать класс AnimalManager
         6.2. Реализовать методы в котором кошки и собаки будут сортироваться в зависимости от возраста на 2 категории:
          щенки (котята) и взрослые особи
         6.3. Реализовать методы в котором кошки и собаки будут складываться в массивы puppies, kittens, dogs, cats
-        в зависимости от результата работы методов из п. 6.2. */
+        в зависимости от результата работы методов из п. 6.3. */
+
+public class AnimalManager {
 
 
 }
