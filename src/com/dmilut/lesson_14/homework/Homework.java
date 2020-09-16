@@ -1,9 +1,5 @@
 package com.dmilut.lesson_14.homework;
 
-import com.dmilut.lesson_14.homework.homeworkVika.CustomArrayList;
-
-import java.util.Arrays;
-
 public class Homework {
 
     /* TODO: 9/10/20
@@ -14,6 +10,7 @@ public class Homework {
 
     /* TODO: 9/10/20
         3.1. Реализовать custom Linked List (сделать свою реализацию) с методами add, remove, get, set */
+<<<<<<< HEAD
 
     public static void main(String[] args) {
 
@@ -85,4 +82,6 @@ public class Homework {
 
 
 
+=======
+>>>>>>> a82d5170c89c1832de6e25fb326eb35297ae3de2
 }
