@@ -1,22 +1,22 @@
 package com.dmilut.lesson_14.homework.homeworkIryna;
 
-public class ArrayList <Fruit> {
+public class ArrayList {
 
  /*TODO: 9/10/20
-        2.1. Реализовать custom Array List (сделать свою реализацию) с методами add, remove, get, set */
+        2.1. Реализовать custom Array List (сделать свою реализацию) с методами add, remove, get, set
+*/
 
-
-       /* private Fruit[] fruits;
+        private Fruit[] fruits;
         private final int DEFAULT_ARRAY_LENGTH = 3;
 
 
         public ArrayList() {
-          fruits = new <Fruit>[DEFAULT_ARRAY_LENGTH];
+          fruits = new Fruit[DEFAULT_ARRAY_LENGTH];
         }
 
 
         public ArrayList(int length) {
-          fruits = new <Fruit>[length];
+          fruits = new Fruit[length];
         }
 
 
@@ -81,7 +81,7 @@ public class ArrayList <Fruit> {
 
 
         private void expandArray() {
-            Fruit[] tempArray = new <Fruit>[this.fruits.length + DEFAULT_ARRAY_LENGTH];
+            Fruit[] tempArray = new Fruit[this.fruits.length + DEFAULT_ARRAY_LENGTH];
 
             for (int i = 0; i < this.fruits.length; i++) {
                 tempArray[i] = this.fruits[i];
@@ -90,5 +90,4 @@ public class ArrayList <Fruit> {
             this.fruits = (Fruit[]) tempArray;
         }
 
-*/
     }
