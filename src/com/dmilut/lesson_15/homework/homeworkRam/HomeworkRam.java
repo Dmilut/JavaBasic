@@ -1,6 +1,5 @@
 package com.dmilut.lesson_15.homework.homeworkRam;
 
-import java.sql.SQLOutput;
 import java.util.ArrayDeque;
 import java.util.Stack;
 
@@ -8,10 +7,9 @@ public class HomeworkRam {
 
     public static void main(String[] args) {
 
-
         System.out.println("1.1. Реализовать custom Stack и методы push, pop и peek");
 
-        Stack stack = new Stack<>();
+        Stack stack = new Stack();
 
         System.out.println("Stack is empty?" + " " + stack.empty());
 
@@ -24,8 +22,7 @@ public class HomeworkRam {
 
         System.out.println("Stack is empty?" + " " + stack.empty());
 
-        if (!stack.empty()){
-
+        if (!stack.empty()) {
             System.out.println(stack.pop());
             System.out.println(stack.pop());
             System.out.println(stack.pop());
@@ -37,7 +34,6 @@ public class HomeworkRam {
 
 
         System.out.println(" 2.1. Реализовать custom Queue и методы для добавления, изъятия и чтения элемента");
-
 
         ArrayDeque<String> deque = new ArrayDeque<>();
 
@@ -56,7 +52,7 @@ public class HomeworkRam {
 
         System.out.println("Deque is empty?" + " " + deque.isEmpty());
 
-        for (Object element:deque) {
+        for (Object element : deque) {
             System.out.println(element);
         }
 
@@ -72,7 +68,6 @@ public class HomeworkRam {
         System.out.println("Last Element" + " " + deque.peekLast());
 
 //        я не совсем понял в чем разница getLast и peekLast
-
 
 
     }
