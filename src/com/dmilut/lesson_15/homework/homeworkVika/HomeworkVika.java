@@ -18,6 +18,20 @@ public class HomeworkVika {
         stack.pop();
         stack.pop();
 
+        System.out.println();
+
+
+        QueuEx q = new QueuEx();
+        q.add(10);
+        q.add(22);
+        q.add(33);
+        q.add(44);
+        q.add(55);
+
+        q.remove();
+
+        q.show();
+
 
     }
 
