@@ -11,7 +11,7 @@ public class Lesson {
         bubbleSort(testArray);
         System.out.println(Arrays.toString(testArray));
 
-        System.out.println(Arrays.toString(getFibonacciNumbers(10)));
+        System.out.println(Arrays.toString(getFibonacciNumbers(20)));
 
         System.out.println(getFibonacciNumber(3));
     }
