@@ -61,7 +61,7 @@ public class Lesson {
         return array;
     }
 
-    // Метод возвращает значение числа Фибоначчи
+    // Метод возвращает значение числа Фибоначчи, сложность O(2^n)
     public static int getFibonacciNumber(int number) {
         if (number == 0) {
             return 0;
