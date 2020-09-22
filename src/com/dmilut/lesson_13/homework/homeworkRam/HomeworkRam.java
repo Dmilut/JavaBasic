@@ -4,12 +4,8 @@ public class HomeworkRam {
 
     public static void main(String[] args) {
 
-
-
         int[] shortTestArray = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11};
         int[] longTestArray = longArrayBuilder(1_000_000);
-
-
     }
 
     // Iterative linear search - сложность O(n)
