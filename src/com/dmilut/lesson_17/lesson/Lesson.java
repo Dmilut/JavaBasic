@@ -24,11 +24,11 @@ public class Lesson {
     }
 
     private static int partition(int[] array, int startIndex, int endIndex) {
-        int pivot = array[endIndex]; //Опорный элемент
+        int pivot = array[endIndex]; //Опорный элемент, для упрощения используем последний элемент массива
         int currentStartIndex = (startIndex - 1);
 
         for (int i = startIndex; i < endIndex; i++) {
-            if (array[i] <= pivot) {
+            if (array[i] < pivot) {
                 currentStartIndex++;
 
                 swap(array, currentStartIndex, i);
@@ -40,7 +40,7 @@ public class Lesson {
         return currentStartIndex + 1;
     }
 
-    // Перестановка элементов
+    // Вспомогательный метод для quickSort, реализует перестановку элементов
     private static void swap(int[] array, int index1, int index2) {
         int swapTemp = array[index1];
         array[index1] = array[index2];
@@ -48,6 +48,7 @@ public class Lesson {
     }
 
 
+    // Сумма значений всех элементов массива (работает для массивов с четным кол-вом элементов
     public static int sum(int[] array) {
 
         if (array.length == 2) {
@@ -60,6 +61,7 @@ public class Lesson {
         return sum(array1) + sum(array2);
     }
 
+    // Вспомогательный метод для sum, реализует копирование левой или правой части исходного массива в новый меньшего размера
     private static int[] arrayHalfCopy(int[] source, int index) {
         int[] result = new int[source.length / 2];
 
