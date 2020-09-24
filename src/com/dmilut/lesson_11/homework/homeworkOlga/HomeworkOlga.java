@@ -2,7 +2,7 @@ package com.dmilut.lesson_11.homework.homeworkOlga;
 
 public class HomeworkOlga {
 
-    public static void main(String[] args) throws MyException  {
+    public static void main(String[] args) throws MyException {
 
 
                 /* TODO: 8/31/20
@@ -41,11 +41,11 @@ public class HomeworkOlga {
                     3.1. Реализовать метод c генерацией собственного исключения
                  */
 
-    static void printString(String a) throws MyException{
+    static void printString(String a) throws MyException {
         if (a == null) {
             throw new MyException("String is empty");
         }
-        System.out.println("Print String:"+a);
+        System.out.println("Print String:" + a);
     }
 
     private static class MyException extends Exception {
