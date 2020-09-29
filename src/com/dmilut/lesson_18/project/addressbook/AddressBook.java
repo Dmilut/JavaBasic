@@ -13,9 +13,9 @@ public class AddressBook {
     private static ContactService contactService = new ContactService();
     private static Util util = new Util();
 
-    /* TODO: 9/16/20
-        1. Реализовать метод поиска по first name, last name и city в одном методе (сейчас сделаны 3 метода по одному
-        на каждый тип поиска - нужно объеденить все в один. */
+    /* TODO: 9/24/20
+        1. Реализовать метод сортировки контактов по алфавиту, так, чтобы контакты хранились в отсортированном в алфавитном
+        порядке (по фамилии) виде. */
     public static void main(String[] args) throws IOException {
 
         util.initApp();

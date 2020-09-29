@@ -5,7 +5,8 @@ import com.dmilut.lesson_14.project.addressbook.util.Util;
 
 import java.io.IOException;
 
-import static com.dmilut.lesson_08.project.addressbook.util.Util.inputText;
+import static com.dmilut.lesson_14.project.addressbook.util.Util.inputText;
+
 
 public class AddressBook {
 
