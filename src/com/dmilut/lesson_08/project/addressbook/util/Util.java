@@ -8,7 +8,7 @@ import java.io.InputStreamReader;
 
 public class Util {
 
-    private ContactService contactService = new ContactService();
+    private final ContactService contactService = new ContactService();
 
     public void initApp() {
         contactService.createContact("TestName1", "TestLastName1", 1234567890L);
@@ -19,8 +19,6 @@ public class Util {
     public static String inputText() throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
-        String text = reader.readLine();
-
-        return text;
+        return reader.readLine();
     }
 }

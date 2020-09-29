@@ -1,13 +1,12 @@
 package com.dmilut.lesson_08.project.addressbook.service;
 
 import com.dmilut.lesson_08.project.addressbook.entity.Contact;
+import com.dmilut.lesson_08.project.addressbook.util.Util;
 
 import java.io.IOException;
 
-import static com.dmilut.lesson_08.project.addressbook.util.Util.inputText;
-
 public class ContactService {
-    private StorageService storageService = new StorageService();
+    private final StorageService storageService = new StorageService();
 
     public void createContact(String firstName, String lastName, long phoneNumber) {
         Contact contact = new Contact();
@@ -23,35 +22,24 @@ public class ContactService {
     }
 
     public Contact getContactByFirstName(String firstName) {
-        Contact contact = storageService.getByFirstName(firstName);
 
-        return contact;
+        return storageService.getByFirstName(firstName);
     }
 
     public Contact[] getAllContacts() {
         return storageService.getAllContact();
     }
 
-    public void updateContact(Contact contact) {
-
-        storageService.updateContact(contact);
-    }
-
-    public void deleteContact(Contact contact) {
-
-        storageService.deleteContact(contact);
-    }
-
     public void inputContact() throws IOException {
         Contact contact = new Contact();
         System.out.println("Введите имя             ");
-        contact.firstName = inputText();
+        contact.firstName = Util.inputText();
 
         System.out.println("Введите фамилию         ");
-        contact.lastName = inputText();
+        contact.lastName = Util.inputText();
 
         System.out.println("Введите номер телефона  ");
-        contact.phoneNumber = Long.parseLong(inputText());
+        contact.phoneNumber = Long.parseLong(Util.inputText());
 
         saveContact(contact);
     }

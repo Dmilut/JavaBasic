@@ -1,39 +1,33 @@
-package com.dmilut.lesson_10.project.addressbook;
+package com.dmilut.lesson_18.project.addressbook;
 
-import com.dmilut.lesson_10.project.addressbook.entity.Contact;
-import com.dmilut.lesson_10.project.addressbook.service.ContactService;
-import com.dmilut.lesson_10.project.addressbook.util.Util;
+import com.dmilut.lesson_18.project.addressbook.service.ContactService;
+import com.dmilut.lesson_18.project.addressbook.util.Util;
 
-import java.io.IOException;
-
-/* TODO: 8/26/20
-    1. Реализовать проект "Адресная книга" в отдельном репозитории (не ветке, а именно создать отдельный репозиторий).
-    Проект должен демонстрировать функционал адресной книги из реальной жизни:
-    - просмотр контакта (поиск по имени)
-    - просмотр всех контактов
-    - создание контакта
-    - обновление контакта
-    - удаление контакта */
+/* TODO: 9/24/20
+    1. Реализовать метод сортировки контактов по алфавиту, так, чтобы контакты хранились в отсортированном в алфавитном
+    порядке (по фамилии) виде. */
 public class AddressBook {
 
     private static final ContactService contactService = new ContactService();
     private static final Util util = new Util();
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         util.initApp();
 
         System.out.println("=========================================================================================");
         System.out.println("                        Добро пожаловать в адресную книгу                                ");
         System.out.println("=========================================================================================");
 
-        String command = "start";
+        String command = "continue";
 
-        while (command.equals("start") || command.equals("continue")) {
+        while (!command.equals("exit")) {
 
             System.out.println("Подсказка по коммандам ==================================================================");
             System.out.println("enter contact           - ввод нового контакта ==========================================");
             System.out.println("print contacts          - вывод в консоль всех контактов ================================");
-            System.out.println("search by name          - поиск по имени контакта =======================================");
+            System.out.println("search                  - поиск контакта ================================================");
+            System.out.println("delete by first name    - удаление контакта =============================================");
+            System.out.println("exit                    - выход из программы ============================================");
             System.out.println("=========================================================================================");
             System.out.println("Введите комманду");
 
@@ -44,25 +38,39 @@ public class AddressBook {
                     contactService.inputContact();
                 }
                 break;
+
                 case "print contacts": {
                     contactService.printContacts(contactService.getAllContacts());
                 }
                 break;
-                case "search by name": {
-                    System.out.println("Введите имя");
-                    String name = Util.inputText();
-                    Contact contact = contactService.getContactByFirstName(name);
 
-                    contactService.printContact(contact);
+                case "search": {
+                    System.out.println("Введите имя / фамилию / город");
+                    String searchQuery = Util.inputText();
+
+                    contactService.printContact(contactService.searchByFirstNameOrLastNameOrCityName(searchQuery));
                 }
                 break;
+
+                case "delete by first name": {
+                    System.out.println("Введите имя");
+                    String firstName = Util.inputText();
+
+                    contactService.deleteContactByFirstName(firstName);
+                }
+                break;
+
+                case "exit": {
+                    command = "exit";
+                }
+                break;
+
                 default: {
                     System.out.println("Вы ошиблись!!!");
+                    command = "continue";
                 }
             }
 
-            System.out.println('\n' + "Для продолжения введите continue");
-            command = Util.inputText();
         }
     }
 }

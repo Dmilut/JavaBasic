@@ -1,10 +1,9 @@
-package com.dmilut.lesson_14.project.addressbook.service;
+package com.dmilut.lesson_18.project.addressbook.service;
 
-import com.dmilut.lesson_14.project.addressbook.entity.Address;
-import com.dmilut.lesson_14.project.addressbook.entity.Contact;
-import com.dmilut.lesson_14.project.addressbook.util.Util;
+import com.dmilut.lesson_18.project.addressbook.entity.Address;
+import com.dmilut.lesson_18.project.addressbook.entity.Contact;
+import com.dmilut.lesson_18.project.addressbook.util.Util;
 
-import java.io.IOException;
 import java.util.ArrayList;
 
 public class ContactService {
@@ -21,19 +20,14 @@ public class ContactService {
         storageService.saveContact(contact);
     }
 
-    public Contact getContactByFirstName(String firstName) {
+    public Contact searchByFirstNameOrLastNameOrCityName(String searchQuery) {
+
+        return storageService.getByFirstNameOrLastNameOrCityName(searchQuery);
+    }
+
+    public Contact searchByFirstName(String firstName) {
 
         return storageService.getByFirstName(firstName);
-    }
-
-    public Contact getContactByLastName(String lastName) {
-
-        return storageService.getByLastName(lastName);
-    }
-
-    public Contact getContactByCityName(String cityName) {
-
-        return storageService.getByCityName(cityName);
     }
 
     public ArrayList<Contact> getAllContacts() {
@@ -42,10 +36,10 @@ public class ContactService {
 
     public void deleteContactByFirstName(String firstName) {
 
-        storageService.removeContact(getContactByFirstName(firstName));
+        storageService.removeContact(searchByFirstName(firstName));
     }
 
-    public void inputContact() throws IOException {
+    public void inputContact() {
 
         System.out.println("Введите имя             ");
         String firstName = Util.inputText();

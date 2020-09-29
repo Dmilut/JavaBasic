@@ -9,7 +9,7 @@ import java.io.InputStreamReader;
 
 public class Util {
 
-    private ContactService contactService = new ContactService();
+    private final ContactService contactService = new ContactService();
 
     public void initApp() {
 

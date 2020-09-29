@@ -5,21 +5,14 @@ import com.dmilut.lesson_14.project.addressbook.util.Util;
 
 import java.io.IOException;
 
-import static com.dmilut.lesson_08.project.addressbook.util.Util.inputText;
-
+/* TODO: 9/9/20
+    1. Заменить реализацию Storage с массива на ArrayList */
 public class AddressBook {
 
-    private static ContactService contactService = new ContactService();
-    private static Util util = new Util();
-
-    /* TODO: 9/9/20
-        1. Заменить реализацию Storage с массива на ArrayList
-        2. Рефакторинг
-        3. Добавить комментарии
-     */
+    private static final ContactService contactService = new ContactService();
+    private static final Util util = new Util();
 
     public static void main(String[] args) throws IOException {
-
         util.initApp();
 
         System.out.println("=========================================================================================");
@@ -41,7 +34,7 @@ public class AddressBook {
             System.out.println("=========================================================================================");
             System.out.println("Введите комманду");
 
-            command = inputText();
+            command = Util.inputText();
 
             switch (command) {
                 case "enter contact": {
@@ -56,7 +49,7 @@ public class AddressBook {
 
                 case "search by first name": {
                     System.out.println("Введите имя");
-                    String firstName = inputText();
+                    String firstName = Util.inputText();
 
                     contactService.printContact(contactService.getContactByFirstName(firstName));
                 }
@@ -64,7 +57,7 @@ public class AddressBook {
 
                 case "search by last name": {
                     System.out.println("Введите фамилию");
-                    String lastName = inputText();
+                    String lastName = Util.inputText();
 
                     contactService.printContact(contactService.getContactByLastName(lastName));
                 }
@@ -72,7 +65,7 @@ public class AddressBook {
 
                 case "search by city": {
                     System.out.println("Введите город");
-                    String cityName = inputText();
+                    String cityName = Util.inputText();
 
                     contactService.printContact(contactService.getContactByCityName(cityName));
                 }
@@ -80,7 +73,7 @@ public class AddressBook {
 
                 case "delete by first name": {
                     System.out.println("Введите имя");
-                    String firstName = inputText();
+                    String firstName = Util.inputText();
 
                     contactService.deleteContactByFirstName(firstName);
                 }

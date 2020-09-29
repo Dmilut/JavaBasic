@@ -6,12 +6,11 @@ import com.dmilut.lesson_08.project.addressbook.util.Util;
 
 import java.io.IOException;
 
-import static com.dmilut.lesson_08.project.addressbook.util.Util.inputText;
 
 public class AddressBook {
 
-    private static ContactService contactService = new ContactService();
-    private static Util util = new Util();
+    private static final ContactService contactService = new ContactService();
+    private static final Util util = new Util();
 
     /*
      * NOTE : =====================================================================================================
@@ -23,7 +22,6 @@ public class AddressBook {
      */
 
     public static void main(String[] args) throws IOException {
-
         util.initApp();
 
         System.out.println("=========================================================================================");
@@ -41,7 +39,7 @@ public class AddressBook {
             System.out.println("=========================================================================================");
             System.out.println("Введите комманду");
 
-            command = inputText();
+            command = Util.inputText();
 
             switch (command) {
                 case "enter contact": {
@@ -54,7 +52,7 @@ public class AddressBook {
                 break;
                 case "search by name": {
                     System.out.println("Введите имя");
-                    String name = inputText();
+                    String name = Util.inputText();
                     Contact contact = contactService.getContactByFirstName(name);
 
                     contactService.printContact(contact);
@@ -66,7 +64,7 @@ public class AddressBook {
             }
 
             System.out.println('\n' + "Для продолжения введите continue");
-            command = inputText();
+            command = Util.inputText();
         }
     }
 }
