@@ -16,29 +16,19 @@ public class StorageService {
     }
 
     public Contact getByFirstName(String firstName) {
-        Contact contact = Storage.contacts[getContactIndexByFirstName(firstName)];
 
-        return contact;
+        return Storage.contacts[getContactIndexByFirstName(firstName)];
     }
 
     public Contact getByLastName(String lastName) {
-        Contact contact = Storage.contacts[getContactIndexByLastName(lastName)];
 
-        return contact;
+        return Storage.contacts[getContactIndexByLastName(lastName)];
     }
 
     public Contact getByCityName(String cityName) {
-        Contact contact = Storage.contacts[getContactIndexByCityName(cityName)];
 
-        return contact;
+        return Storage.contacts[getContactIndexByCityName(cityName)];
     }
-
-    public void updateContact(Contact contact) {
-        int index = getContactIndexByFirstName(contact.getFirstName());
-
-        Storage.contacts[index] = contact;
-    }
-
 
     public void deleteByFirstName(String firstName) {
         int index = getContactIndexByFirstName(firstName);

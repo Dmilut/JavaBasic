@@ -16,9 +16,8 @@ public class StorageService {
     }
 
     public Contact getByFirstName(String firstName) {
-        Contact contact = Storage.contacts[getContactIndexByFirstName(firstName)];
 
-        return contact;
+        return Storage.contacts[getContactIndexByFirstName(firstName)];
     }
 
     public void updateContact(Contact contact) {

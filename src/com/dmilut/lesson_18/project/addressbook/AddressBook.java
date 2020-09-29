@@ -3,21 +3,15 @@ package com.dmilut.lesson_18.project.addressbook;
 import com.dmilut.lesson_18.project.addressbook.service.ContactService;
 import com.dmilut.lesson_18.project.addressbook.util.Util;
 
-import java.io.IOException;
-
-import static com.dmilut.lesson_18.project.addressbook.util.Util.inputText;
-
-
+/* TODO: 9/24/20
+    1. Реализовать метод сортировки контактов по алфавиту, так, чтобы контакты хранились в отсортированном в алфавитном
+    порядке (по фамилии) виде. */
 public class AddressBook {
 
-    private static ContactService contactService = new ContactService();
-    private static Util util = new Util();
+    private static final ContactService contactService = new ContactService();
+    private static final Util util = new Util();
 
-    /* TODO: 9/24/20
-        1. Реализовать метод сортировки контактов по алфавиту, так, чтобы контакты хранились в отсортированном в алфавитном
-        порядке (по фамилии) виде. */
-    public static void main(String[] args) throws IOException {
-
+    public static void main(String[] args) {
         util.initApp();
 
         System.out.println("=========================================================================================");
@@ -37,7 +31,7 @@ public class AddressBook {
             System.out.println("=========================================================================================");
             System.out.println("Введите комманду");
 
-            command = inputText();
+            command = Util.inputText();
 
             switch (command) {
                 case "enter contact": {
@@ -52,7 +46,7 @@ public class AddressBook {
 
                 case "search": {
                     System.out.println("Введите имя / фамилию / город");
-                    String searchQuery = inputText();
+                    String searchQuery = Util.inputText();
 
                     contactService.printContact(contactService.searchByFirstNameOrLastNameOrCityName(searchQuery));
                 }
@@ -60,7 +54,7 @@ public class AddressBook {
 
                 case "delete by first name": {
                     System.out.println("Введите имя");
-                    String firstName = inputText();
+                    String firstName = Util.inputText();
 
                     contactService.deleteContactByFirstName(firstName);
                 }

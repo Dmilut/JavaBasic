@@ -2,13 +2,12 @@ package com.dmilut.lesson_10.project.addressbook.service;
 
 import com.dmilut.lesson_10.project.addressbook.entity.Address;
 import com.dmilut.lesson_10.project.addressbook.entity.Contact;
+import com.dmilut.lesson_10.project.addressbook.util.Util;
 
 import java.io.IOException;
 
-import static com.dmilut.lesson_08.project.addressbook.util.Util.inputText;
-
 public class ContactService {
-    private StorageService storageService = new StorageService();
+    private final StorageService storageService = new StorageService();
 
     public void createContact(String firstName, String lastName, long phoneNumber, Address address) {
         Contact contact = new Contact(firstName, lastName, phoneNumber, address);
@@ -42,29 +41,29 @@ public class ContactService {
     public void inputContact() throws IOException {
 
         System.out.println("Введите имя             ");
-        String firstName = inputText();
+        String firstName = Util.inputText();
 
         System.out.println("Введите фамилию         ");
-        String lastName = inputText();
+        String lastName = Util.inputText();
 
         System.out.println("Введите номер телефона  ");
-        long phoneNumber = Long.parseLong(inputText());
+        long phoneNumber = Long.parseLong(Util.inputText());
 
         System.out.println("Адрес-------------------");
         System.out.println("Введите номер дома      ");
-        String houseNumber = inputText();
+        String houseNumber = Util.inputText();
 
         System.out.println("Введите улицу           ");
-        String streetName = inputText();
+        String streetName = Util.inputText();
 
         System.out.println("Введите город           ");
-        String cityName = inputText();
+        String cityName = Util.inputText();
 
         System.out.println("Введите штат            ");
-        String stateName = inputText();
+        String stateName = Util.inputText();
 
         System.out.println("Введите зип-код         ");
-        int zipCode = Integer.parseInt(inputText());
+        int zipCode = Integer.parseInt(Util.inputText());
 
         Contact contact = new Contact(firstName, lastName, phoneNumber, new Address(houseNumber, streetName, cityName, stateName, zipCode));
 

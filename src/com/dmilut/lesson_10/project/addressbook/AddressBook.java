@@ -6,25 +6,20 @@ import com.dmilut.lesson_10.project.addressbook.util.Util;
 
 import java.io.IOException;
 
-import static com.dmilut.lesson_10.project.addressbook.util.Util.inputText;
-
-
+/* TODO: 8/26/20
+    1. Реализовать проект "Адресная книга" в отдельном репозитории (не ветке, а именно создать отдельный репозиторий).
+    Проект должен демонстрировать функционал адресной книги из реальной жизни:
+    - просмотр контакта (поиск по имени)
+    - просмотр всех контактов
+    - создание контакта
+    - обновление контакта
+    - удаление контакта */
 public class AddressBook {
 
-    private static ContactService contactService = new ContactService();
-    private static Util util = new Util();
-
-    /*
-     * NOTE : =====================================================================================================
-     * Задача   -   написать программу, которая будет решать проблему из реальной жизни.
-     * Level 3  -   провести анализ предметной области
-     *          -   записать сущности предметной области как классы программы
-     *          -   записать поля классов
-     * ============================================================================================================
-     */
+    private static final ContactService contactService = new ContactService();
+    private static final Util util = new Util();
 
     public static void main(String[] args) throws IOException {
-
         util.initApp();
 
         System.out.println("=========================================================================================");
@@ -42,7 +37,7 @@ public class AddressBook {
             System.out.println("=========================================================================================");
             System.out.println("Введите комманду");
 
-            command = inputText();
+            command = Util.inputText();
 
             switch (command) {
                 case "enter contact": {
@@ -55,7 +50,7 @@ public class AddressBook {
                 break;
                 case "search by name": {
                     System.out.println("Введите имя");
-                    String name = inputText();
+                    String name = Util.inputText();
                     Contact contact = contactService.getContactByFirstName(name);
 
                     contactService.printContact(contact);
@@ -67,7 +62,7 @@ public class AddressBook {
             }
 
             System.out.println('\n' + "Для продолжения введите continue");
-            command = inputText();
+            command = Util.inputText();
         }
     }
 }
