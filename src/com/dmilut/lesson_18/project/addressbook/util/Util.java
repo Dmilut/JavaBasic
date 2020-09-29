@@ -17,9 +17,9 @@ public class Util {
         Address testAddress2 = new Address("TestHouseNumber2", "TestStreet2", "TestCity2", "TestState2", 22222);
         Address testAddress3 = new Address("TestHouseNumber3", "TestStreet3", "TestCity3", "TestState3", 33333);
 
-        contactService.createContact("TestName1", "TestLastName1", 1234567890L, testAddress1);
-        contactService.createContact("TestName2", "TestLastName2", 2345678901L, testAddress2);
-        contactService.createContact("TestName3", "TestLastName3", 3456789012L, testAddress3);
+        contactService.createContact("TestName1", "Bbbbbbbbb", 1234567890L, testAddress1);
+        contactService.createContact("TestName2", "Aaaaaaaaa", 2345678901L, testAddress2);
+        contactService.createContact("TestName3", "Ccccccccc", 3456789012L, testAddress3);
     }
 
     // Ввод данных через консоль

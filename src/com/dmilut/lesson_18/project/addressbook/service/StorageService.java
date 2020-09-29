@@ -1,6 +1,7 @@
 package com.dmilut.lesson_18.project.addressbook.service;
 
 import com.dmilut.lesson_18.project.addressbook.entity.Contact;
+import com.dmilut.lesson_18.project.addressbook.util.Sorter;
 import com.dmilut.lesson_18.project.addressbook.util.Storage;
 
 import java.util.ArrayList;
@@ -8,7 +9,9 @@ import java.util.ArrayList;
 public class StorageService {
 
     public void saveContact(Contact contact) {
+
         Storage.getContacts().add(contact);
+        Storage.getContacts().sort(new Sorter());
     }
 
     public ArrayList<Contact> getAllContact() {
