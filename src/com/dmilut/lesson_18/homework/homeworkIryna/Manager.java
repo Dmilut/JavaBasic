@@ -1,31 +1,30 @@
 package com.dmilut.lesson_18.homework.homeworkIryna;
 
-import com.dmilut.lesson_18.homework.homeworkVahe.Student;
-import com.dmilut.lesson_18.homework.homeworkVahe.StudentStorage;
 
 import java.util.Arrays;
 
 public class Manager {
-    private Storage Storage;
+    private Storage storage;
 
-    public Manager(){ Storage = new Storage();
+    public Manager(){
+        storage = new Storage();
     }
 
-    public void addStudent (com.dmilut.lesson_18.homework.homeworkVahe.Student student){
-        Storage.getStudents().put(student.hashCode(),student);
+    public void addStudent (Student student){
+        storage.getStudents().put(student.hashCode(),student);
     }
 
-    public com.dmilut.lesson_18.homework.homeworkVahe.Student findStudent (Integer hash) {
-        return Storage.getStudents().get(hash);
+    public Student findStudent (Integer hash) {
+        return storage.getStudents().get(hash);
     }
 
     public void printStudent (Student student){
         System.out.println("Student found by hash is " + student.getFirstName() + " " +
                 student.getLastName() + " " + student.getAge() + " years old studying in group " +
-                student.getGroupNumber());
+                student.getGroupName());
     }
 
     public void printAllStudents(){
-        System.out.println(Arrays.asList(Storage.getStudents()));
+        System.out.println(Arrays.asList(storage.getStudents()));
     }
 }

@@ -15,7 +15,7 @@ public class Student {
     public String getLastName(){return lastName;}
     public void setLastName(String lastName){this.lastName=lastName;}
 
-    public int age(){return age;}
+    public int getAge(){return age;}
     public void setAge(int age){this.age=age;}
 
     public String getGroupName(){return groupName;}
@@ -36,4 +36,6 @@ public class Student {
         }
         return  sum;
     }
+
+
 }
