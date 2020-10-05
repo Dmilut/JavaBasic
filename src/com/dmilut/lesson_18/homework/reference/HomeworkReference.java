@@ -1,7 +1,5 @@
 package com.dmilut.lesson_18.homework.reference;
 
-import java.util.HashMap;
-
 public class HomeworkReference {
 
     public static void main(String[] args) {
